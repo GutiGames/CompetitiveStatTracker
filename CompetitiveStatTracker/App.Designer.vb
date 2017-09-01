@@ -46,7 +46,7 @@ Partial Class MainMenu
         Me.Smite.Image = CType(resources.GetObject("Smite.Image"), System.Drawing.Image)
         Me.Smite.Location = New System.Drawing.Point(53, 249)
         Me.Smite.Name = "Smite"
-        Me.Smite.Size = New System.Drawing.Size(512, 228)
+        Me.Smite.Size = New System.Drawing.Size(512, 285)
         Me.Smite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Smite.TabIndex = 1
         Me.Smite.TabStop = False
@@ -54,9 +54,9 @@ Partial Class MainMenu
         'OW
         '
         Me.OW.Image = CType(resources.GetObject("OW.Image"), System.Drawing.Image)
-        Me.OW.Location = New System.Drawing.Point(687, 249)
+        Me.OW.Location = New System.Drawing.Point(740, 249)
         Me.OW.Name = "OW"
-        Me.OW.Size = New System.Drawing.Size(512, 228)
+        Me.OW.Size = New System.Drawing.Size(512, 285)
         Me.OW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.OW.TabIndex = 2
         Me.OW.TabStop = False
@@ -70,6 +70,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.Smite)
         Me.Controls.Add(Me.Title)
         Me.Name = "MainMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Competitive Stat Tracker"
         CType(Me.Smite, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OW, System.ComponentModel.ISupportInitialize).EndInit()

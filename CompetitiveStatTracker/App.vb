@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Smite_Click(sender As Object, e As EventArgs) Handles Smite.Click
-        Smie.Show()
+        SmiteMenu.Show()
         Me.Hide()
 
     End Sub
