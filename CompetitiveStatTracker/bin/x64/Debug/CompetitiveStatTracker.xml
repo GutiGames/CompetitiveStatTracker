@@ -22,67 +22,67 @@ CompetitiveStatTracker
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSet">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSet.SmiteJoustDataTable">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSet.SmiteJoustDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSet.SmiteJoustRow">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSet.SmiteJoustRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSet.SmiteJoustRowChangeEvent">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSet.SmiteJoustRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSetTableAdapters.SmiteJoustTableAdapter">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.SmiteJoustTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager">
 <summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
-<member name="M:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CompetitiveStatTracker.SmiteDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CompetitiveStatTracker.SmiteJoustDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Update rows in top-down order.
 </summary>
 </member>
-<member name="M:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CompetitiveStatTracker.SmiteDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CompetitiveStatTracker.SmiteJoustDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Insert rows in top-down order.
 </summary>
 </member>
-<member name="M:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CompetitiveStatTracker.SmiteDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CompetitiveStatTracker.SmiteJoustDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Delete rows in bottom-up order.
 </summary>
 </member>
-<member name="M:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
 </member>
-<member name="M:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.UpdateAll(CompetitiveStatTracker.SmiteDataSet)">
+<member name="M:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.UpdateAll(CompetitiveStatTracker.SmiteJoustDataSet)">
 <summary>
 Update all changes to the dataset.
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
 <summary>
 Update Order Option
 </summary>
 </member>
-<member name="T:CompetitiveStatTracker.SmiteDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<member name="T:CompetitiveStatTracker.SmiteJoustDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>
