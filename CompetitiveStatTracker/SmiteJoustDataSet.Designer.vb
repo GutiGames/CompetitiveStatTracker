@@ -285,11 +285,23 @@ Partial Public Class SmiteJoustDataSet
         
         Private columnMatchNumber As Global.System.Data.DataColumn
         
+        Private columnTier As Global.System.Data.DataColumn
+        
         Private columnResult As Global.System.Data.DataColumn
         
         Private columnElo_Balance As Global.System.Data.DataColumn
         
         Private columnTotal_Elo As Global.System.Data.DataColumn
+        
+        Private columnRole As Global.System.Data.DataColumn
+        
+        Private columnGod As Global.System.Data.DataColumn
+        
+        Private columnKDA As Global.System.Data.DataColumn
+        
+        Private columnQue_Type As Global.System.Data.DataColumn
+        
+        Private columnComment As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -336,6 +348,14 @@ Partial Public Class SmiteJoustDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property TierColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTier
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property ResultColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnResult
@@ -355,6 +375,46 @@ Partial Public Class SmiteJoustDataSet
         Public ReadOnly Property Total_EloColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnTotal_Elo
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property RoleColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnRole
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property GodColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnGod
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property KDAColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnKDA
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Que_TypeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnQue_Type
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CommentColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnComment
             End Get
         End Property
         
@@ -395,12 +455,18 @@ Partial Public Class SmiteJoustDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddSmiteJoustRow(ByVal Result As String, ByVal Elo_Balance As String, ByVal Total_Elo As String) As SmiteJoustRow
+        Public Overloads Function AddSmiteJoustRow(ByVal Tier As String, ByVal Result As String, ByVal Elo_Balance As Integer, ByVal Total_Elo As Integer, ByVal Role As String, ByVal God As String, ByVal KDA As Double, ByVal Que_Type As String, ByVal Comment As String) As SmiteJoustRow
             Dim rowSmiteJoustRow As SmiteJoustRow = CType(Me.NewRow,SmiteJoustRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Result, Elo_Balance, Total_Elo}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Tier, Result, Elo_Balance, Total_Elo, Role, God, KDA, Que_Type, Comment}
             rowSmiteJoustRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowSmiteJoustRow)
             Return rowSmiteJoustRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindByMatchNumber(ByVal MatchNumber As Integer) As SmiteJoustRow
+            Return CType(Me.Rows.Find(New Object() {MatchNumber}),SmiteJoustRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -421,9 +487,15 @@ Partial Public Class SmiteJoustDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
             Me.columnMatchNumber = MyBase.Columns("MatchNumber")
+            Me.columnTier = MyBase.Columns("Tier")
             Me.columnResult = MyBase.Columns("Result")
             Me.columnElo_Balance = MyBase.Columns("Elo Balance")
             Me.columnTotal_Elo = MyBase.Columns("Total Elo")
+            Me.columnRole = MyBase.Columns("Role")
+            Me.columnGod = MyBase.Columns("God")
+            Me.columnKDA = MyBase.Columns("KDA")
+            Me.columnQue_Type = MyBase.Columns("Que Type")
+            Me.columnComment = MyBase.Columns("Comment")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -431,18 +503,36 @@ Partial Public Class SmiteJoustDataSet
         Private Sub InitClass()
             Me.columnMatchNumber = New Global.System.Data.DataColumn("MatchNumber", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnMatchNumber)
+            Me.columnTier = New Global.System.Data.DataColumn("Tier", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTier)
             Me.columnResult = New Global.System.Data.DataColumn("Result", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnResult)
-            Me.columnElo_Balance = New Global.System.Data.DataColumn("Elo Balance", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnElo_Balance = New Global.System.Data.DataColumn("Elo Balance", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnElo_Balance)
-            Me.columnTotal_Elo = New Global.System.Data.DataColumn("Total Elo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnTotal_Elo = New Global.System.Data.DataColumn("Total Elo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTotal_Elo)
+            Me.columnRole = New Global.System.Data.DataColumn("Role", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnRole)
+            Me.columnGod = New Global.System.Data.DataColumn("God", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnGod)
+            Me.columnKDA = New Global.System.Data.DataColumn("KDA", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnKDA)
+            Me.columnQue_Type = New Global.System.Data.DataColumn("Que Type", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnQue_Type)
+            Me.columnComment = New Global.System.Data.DataColumn("Comment", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnComment)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnMatchNumber}, true))
             Me.columnMatchNumber.AutoIncrement = true
             Me.columnMatchNumber.AutoIncrementSeed = -1
             Me.columnMatchNumber.AutoIncrementStep = -1
+            Me.columnMatchNumber.AllowDBNull = false
+            Me.columnMatchNumber.Unique = true
+            Me.columnTier.MaxLength = 255
             Me.columnResult.MaxLength = 255
-            Me.columnElo_Balance.MaxLength = 255
-            Me.columnTotal_Elo.MaxLength = 255
+            Me.columnRole.MaxLength = 255
+            Me.columnGod.MaxLength = 255
+            Me.columnQue_Type.MaxLength = 255
+            Me.columnComment.MaxLength = 536870910
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -591,14 +681,25 @@ Partial Public Class SmiteJoustDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property MatchNumber() As Integer
             Get
-                Try 
-                    Return CType(Me(Me.tableSmiteJoust.MatchNumberColumn),Integer)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'MatchNumber' in table 'SmiteJoust' is DBNull.", e)
-                End Try
+                Return CType(Me(Me.tableSmiteJoust.MatchNumberColumn),Integer)
             End Get
             Set
                 Me(Me.tableSmiteJoust.MatchNumberColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Tier() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.TierColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Tier' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.TierColumn) = value
             End Set
         End Property
         
@@ -619,10 +720,10 @@ Partial Public Class SmiteJoustDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Elo_Balance() As String
+        Public Property Elo_Balance() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tableSmiteJoust.Elo_BalanceColumn),String)
+                    Return CType(Me(Me.tableSmiteJoust.Elo_BalanceColumn),Integer)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Elo Balance' in table 'SmiteJoust' is DBNull.", e)
                 End Try
@@ -634,10 +735,10 @@ Partial Public Class SmiteJoustDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Total_Elo() As String
+        Public Property Total_Elo() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tableSmiteJoust.Total_EloColumn),String)
+                    Return CType(Me(Me.tableSmiteJoust.Total_EloColumn),Integer)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Total Elo' in table 'SmiteJoust' is DBNull.", e)
                 End Try
@@ -649,14 +750,89 @@ Partial Public Class SmiteJoustDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsMatchNumberNull() As Boolean
-            Return Me.IsNull(Me.tableSmiteJoust.MatchNumberColumn)
+        Public Property Role() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.RoleColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Role' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.RoleColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property God() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.GodColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'God' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.GodColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property KDA() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.KDAColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'KDA' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.KDAColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Que_Type() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.Que_TypeColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Que Type' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.Que_TypeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Comment() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSmiteJoust.CommentColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Comment' in table 'SmiteJoust' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSmiteJoust.CommentColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTierNull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.TierColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetMatchNumberNull()
-            Me(Me.tableSmiteJoust.MatchNumberColumn) = Global.System.Convert.DBNull
+        Public Sub SetTierNull()
+            Me(Me.tableSmiteJoust.TierColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -693,6 +869,66 @@ Partial Public Class SmiteJoustDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetTotal_EloNull()
             Me(Me.tableSmiteJoust.Total_EloColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsRoleNull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.RoleColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetRoleNull()
+            Me(Me.tableSmiteJoust.RoleColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsGodNull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.GodColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetGodNull()
+            Me(Me.tableSmiteJoust.GodColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsKDANull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.KDAColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetKDANull()
+            Me(Me.tableSmiteJoust.KDAColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsQue_TypeNull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.Que_TypeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetQue_TypeNull()
+            Me(Me.tableSmiteJoust.Que_TypeColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCommentNull() As Boolean
+            Return Me.IsNull(Me.tableSmiteJoust.CommentColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCommentNull()
+            Me(Me.tableSmiteJoust.CommentColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -863,17 +1099,30 @@ Namespace SmiteJoustDataSetTableAdapters
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "SmiteJoust"
             tableMapping.ColumnMappings.Add("MatchNumber", "MatchNumber")
+            tableMapping.ColumnMappings.Add("Tier", "Tier")
             tableMapping.ColumnMappings.Add("Result", "Result")
             tableMapping.ColumnMappings.Add("Elo Balance", "Elo Balance")
             tableMapping.ColumnMappings.Add("Total Elo", "Total Elo")
+            tableMapping.ColumnMappings.Add("Role", "Role")
+            tableMapping.ColumnMappings.Add("God", "God")
+            tableMapping.ColumnMappings.Add("KDA", "KDA")
+            tableMapping.ColumnMappings.Add("Que Type", "Que Type")
+            tableMapping.ColumnMappings.Add("Comment", "Comment")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `SmiteJoust` (`Result`, `Elo Balance`, `Total Elo`) VALUES (?, ?, ?)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `SmiteJoust` (`Tier`, `Result`, `Elo Balance`, `Total Elo`, `Role`, `"& _ 
+                "God`, `KDA`, `Que Type`, `Comment`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Tier", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Tier", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Result", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Result", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Role", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Role", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("God", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "God", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("KDA", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "KDA", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Que_Type", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Que Type", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Comment", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Comment", Global.System.Data.DataRowVersion.Current, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -889,23 +1138,39 @@ Namespace SmiteJoustDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(2) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT MatchNumber, Result, [Elo Balance], [Total Elo] FROM SmiteJoust"
+            Me._commandCollection(0).CommandText = "SELECT        MatchNumber, Tier, Result, [Elo Balance], [Total Elo], Role, God, K"& _ 
+                "DA, [Que Type], Comment"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            SmiteJoust"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "INSERT INTO `SmiteJoust` (`Result`, `Elo Balance`, `Total Elo`) VALUES (?, ?, ?)"
+            Me._commandCollection(1).CommandText = "INSERT INTO SmiteJoust"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (Tier, Result, [Elo Balance], [T"& _ 
+                "otal Elo], Role, God, KDA, [Que Type], Comment)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"VALUES        (?, ?, ?, ?, ?, ?"& _ 
+                ", ?, ?, ?)"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Tier", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Tier", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Result", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Result", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Role", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Role", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("God", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "God", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("KDA", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "KDA", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Que_Type", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Que Type", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Comment", Global.System.Data.OleDb.OleDbType.WChar, 1024, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Comment", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(2) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(2).Connection = Me.Connection
-            Me._commandCollection(2).CommandText = "UPDATE       SmiteJoust"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SET                Result = ?, [Elo Balance] = ?, [Total"& _ 
-                " Elo] = ?"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (MatchNumber = ?)"
+            Me._commandCollection(2).CommandText = "UPDATE       SmiteJoust"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SET                Tier = ?, Result = ?, [Elo Balance] ="& _ 
+                " ?, [Total Elo] = ?, Role = ?, God = ?, KDA = ?, [Que Type] = ?, Comment = ?"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WH"& _ 
+                "ERE        (MatchNumber = ?)"
             Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Tier", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Tier", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Result", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Result", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Elo_Balance", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Elo Balance", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Total_Elo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Total Elo", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Role", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Role", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("God", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "God", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("KDA", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "KDA", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Que_Type", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Que Type", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Comment", Global.System.Data.OleDb.OleDbType.WChar, 1024, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Comment", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_MatchNumber", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "MatchNumber", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
         
@@ -965,21 +1230,51 @@ Namespace SmiteJoustDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Result As String, ByVal Elo_Balance As String, ByVal Total_Elo As String) As Integer
-            If (Result Is Nothing) Then
+        Public Overloads Overridable Function Insert(ByVal Tier As String, ByVal Result As String, ByVal Elo_Balance As Global.System.Nullable(Of Integer), ByVal Total_Elo As Global.System.Nullable(Of Integer), ByVal Role As String, ByVal God As String, ByVal KDA As Global.System.Nullable(Of Integer), ByVal Que_Type As String, ByVal Comment As String) As Integer
+            If (Tier Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Result,String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Tier,String)
             End If
-            If (Elo_Balance Is Nothing) Then
+            If (Result Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Elo_Balance,String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Result,String)
             End If
-            If (Total_Elo Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            If (Elo_Balance.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Elo_Balance.Value,Integer)
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Total_Elo,String)
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (Total_Elo.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(Total_Elo.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (Role Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(Role,String)
+            End If
+            If (God Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(God,String)
+            End If
+            If (KDA.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(KDA.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            If (Que_Type Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Que_Type,String)
+            End If
+            If (Comment Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Comment,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1000,22 +1295,52 @@ Namespace SmiteJoustDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, false)>  _
-        Public Overloads Overridable Function AddMatch(ByVal Result As String, ByVal Elo_Balance As String, ByVal Total_Elo As String) As Integer
+        Public Overloads Overridable Function AddMatch(ByVal Tier As String, ByVal Result As String, ByVal Elo_Balance As Global.System.Nullable(Of Integer), ByVal Total_Elo As Global.System.Nullable(Of Integer), ByVal Role As String, ByVal God As String, ByVal KDA As String, ByVal Que_Type As String, ByVal Comment As String) As Integer
             Dim command As Global.System.Data.OleDb.OleDbCommand = Me.CommandCollection(1)
-            If (Result Is Nothing) Then
+            If (Tier Is Nothing) Then
                 command.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(0).Value = CType(Result,String)
+                command.Parameters(0).Value = CType(Tier,String)
             End If
-            If (Elo_Balance Is Nothing) Then
+            If (Result Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(Elo_Balance,String)
+                command.Parameters(1).Value = CType(Result,String)
             End If
-            If (Total_Elo Is Nothing) Then
-                command.Parameters(2).Value = Global.System.DBNull.Value
+            If (Elo_Balance.HasValue = true) Then
+                command.Parameters(2).Value = CType(Elo_Balance.Value,Integer)
             Else
-                command.Parameters(2).Value = CType(Total_Elo,String)
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (Total_Elo.HasValue = true) Then
+                command.Parameters(3).Value = CType(Total_Elo.Value,Integer)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (Role Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(Role,String)
+            End If
+            If (God Is Nothing) Then
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(5).Value = CType(God,String)
+            End If
+            If (KDA Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(KDA,String)
+            End If
+            If (Que_Type Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(Que_Type,String)
+            End If
+            If (Comment Is Nothing) Then
+                command.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(8).Value = CType(Comment,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
             If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1037,24 +1362,58 @@ Namespace SmiteJoustDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, false)>  _
-        Public Overloads Overridable Function EditMatch(ByVal Result As String, ByVal Elo_Balance As String, ByVal Total_Elo As String, ByVal Original_MatchNumber As Integer) As Integer
+        Public Overloads Overridable Function EditMatch(ByVal Tier As String, ByVal Result As String, ByVal Elo_Balance As Global.System.Nullable(Of Integer), ByVal Total_Elo As Global.System.Nullable(Of Integer), ByVal Role As String, ByVal God As String, ByVal KDA As String, ByVal Que_Type As String, ByVal Comment As String, ByVal Original_MatchNumber As Global.System.Nullable(Of Integer)) As Integer
             Dim command As Global.System.Data.OleDb.OleDbCommand = Me.CommandCollection(2)
-            If (Result Is Nothing) Then
+            If (Tier Is Nothing) Then
                 command.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(0).Value = CType(Result,String)
+                command.Parameters(0).Value = CType(Tier,String)
             End If
-            If (Elo_Balance Is Nothing) Then
+            If (Result Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(Elo_Balance,String)
+                command.Parameters(1).Value = CType(Result,String)
             End If
-            If (Total_Elo Is Nothing) Then
-                command.Parameters(2).Value = Global.System.DBNull.Value
+            If (Elo_Balance.HasValue = true) Then
+                command.Parameters(2).Value = CType(Elo_Balance.Value,Integer)
             Else
-                command.Parameters(2).Value = CType(Total_Elo,String)
+                command.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            command.Parameters(3).Value = CType(Original_MatchNumber,Integer)
+            If (Total_Elo.HasValue = true) Then
+                command.Parameters(3).Value = CType(Total_Elo.Value,Integer)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (Role Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(Role,String)
+            End If
+            If (God Is Nothing) Then
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(5).Value = CType(God,String)
+            End If
+            If (KDA Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(KDA,String)
+            End If
+            If (Que_Type Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(Que_Type,String)
+            End If
+            If (Comment Is Nothing) Then
+                command.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(8).Value = CType(Comment,String)
+            End If
+            If (Original_MatchNumber.HasValue = true) Then
+                command.Parameters(9).Value = CType(Original_MatchNumber.Value,Integer)
+            Else
+                command.Parameters(9).Value = Global.System.DBNull.Value
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
             If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
