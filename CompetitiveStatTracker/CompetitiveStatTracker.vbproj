@@ -84,7 +84,35 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>CompetitiveStatTracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>CompetitiveStatTracker.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.Entity.Design.Extensibility, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.OData, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.Services, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -120,6 +148,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddJoustMatch.Designer.vb">
+      <DependentUpon>AddJoustMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddJoustMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="App.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +176,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MyResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RankedJoust.Designer.vb">
       <DependentUpon>RankedJoust.vb</DependentUpon>
     </Compile>
@@ -154,27 +193,32 @@
     <Compile Include="Smite.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SmiteJoustDataSet.Designer.vb">
+    <Compile Include="SmiteDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SmiteJoustDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SmiteJoustDataSet.vb">
-      <DependentUpon>SmiteJoustDataSet.xsd</DependentUpon>
+      <DependentUpon>SmiteDataSet.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddJoustMatch.resx">
+      <DependentUpon>AddJoustMatch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RankedJoust.resx">
       <DependentUpon>RankedJoust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyResources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Smite.resx">
       <DependentUpon>Smite.vb</DependentUpon>
@@ -195,16 +239,16 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="SmiteJoustDataSet.xsc">
-      <DependentUpon>SmiteJoustDataSet.xsd</DependentUpon>
+    <None Include="SmiteDataSet.xsc">
+      <DependentUpon>SmiteDataSet.xsd</DependentUpon>
     </None>
-    <None Include="SmiteJoustDataSet.xsd">
+    <None Include="SmiteDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SmiteJoustDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>SmiteDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="SmiteJoustDataSet.xss">
-      <DependentUpon>SmiteJoustDataSet.xsd</DependentUpon>
+    <None Include="SmiteDataSet.xss">
+      <DependentUpon>SmiteDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +262,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\174872.png" />
+    <None Include="Resources\Vacio.png" />
+    <None Include="Resources\alumnos2.png" />
+    <Content Include="Smite.accdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
