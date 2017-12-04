@@ -41,7 +41,6 @@ Partial Class SmiteMenu
         Me.Conquest.Location = New System.Drawing.Point(8, 67)
         Me.Conquest.Name = "Conquest"
         Me.Conquest.Size = New System.Drawing.Size(430, 602)
-        Me.Conquest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Conquest.TabIndex = 0
         Me.Conquest.TabStop = False
         '
@@ -69,7 +68,7 @@ Partial Class SmiteMenu
         '
         Me.Title.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Title.Location = New System.Drawing.Point(8, 9)
+        Me.Title.Location = New System.Drawing.Point(5, 9)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(1290, 55)
         Me.Title.TabIndex = 3
@@ -78,9 +77,9 @@ Partial Class SmiteMenu
         '
         'Atras
         '
-        Me.Atras.Location = New System.Drawing.Point(12, 9)
+        Me.Atras.Location = New System.Drawing.Point(8, 12)
         Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(100, 48)
+        Me.Atras.Size = New System.Drawing.Size(100, 40)
         Me.Atras.TabIndex = 32
         Me.Atras.Text = "<="
         Me.Atras.UseVisualStyleBackColor = True
@@ -89,7 +88,7 @@ Partial Class SmiteMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1310, 676)
+        Me.ClientSize = New System.Drawing.Size(1304, 671)
         Me.Controls.Add(Me.Atras)
         Me.Controls.Add(Me.Title)
         Me.Controls.Add(Me.Duel)

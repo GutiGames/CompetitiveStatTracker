@@ -13,7 +13,7 @@
 
     Public Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
 
-        Dim KDA As Single
+        Dim KDA As Single = 0
         Dim K As Integer = Val(Kills.Text)
         Dim D As Integer = Val(Deaths.Text)
         Dim A As Integer = Val(Assists.Text)
@@ -28,16 +28,20 @@
 
 
         JoustMatchesTableAdapter.InsertJoustMatch(Tier.SelectedValue, Winner.SelectedValue, Que.SelectedValue, Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text), KDA, Comment.Text)
-        JoustMatchesTableAdapter.InsertQuery(Tier.SelectedValue)
-
         Me.JoustMatchesTableAdapter.Fill(Me.SmiteDataSet.JoustMatches)
+
+        AddJoustMatch.Show()
+    End Sub
+
+    Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
+
+        SmiteMenu.Show()
+        Me.Close()
 
     End Sub
 
-    Private Sub siguiente_Click(sender As Object, e As EventArgs) Handles siguiente.Click
+    Private Sub Modify_Click(sender As Object, e As EventArgs) Handles Modify.Click
 
-        AddJoustMatch.Show()
-        Me.Hide()
 
 
     End Sub

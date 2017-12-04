@@ -33,7 +33,7 @@ Partial Class MainMenu
         'Title
         '
         Me.Title.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Title.Font = New System.Drawing.Font("Olivers Barney", 51.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 51.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Title.Location = New System.Drawing.Point(12, 9)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(1240, 75)

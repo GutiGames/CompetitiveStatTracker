@@ -60,7 +60,7 @@ Partial Class RankedJoust
         Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
-        Me.siguiente = New System.Windows.Forms.Button()
+        Me.Modify = New System.Windows.Forms.Button()
         CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,18 +71,20 @@ Partial Class RankedJoust
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(972, 674)
+        Me.Add.Location = New System.Drawing.Point(1156, 627)
+        Me.Add.Margin = New System.Windows.Forms.Padding(4)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(75, 21)
+        Me.Add.Size = New System.Drawing.Size(45, 22)
         Me.Add.TabIndex = 4
         Me.Add.Text = "Add"
         Me.Add.UseVisualStyleBackColor = True
         '
         'MatchID
         '
-        Me.MatchID.Location = New System.Drawing.Point(15, 675)
+        Me.MatchID.Location = New System.Drawing.Point(20, 627)
+        Me.MatchID.Margin = New System.Windows.Forms.Padding(4)
         Me.MatchID.Name = "MatchID"
-        Me.MatchID.Size = New System.Drawing.Size(100, 20)
+        Me.MatchID.Size = New System.Drawing.Size(102, 22)
         Me.MatchID.TabIndex = 6
         '
         'Tier
@@ -91,9 +93,10 @@ Partial Class RankedJoust
         Me.Tier.DataSource = Me.TiersBindingSource
         Me.Tier.DisplayMember = "Nombre"
         Me.Tier.FormattingEnabled = True
-        Me.Tier.Location = New System.Drawing.Point(123, 674)
+        Me.Tier.Location = New System.Drawing.Point(130, 627)
+        Me.Tier.Margin = New System.Windows.Forms.Padding(4)
         Me.Tier.Name = "Tier"
-        Me.Tier.Size = New System.Drawing.Size(85, 21)
+        Me.Tier.Size = New System.Drawing.Size(112, 24)
         Me.Tier.TabIndex = 10
         Me.Tier.ValueMember = "IdTier"
         '
@@ -113,9 +116,10 @@ Partial Class RankedJoust
         Me.Winner.DataSource = Me.TeamsBindingSource
         Me.Winner.DisplayMember = "Names"
         Me.Winner.FormattingEnabled = True
-        Me.Winner.Location = New System.Drawing.Point(214, 674)
+        Me.Winner.Location = New System.Drawing.Point(250, 627)
+        Me.Winner.Margin = New System.Windows.Forms.Padding(4)
         Me.Winner.Name = "Winner"
-        Me.Winner.Size = New System.Drawing.Size(81, 21)
+        Me.Winner.Size = New System.Drawing.Size(73, 24)
         Me.Winner.TabIndex = 11
         Me.Winner.ValueMember = "IdTeams"
         '
@@ -126,23 +130,26 @@ Partial Class RankedJoust
         '
         'Deaths
         '
-        Me.Deaths.Location = New System.Drawing.Point(474, 674)
+        Me.Deaths.Location = New System.Drawing.Point(499, 627)
+        Me.Deaths.Margin = New System.Windows.Forms.Padding(4)
         Me.Deaths.Name = "Deaths"
-        Me.Deaths.Size = New System.Drawing.Size(65, 20)
+        Me.Deaths.Size = New System.Drawing.Size(86, 22)
         Me.Deaths.TabIndex = 14
         '
         'Kills
         '
-        Me.Kills.Location = New System.Drawing.Point(407, 674)
+        Me.Kills.Location = New System.Drawing.Point(405, 627)
+        Me.Kills.Margin = New System.Windows.Forms.Padding(4)
         Me.Kills.Name = "Kills"
-        Me.Kills.Size = New System.Drawing.Size(65, 20)
+        Me.Kills.Size = New System.Drawing.Size(86, 22)
         Me.Kills.TabIndex = 15
         '
         'Assists
         '
-        Me.Assists.Location = New System.Drawing.Point(541, 674)
+        Me.Assists.Location = New System.Drawing.Point(593, 627)
+        Me.Assists.Margin = New System.Windows.Forms.Padding(4)
         Me.Assists.Name = "Assists"
-        Me.Assists.Size = New System.Drawing.Size(65, 20)
+        Me.Assists.Size = New System.Drawing.Size(86, 22)
         Me.Assists.TabIndex = 16
         '
         'Que
@@ -151,9 +158,10 @@ Partial Class RankedJoust
         Me.Que.DataSource = Me.QueTypesBindingSource
         Me.Que.DisplayMember = "Name"
         Me.Que.FormattingEnabled = True
-        Me.Que.Location = New System.Drawing.Point(301, 674)
+        Me.Que.Location = New System.Drawing.Point(331, 627)
+        Me.Que.Margin = New System.Windows.Forms.Padding(4)
         Me.Que.Name = "Que"
-        Me.Que.Size = New System.Drawing.Size(100, 21)
+        Me.Que.Size = New System.Drawing.Size(66, 24)
         Me.Que.TabIndex = 17
         Me.Que.ValueMember = "IdQueType"
         '
@@ -164,17 +172,19 @@ Partial Class RankedJoust
         '
         'Comment
         '
-        Me.Comment.Location = New System.Drawing.Point(619, 674)
+        Me.Comment.Location = New System.Drawing.Point(687, 627)
+        Me.Comment.Margin = New System.Windows.Forms.Padding(4)
         Me.Comment.Multiline = True
         Me.Comment.Name = "Comment"
-        Me.Comment.Size = New System.Drawing.Size(347, 21)
+        Me.Comment.Size = New System.Drawing.Size(461, 22)
         Me.Comment.TabIndex = 18
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 655)
+        Me.Label1.Location = New System.Drawing.Point(17, 608)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 15)
         Me.Label1.TabIndex = 19
@@ -184,7 +194,8 @@ Partial Class RankedJoust
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(148, 656)
+        Me.Label2.Location = New System.Drawing.Point(168, 608)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 15)
         Me.Label2.TabIndex = 20
@@ -194,7 +205,8 @@ Partial Class RankedJoust
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(230, 656)
+        Me.Label3.Location = New System.Drawing.Point(258, 608)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 15)
         Me.Label3.TabIndex = 21
@@ -204,7 +216,8 @@ Partial Class RankedJoust
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(422, 654)
+        Me.Label8.Location = New System.Drawing.Point(429, 608)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 15)
         Me.Label8.TabIndex = 26
@@ -214,7 +227,8 @@ Partial Class RankedJoust
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(481, 654)
+        Me.Label9.Location = New System.Drawing.Point(514, 608)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 15)
         Me.Label9.TabIndex = 27
@@ -224,7 +238,8 @@ Partial Class RankedJoust
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(548, 654)
+        Me.Label10.Location = New System.Drawing.Point(609, 608)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 15)
         Me.Label10.TabIndex = 28
@@ -234,7 +249,8 @@ Partial Class RankedJoust
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(317, 654)
+        Me.Label11.Location = New System.Drawing.Point(329, 608)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 15)
         Me.Label11.TabIndex = 29
@@ -244,7 +260,8 @@ Partial Class RankedJoust
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(756, 654)
+        Me.Label12.Location = New System.Drawing.Point(867, 608)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(72, 15)
         Me.Label12.TabIndex = 30
@@ -252,9 +269,10 @@ Partial Class RankedJoust
         '
         'Atras
         '
-        Me.Atras.Location = New System.Drawing.Point(12, 12)
+        Me.Atras.Location = New System.Drawing.Point(16, 18)
+        Me.Atras.Margin = New System.Windows.Forms.Padding(4)
         Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(100, 48)
+        Me.Atras.Size = New System.Drawing.Size(133, 50)
         Me.Atras.TabIndex = 31
         Me.Atras.Text = "<="
         Me.Atras.UseVisualStyleBackColor = True
@@ -264,13 +282,16 @@ Partial Class RankedJoust
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.ColumnHeadersHeight = 25
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdMatchDataGridViewTextBoxColumn, Me.TierDataGridViewTextBoxColumn, Me.WinnerDataGridViewTextBoxColumn, Me.QueTypeDataGridViewTextBoxColumn, Me.MyKDataGridViewTextBoxColumn, Me.MyDDataGridViewTextBoxColumn, Me.MyADataGridViewTextBoxColumn, Me.MyKDADataGridViewTextBoxColumn, Me.CommetsDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.JoustMatchesBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 69)
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 85)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1035, 583)
+        Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridView1.Size = New System.Drawing.Size(1240, 500)
         Me.DataGridView1.TabIndex = 32
         '
         'IdMatchDataGridViewTextBoxColumn
@@ -279,6 +300,7 @@ Partial Class RankedJoust
         Me.IdMatchDataGridViewTextBoxColumn.HeaderText = "IdMatch"
         Me.IdMatchDataGridViewTextBoxColumn.Name = "IdMatchDataGridViewTextBoxColumn"
         Me.IdMatchDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdMatchDataGridViewTextBoxColumn.Width = 130
         '
         'TierDataGridViewTextBoxColumn
         '
@@ -286,6 +308,7 @@ Partial Class RankedJoust
         Me.TierDataGridViewTextBoxColumn.HeaderText = "Tier"
         Me.TierDataGridViewTextBoxColumn.Name = "TierDataGridViewTextBoxColumn"
         Me.TierDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TierDataGridViewTextBoxColumn.Width = 130
         '
         'WinnerDataGridViewTextBoxColumn
         '
@@ -293,6 +316,7 @@ Partial Class RankedJoust
         Me.WinnerDataGridViewTextBoxColumn.HeaderText = "Winner"
         Me.WinnerDataGridViewTextBoxColumn.Name = "WinnerDataGridViewTextBoxColumn"
         Me.WinnerDataGridViewTextBoxColumn.ReadOnly = True
+        Me.WinnerDataGridViewTextBoxColumn.Width = 130
         '
         'QueTypeDataGridViewTextBoxColumn
         '
@@ -300,6 +324,7 @@ Partial Class RankedJoust
         Me.QueTypeDataGridViewTextBoxColumn.HeaderText = "Que Type"
         Me.QueTypeDataGridViewTextBoxColumn.Name = "QueTypeDataGridViewTextBoxColumn"
         Me.QueTypeDataGridViewTextBoxColumn.ReadOnly = True
+        Me.QueTypeDataGridViewTextBoxColumn.Width = 130
         '
         'MyKDataGridViewTextBoxColumn
         '
@@ -307,6 +332,7 @@ Partial Class RankedJoust
         Me.MyKDataGridViewTextBoxColumn.HeaderText = "My K"
         Me.MyKDataGridViewTextBoxColumn.Name = "MyKDataGridViewTextBoxColumn"
         Me.MyKDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDataGridViewTextBoxColumn.Width = 130
         '
         'MyDDataGridViewTextBoxColumn
         '
@@ -314,6 +340,7 @@ Partial Class RankedJoust
         Me.MyDDataGridViewTextBoxColumn.HeaderText = "My D"
         Me.MyDDataGridViewTextBoxColumn.Name = "MyDDataGridViewTextBoxColumn"
         Me.MyDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyDDataGridViewTextBoxColumn.Width = 130
         '
         'MyADataGridViewTextBoxColumn
         '
@@ -321,6 +348,7 @@ Partial Class RankedJoust
         Me.MyADataGridViewTextBoxColumn.HeaderText = "My A"
         Me.MyADataGridViewTextBoxColumn.Name = "MyADataGridViewTextBoxColumn"
         Me.MyADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyADataGridViewTextBoxColumn.Width = 130
         '
         'MyKDADataGridViewTextBoxColumn
         '
@@ -328,6 +356,7 @@ Partial Class RankedJoust
         Me.MyKDADataGridViewTextBoxColumn.HeaderText = "My KDA"
         Me.MyKDADataGridViewTextBoxColumn.Name = "MyKDADataGridViewTextBoxColumn"
         Me.MyKDADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDADataGridViewTextBoxColumn.Width = 130
         '
         'CommetsDataGridViewTextBoxColumn
         '
@@ -335,6 +364,7 @@ Partial Class RankedJoust
         Me.CommetsDataGridViewTextBoxColumn.HeaderText = "Commets"
         Me.CommetsDataGridViewTextBoxColumn.Name = "CommetsDataGridViewTextBoxColumn"
         Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CommetsDataGridViewTextBoxColumn.Width = 130
         '
         'JoustMatchesBindingSource
         '
@@ -357,22 +387,22 @@ Partial Class RankedJoust
         '
         Me.QueTypesTableAdapter.ClearBeforeFill = True
         '
-        'siguiente
+        'Modify
         '
-        Me.siguiente.Location = New System.Drawing.Point(569, 12)
-        Me.siguiente.Name = "siguiente"
-        Me.siguiente.Size = New System.Drawing.Size(100, 48)
-        Me.siguiente.TabIndex = 31
-        Me.siguiente.Text = "<="
-        Me.siguiente.UseVisualStyleBackColor = True
+        Me.Modify.Location = New System.Drawing.Point(1209, 627)
+        Me.Modify.Margin = New System.Windows.Forms.Padding(4)
+        Me.Modify.Name = "Modify"
+        Me.Modify.Size = New System.Drawing.Size(45, 22)
+        Me.Modify.TabIndex = 4
+        Me.Modify.Text = "Edit"
+        Me.Modify.UseVisualStyleBackColor = True
         '
         'RankedJoust
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1070, 721)
+        Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.siguiente)
         Me.Controls.Add(Me.Atras)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -390,7 +420,10 @@ Partial Class RankedJoust
         Me.Controls.Add(Me.Winner)
         Me.Controls.Add(Me.Tier)
         Me.Controls.Add(Me.MatchID)
+        Me.Controls.Add(Me.Modify)
         Me.Controls.Add(Me.Add)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RankedJoust"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RankedJoust"
@@ -426,6 +459,12 @@ Partial Class RankedJoust
     Friend WithEvents SmiteDataSet As SmiteDataSet
     Friend WithEvents JoustMatchesBindingSource As BindingSource
     Friend WithEvents JoustMatchesTableAdapter As SmiteDataSetTableAdapters.JoustMatchesTableAdapter
+    Friend WithEvents TiersBindingSource As BindingSource
+    Friend WithEvents TiersTableAdapter As SmiteDataSetTableAdapters.TiersTableAdapter
+    Friend WithEvents TeamsBindingSource As BindingSource
+    Friend WithEvents TeamsTableAdapter As SmiteDataSetTableAdapters.TeamsTableAdapter
+    Friend WithEvents QueTypesBindingSource As BindingSource
+    Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
     Friend WithEvents IdMatchDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TierDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents WinnerDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -435,11 +474,5 @@ Partial Class RankedJoust
     Friend WithEvents MyADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MyKDADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TiersBindingSource As BindingSource
-    Friend WithEvents TiersTableAdapter As SmiteDataSetTableAdapters.TiersTableAdapter
-    Friend WithEvents TeamsBindingSource As BindingSource
-    Friend WithEvents TeamsTableAdapter As SmiteDataSetTableAdapters.TeamsTableAdapter
-    Friend WithEvents QueTypesBindingSource As BindingSource
-    Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
-    Friend WithEvents siguiente As Button
+    Friend WithEvents Modify As Button
 End Class

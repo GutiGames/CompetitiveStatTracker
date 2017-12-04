@@ -161,6 +161,16 @@
       <DependentUpon>App.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GodCards.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GodCards.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GodIcons.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GodIcons.resx</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -175,11 +185,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="MyResources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyResources.resx</DependentUpon>
     </Compile>
     <Compile Include="RankedJoust.Designer.vb">
       <DependentUpon>RankedJoust.vb</DependentUpon>
@@ -198,6 +203,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SmiteDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SmiteDataSet.vb">
+      <DependentUpon>SmiteDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddJoustMatch.resx">
@@ -205,6 +213,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GodIcons.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GodIcons.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -215,10 +228,10 @@
     <EmbeddedResource Include="RankedJoust.resx">
       <DependentUpon>RankedJoust.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyResources.resx">
+    <EmbeddedResource Include="GodCards.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MyResources.Designer.vb</LastGenOutput>
+      <LastGenOutput>GodCards.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Smite.resx">
       <DependentUpon>Smite.vb</DependentUpon>
@@ -238,7 +251,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SmiteDataSet.xsc">
       <DependentUpon>SmiteDataSet.xsd</DependentUpon>
     </None>
@@ -264,11 +279,194 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\174872.png" />
-    <None Include="Resources\Vacio.png" />
-    <None Include="Resources\alumnos2.png" />
+    <None Include="Resources\GodCards\Vacio.png" />
+    <None Include="Resources\GodCards\Agni.jpg" />
+    <None Include="Resources\GodCards\AhMuzenCab.jpg" />
+    <None Include="Resources\GodCards\AhPuch.jpg" />
+    <None Include="Resources\GodCards\Amaterasu.jpg" />
+    <None Include="Resources\GodCards\Anhur.jpg" />
+    <None Include="Resources\GodCards\Anubis.jpg" />
+    <None Include="Resources\GodCards\AoKuang.jpg" />
+    <None Include="Resources\GodCards\Aphrodite.jpg" />
+    <None Include="Resources\GodCards\Apollo.jpg" />
+    <None Include="Resources\GodCards\Arachne.jpg" />
+    <None Include="Resources\GodCards\Ares.jpg" />
+    <None Include="Resources\GodCards\Artemis.jpg" />
+    <None Include="Resources\GodCards\Artio.jpg" />
+    <None Include="Resources\GodCards\Athena.jpg" />
+    <None Include="Resources\GodCards\Awilix.jpg" />
+    <None Include="Resources\GodCards\Bacchus.jpg" />
+    <None Include="Resources\GodCards\Bakasura.jpg" />
+    <None Include="Resources\GodCards\Bastet.jpg" />
+    <None Include="Resources\GodCards\Bellona.jpg" />
+    <None Include="Resources\GodCards\Cabrakan.jpg" />
+    <None Include="Resources\GodCards\Camazotz.jpg" />
+    <None Include="Resources\GodCards\Cernunnos.jpg" />
+    <None Include="Resources\GodCards\Chaac.jpg" />
+    <None Include="Resources\GodCards\Chang%27e.jpg" />
+    <None Include="Resources\GodCards\Chiron.jpg" />
+    <None Include="Resources\GodCards\Chronos.jpg" />
+    <None Include="Resources\GodCards\CuChulainn.jpg" />
+    <None Include="Resources\GodCards\Cupid.jpg" />
+    <None Include="Resources\GodCards\DaJi.jpg" />
+    <None Include="Resources\GodCards\Discordia.jpg" />
+    <None Include="Resources\GodCards\ErlangShen.jpg" />
+    <None Include="Resources\GodCards\Fafnir.jpg" />
+    <None Include="Resources\GodCards\Fenrir.jpg" />
+    <None Include="Resources\GodCards\Freya.jpg" />
+    <None Include="Resources\GodCards\Ganesha.jpg" />
+    <None Include="Resources\GodCards\Geb.jpg" />
+    <None Include="Resources\GodCards\GuanYu.jpg" />
+    <None Include="Resources\GodCards\Hachiman.jpg" />
+    <None Include="Resources\GodCards\Hades.jpg" />
+    <None Include="Resources\GodCards\HeBo.jpg" />
+    <None Include="Resources\GodCards\Hel.jpg" />
+    <None Include="Resources\GodCards\Hercules.jpg" />
+    <None Include="Resources\GodCards\HouYi.jpg" />
+    <None Include="Resources\GodCards\HunBatz.jpg" />
+    <None Include="Resources\GodCards\Isis.jpg" />
+    <None Include="Resources\GodCards\Izanami.jpg" />
+    <None Include="Resources\GodCards\Janus.jpg" />
+    <None Include="Resources\GodCards\JingWei.jpg" />
+    <None Include="Resources\GodCards\Kali.jpg" />
+    <None Include="Resources\GodCards\Khepri.jpg" />
+    <None Include="Resources\GodCards\Kukulkan.jpg" />
+    <None Include="Resources\GodCards\Kumbhakarna.jpg" />
+    <None Include="Resources\GodCards\Kuzenbo.jpg" />
+    <None Include="Resources\GodCards\Loki.jpg" />
+    <None Include="Resources\GodCards\Medusa.jpg" />
+    <None Include="Resources\GodCards\Mercury.jpg" />
+    <None Include="Resources\GodCards\Neith.jpg" />
+    <None Include="Resources\GodCards\Nemesis.jpg" />
+    <None Include="Resources\GodCards\NeZha.jpg" />
+    <None Include="Resources\GodCards\Nike.jpg" />
+    <None Include="Resources\GodCards\Nox.jpg" />
+    <None Include="Resources\GodCards\NuWa.jpg" />
+    <None Include="Resources\GodCards\Odin.jpg" />
+    <None Include="Resources\GodCards\Osiris.jpg" />
+    <None Include="Resources\GodCards\Poseidon.jpg" />
+    <None Include="Resources\GodCards\Ra.jpg" />
+    <None Include="Resources\GodCards\Raijin.jpg" />
+    <None Include="Resources\GodCards\Rama.jpg" />
+    <None Include="Resources\GodCards\Ratatoskr.png" />
+    <None Include="Resources\GodCards\Ravana.jpg" />
+    <None Include="Resources\GodCards\Scylla.jpg" />
+    <None Include="Resources\GodCards\Serqet.jpg" />
+    <None Include="Resources\GodCards\Skadi.jpg" />
+    <None Include="Resources\GodCards\Sobek.jpg" />
+    <None Include="Resources\GodCards\Sol.jpg" />
+    <None Include="Resources\GodCards\SunWukong.jpg" />
+    <None Include="Resources\GodCards\Susano.jpg" />
+    <None Include="Resources\GodCards\Sylvanus.jpg" />
+    <None Include="Resources\GodCards\Terra.jpg" />
+    <None Include="Resources\GodCards\Thanatos.jpg" />
+    <None Include="Resources\GodCards\TheMorrigan.jpg" />
+    <None Include="Resources\GodCards\Thor.jpg" />
+    <None Include="Resources\GodCards\Thoth.jpg" />
+    <None Include="Resources\GodCards\Tyr.jpg" />
+    <None Include="Resources\GodCards\Ullr.jpg" />
+    <None Include="Resources\GodCards\Vamana.jpg" />
+    <None Include="Resources\GodCards\Vulcan.jpg" />
+    <None Include="Resources\GodCards\Xbalanque.jpg" />
+    <None Include="Resources\GodCards\XingTian.jpg" />
+    <None Include="Resources\GodCards\Ymir.jpg" />
+    <None Include="Resources\GodCards\Zeus.jpg" />
+    <None Include="Resources\GodCards\ZhongKui.jpg" />
+    <Content Include="Resources\GodIcons\Agni.jpg" />
+    <Content Include="Resources\GodIcons\AhMuzenCab.jpg" />
+    <Content Include="Resources\GodIcons\AhPuch.jpg" />
+    <Content Include="Resources\GodIcons\Amaterasu.jpg" />
+    <Content Include="Resources\GodIcons\Anhur.jpg" />
+    <Content Include="Resources\GodIcons\Anubis.jpg" />
+    <Content Include="Resources\GodIcons\AoKuang.jpg" />
+    <Content Include="Resources\GodIcons\Aphrodite.jpg" />
+    <Content Include="Resources\GodIcons\Apollo.jpg" />
+    <Content Include="Resources\GodIcons\Arachne.jpg" />
+    <Content Include="Resources\GodIcons\Ares.jpg" />
+    <Content Include="Resources\GodIcons\Artemis.jpg" />
+    <Content Include="Resources\GodIcons\Artio.jpg" />
+    <Content Include="Resources\GodIcons\Athena.jpg" />
+    <Content Include="Resources\GodIcons\Awilix.jpg" />
+    <Content Include="Resources\GodIcons\Bacchus.jpg" />
+    <Content Include="Resources\GodIcons\Bakasura.jpg" />
+    <Content Include="Resources\GodIcons\Bastet.jpg" />
+    <Content Include="Resources\GodIcons\Bellona.jpg" />
+    <Content Include="Resources\GodIcons\Cabrakan.jpg" />
+    <Content Include="Resources\GodIcons\Camazotz.jpg" />
+    <Content Include="Resources\GodIcons\Cernunnos.jpg" />
+    <Content Include="Resources\GodIcons\Chaac.jpg" />
+    <Content Include="Resources\GodIcons\Chang%27e.jpg" />
+    <Content Include="Resources\GodIcons\Chiron.jpg" />
+    <Content Include="Resources\GodIcons\Chronos.jpg" />
+    <Content Include="Resources\GodIcons\CuChulainn.jpg" />
+    <Content Include="Resources\GodIcons\Cupid.jpg" />
+    <Content Include="Resources\GodIcons\DaJi.jpg" />
+    <Content Include="Resources\GodIcons\Discordia.jpg" />
+    <Content Include="Resources\GodIcons\ErlangShen.jpg" />
+    <Content Include="Resources\GodIcons\Fafnir.jpg" />
+    <Content Include="Resources\GodIcons\Fenrir.jpg" />
+    <Content Include="Resources\GodIcons\Freya.jpg" />
+    <Content Include="Resources\GodIcons\Ganesha.jpg" />
+    <Content Include="Resources\GodIcons\Geb.jpg" />
+    <Content Include="Resources\GodIcons\GuanYu.jpg" />
+    <Content Include="Resources\GodIcons\Hachiman.jpg" />
+    <Content Include="Resources\GodIcons\Hades.jpg" />
+    <Content Include="Resources\GodIcons\HeBo.jpg" />
+    <Content Include="Resources\GodIcons\Hel.jpg" />
+    <Content Include="Resources\GodIcons\Hercules.jpg" />
+    <Content Include="Resources\GodIcons\HouYi.jpg" />
+    <Content Include="Resources\GodIcons\HunBatz.jpg" />
+    <Content Include="Resources\GodIcons\Isis.jpg" />
+    <Content Include="Resources\GodIcons\Izanami.jpg" />
+    <Content Include="Resources\GodIcons\Janus.jpg" />
+    <Content Include="Resources\GodIcons\JingWei.jpg" />
+    <Content Include="Resources\GodIcons\Kali.jpg" />
+    <Content Include="Resources\GodIcons\Khepri.jpg" />
+    <Content Include="Resources\GodIcons\Kukulkan.jpg" />
+    <Content Include="Resources\GodIcons\Kumbhakarna.jpg" />
+    <Content Include="Resources\GodIcons\Kuzenbo.jpg" />
+    <Content Include="Resources\GodIcons\Loki.jpg" />
+    <Content Include="Resources\GodIcons\Medusa.jpg" />
+    <Content Include="Resources\GodIcons\Mercury.jpg" />
+    <Content Include="Resources\GodIcons\Neith.jpg" />
+    <Content Include="Resources\GodIcons\Nemesis.jpg" />
+    <Content Include="Resources\GodIcons\NeZha.jpg" />
+    <Content Include="Resources\GodIcons\Nike.jpg" />
+    <Content Include="Resources\GodIcons\Nox.jpg" />
+    <Content Include="Resources\GodIcons\NuWa.jpg" />
+    <Content Include="Resources\GodIcons\Odin.jpg" />
+    <Content Include="Resources\GodIcons\Osiris.jpg" />
+    <Content Include="Resources\GodIcons\Poseidon.jpg" />
+    <Content Include="Resources\GodIcons\Ra.jpg" />
+    <Content Include="Resources\GodIcons\Raijin.jpg" />
+    <Content Include="Resources\GodIcons\Rama.jpg" />
+    <Content Include="Resources\GodIcons\Ratatoskr.png" />
+    <Content Include="Resources\GodIcons\Ravana.jpg" />
+    <Content Include="Resources\GodIcons\Scylla.jpg" />
+    <Content Include="Resources\GodIcons\Serqet.jpg" />
+    <Content Include="Resources\GodIcons\Skadi.jpg" />
+    <Content Include="Resources\GodIcons\Sobek.jpg" />
+    <Content Include="Resources\GodIcons\Sol.jpg" />
+    <Content Include="Resources\GodIcons\SunWukong.jpg" />
+    <Content Include="Resources\GodIcons\Susano.jpg" />
+    <Content Include="Resources\GodIcons\Sylvanus.jpg" />
+    <Content Include="Resources\GodIcons\Terra.jpg" />
+    <Content Include="Resources\GodIcons\Thanatos.jpg" />
+    <Content Include="Resources\GodIcons\TheMorrigan.jpg" />
+    <Content Include="Resources\GodIcons\Thor.jpg" />
+    <Content Include="Resources\GodIcons\Thoth.jpg" />
+    <Content Include="Resources\GodIcons\Tyr.jpg" />
+    <Content Include="Resources\GodIcons\Ullr.jpg" />
+    <Content Include="Resources\GodIcons\Vamana.jpg" />
+    <Content Include="Resources\GodIcons\Vulcan.jpg" />
+    <Content Include="Resources\GodIcons\Xbalanque.jpg" />
+    <Content Include="Resources\GodIcons\XingTian.jpg" />
+    <Content Include="Resources\GodIcons\Ymir.jpg" />
+    <Content Include="Resources\GodIcons\Zeus.jpg" />
+    <Content Include="Resources\GodIcons\ZhongKui.jpg" />
     <Content Include="Smite.accdb" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -17,7 +17,7 @@
     Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
 
         MainMenu.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class
