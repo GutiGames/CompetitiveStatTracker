@@ -1,30 +1,30 @@
-Competitive Stat Tracker
+# **_Competitive Stat Tracker_**
 
-Current Features:
 
-	SMITE: 
-		--Add every Smite: Joust match with Picks and Bans.
+### _Current Features:_
+	
+   - SMITE:
+     - Add every Smite: Joust match with Picks and Bans.
 
-Future Plans: 
+### _Future Plans:_ 
 	
 
-	SMITE:
+  - #### SMITE:
 
-		--Add every Smite: Conquest and Duel matches with Picks and Bans.
-		--Stat screen for each match type (Most played, Banned .. gods).
+    - Add every Smite: Conquest and Duel matches with Picks and Bans.
+    - Stat screen for each match type (Most played, Banned .. gods).
 
-	OVERWATCH (Very Long Term):
+  - #### OVERWATCH (Very Long Term):
 		
-		--Make a stat tracker.
+    - Make a stat tracker.
 
 
-Known Issues:
+### _Known Issues:_
 
-	--
 
-Patch Notes:
+### _Patch Notes:_
 
-Conpetitive Stat Tracker 0.01
+##### **_Conpetitive Stat Tracker 0.01_**
 
-	--Add every Smite: Joust match with Picks and Bans.
+  - Added every Smite: Joust match with Picks and Bans.
 
