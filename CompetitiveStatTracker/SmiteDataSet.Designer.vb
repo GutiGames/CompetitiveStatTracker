@@ -11957,7 +11957,7 @@ Namespace SmiteDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(1) {}
+            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(2) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT IdMatch, Tier, Winner, [Que Type], [My K], [My D], [My A], [My KDA], Comme"& _ 
@@ -11965,8 +11965,8 @@ Namespace SmiteDataSetTableAdapters
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "INSERT INTO JoustMatches"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (Tier, Winner, [Que Type], [My"& _ 
-                " K], [My D], [My A], [My KDA], Commets)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"VALUES        (?, ?, ?, ?, ?, ?, ?, ?)"
+            Me._commandCollection(1).CommandText = "INSERT INTO JoustMatches"&Global.Microsoft.VisualBasic.ChrW(10)&"                         (Tier, Winner, [Que Type], [My "& _ 
+                "K], [My D], [My A], [My KDA], Commets)"&Global.Microsoft.VisualBasic.ChrW(10)&"VALUES        (?, ?, ?, ?, ?, ?, ?, ?)"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Tier", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Tier", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Winner", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Winner", Global.System.Data.DataRowVersion.Current, false, Nothing))
@@ -11976,6 +11976,21 @@ Namespace SmiteDataSetTableAdapters
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_A", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "My A", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_KDA", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(15,Byte), CType(0,Byte), "My KDA", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Commets", Global.System.Data.OleDb.OleDbType.WChar, 1024, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Commets", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "UPDATE       JoustMatches"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SET                Tier = ?, Winner = ?, [Que Type] = "& _ 
+                "?, [My K] = ?, [My D] = ?, [My A] = ?, [My KDA] = ?, Commets = ?"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        ("& _ 
+                "IdMatch = ?)"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Tier", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Tier", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Winner", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Winner", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Que_Type", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Que Type", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_K", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "My K", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_D", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "My D", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_A", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "My A", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("My_KDA", Global.System.Data.OleDb.OleDbType.[Single], 0, Global.System.Data.ParameterDirection.Input, CType(7,Byte), CType(0,Byte), "My KDA", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Commets", Global.System.Data.OleDb.OleDbType.WChar, 1024, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Commets", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_IdMatch", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "IdMatch", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -12332,6 +12347,69 @@ Namespace SmiteDataSetTableAdapters
             Else
                 command.Parameters(7).Value = CType(Commets,String)
             End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open
+            End If
+            Dim returnValue As Integer
+            Try 
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close
+                End If
+            End Try
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, false)>  _
+        Public Overloads Overridable Function ModifyJoustMatch(ByVal Tier As Global.System.Nullable(Of Integer), ByVal Winner As Global.System.Nullable(Of Integer), ByVal Que_Type As Global.System.Nullable(Of Integer), ByVal My_K As Global.System.Nullable(Of Integer), ByVal My_D As Global.System.Nullable(Of Integer), ByVal My_A As Global.System.Nullable(Of Integer), ByVal My_KDA As Global.System.Nullable(Of Decimal), ByVal Commets As String, ByVal Original_IdMatch As Integer) As Integer
+            Dim command As Global.System.Data.OleDb.OleDbCommand = Me.CommandCollection(2)
+            If (Tier.HasValue = true) Then
+                command.Parameters(0).Value = CType(Tier.Value,Integer)
+            Else
+                command.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (Winner.HasValue = true) Then
+                command.Parameters(1).Value = CType(Winner.Value,Integer)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (Que_Type.HasValue = true) Then
+                command.Parameters(2).Value = CType(Que_Type.Value,Integer)
+            Else
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (My_K.HasValue = true) Then
+                command.Parameters(3).Value = CType(My_K.Value,Integer)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (My_D.HasValue = true) Then
+                command.Parameters(4).Value = CType(My_D.Value,Integer)
+            Else
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            If (My_A.HasValue = true) Then
+                command.Parameters(5).Value = CType(My_A.Value,Integer)
+            Else
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            End If
+            If (My_KDA.HasValue = true) Then
+                command.Parameters(6).Value = CType(My_KDA.Value,Decimal)
+            Else
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            If (Commets Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(Commets,String)
+            End If
+            command.Parameters(8).Value = CType(Original_IdMatch,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
             If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
