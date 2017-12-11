@@ -925,6 +925,25 @@ WHERE        (IdMatch = ?)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WinRateTableAdapter" GeneratorDataComponentClassName="WinRateTableAdapter" Name="WinRate" UserDataComponentName="WinRateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SmiteConnectionString (MySettings)" DbObjectName="WinRate" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM WinRate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Played" DataSetColumn="Played" />
+              <Mapping SourceColumn="Winned" DataSetColumn="Winned" />
+              <Mapping SourceColumn="WinRate" DataSetColumn="WinRate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -1192,6 +1211,22 @@ WHERE        (IdMatch = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WinRate" msprop:Generator_TableClassName="WinRateDataTable" msprop:Generator_TableVarName="tableWinRate" msprop:Generator_TablePropName="WinRate" msprop:Generator_RowDeletingName="WinRateRowDeleting" msprop:Generator_RowChangingName="WinRateRowChanging" msprop:Generator_RowEvHandlerName="WinRateRowChangeEventHandler" msprop:Generator_RowDeletedName="WinRateRowDeleted" msprop:Generator_UserTableName="WinRate" msprop:Generator_RowChangedName="WinRateRowChanged" msprop:Generator_RowEvArgName="WinRateRowChangeEvent" msprop:Generator_RowClassName="WinRateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Played" msprop:Generator_ColumnVarNameInTable="columnPlayed" msprop:Generator_ColumnPropNameInRow="Played" msprop:Generator_ColumnPropNameInTable="PlayedColumn" msprop:Generator_UserColumnName="Played" type="xs:int" minOccurs="0" />
+              <xs:element name="Winned" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWinned" msprop:Generator_ColumnPropNameInRow="Winned" msprop:Generator_ColumnPropNameInTable="WinnedColumn" msprop:Generator_UserColumnName="Winned" type="xs:anyType" minOccurs="0" />
+              <xs:element name="WinRate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWinRate" msprop:Generator_ColumnPropNameInRow="WinRate" msprop:Generator_ColumnPropNameInTable="WinRateColumn" msprop:Generator_UserColumnName="WinRate" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

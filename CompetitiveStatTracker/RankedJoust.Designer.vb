@@ -61,6 +61,7 @@ Partial Class RankedJoust
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
         Me.Modify = New System.Windows.Forms.Button()
+        Me.Stats = New System.Windows.Forms.Button()
         CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -397,11 +398,22 @@ Partial Class RankedJoust
         Me.Modify.Text = "Edit"
         Me.Modify.UseVisualStyleBackColor = True
         '
+        'Stats
+        '
+        Me.Stats.Location = New System.Drawing.Point(1118, 13)
+        Me.Stats.Margin = New System.Windows.Forms.Padding(4)
+        Me.Stats.Name = "Stats"
+        Me.Stats.Size = New System.Drawing.Size(133, 50)
+        Me.Stats.TabIndex = 33
+        Me.Stats.Text = "Stats"
+        Me.Stats.UseVisualStyleBackColor = True
+        '
         'RankedJoust
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Atras)
         Me.Controls.Add(Me.Label12)
@@ -475,4 +487,5 @@ Partial Class RankedJoust
     Friend WithEvents MyKDADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Modify As Button
+    Friend WithEvents Stats As Button
 End Class

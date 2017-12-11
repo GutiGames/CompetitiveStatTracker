@@ -56,4 +56,10 @@
 
     End Sub
 
+    Private Sub Stats_Click(sender As Object, e As EventArgs) Handles Stats.Click
+
+        JoustStatsScreen.Show()
+        Me.Close()
+
+    End Sub
 End Class

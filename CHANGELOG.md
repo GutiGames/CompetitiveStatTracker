@@ -2,6 +2,10 @@
 
 ### _Patch Notes:_
 
+##### **_Pre-Alpha 0.003_**
+
+  - Added a stat screen to the Joust Match Screen with winrate.
+
 ##### **_Pre-Alpha 0.002_**
 
   - Added a modify Joust match button to the Joust Match Screen.
