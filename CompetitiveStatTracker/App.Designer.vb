@@ -34,7 +34,7 @@ Partial Class MainMenu
         '
         Me.Title.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 51.7!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Title.Location = New System.Drawing.Point(12, 9)
+        Me.Title.Location = New System.Drawing.Point(93, 9)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(1240, 75)
         Me.Title.TabIndex = 0
@@ -65,7 +65,7 @@ Partial Class MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.ClientSize = New System.Drawing.Size(1317, 681)
         Me.Controls.Add(Me.OW)
         Me.Controls.Add(Me.Smite)
         Me.Controls.Add(Me.Title)
