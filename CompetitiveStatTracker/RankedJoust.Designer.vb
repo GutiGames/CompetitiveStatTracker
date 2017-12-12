@@ -55,14 +55,17 @@ Partial Class RankedJoust
         Me.MyADataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MyKDADataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CommetsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JoustMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JoustMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustMatchesTableAdapter()
         Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
         Me.Modify = New System.Windows.Forms.Button()
         Me.Stats = New System.Windows.Forms.Button()
+<<<<<<< HEAD
         Me.Button1 = New System.Windows.Forms.Button()
+=======
+        Me.JoustMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+>>>>>>> master
         CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -368,11 +371,6 @@ Partial Class RankedJoust
         Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
         Me.CommetsDataGridViewTextBoxColumn.Width = 130
         '
-        'JoustMatchesBindingSource
-        '
-        Me.JoustMatchesBindingSource.DataMember = "JoustMatches"
-        Me.JoustMatchesBindingSource.DataSource = Me.SmiteDataSet
-        '
         'JoustMatchesTableAdapter
         '
         Me.JoustMatchesTableAdapter.ClearBeforeFill = True
@@ -409,6 +407,7 @@ Partial Class RankedJoust
         Me.Stats.Text = "Stats"
         Me.Stats.UseVisualStyleBackColor = True
         '
+<<<<<<< HEAD
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(977, 13)
@@ -418,6 +417,12 @@ Partial Class RankedJoust
         Me.Button1.TabIndex = 33
         Me.Button1.Text = "Stats"
         Me.Button1.UseVisualStyleBackColor = True
+=======
+        'JoustMatchesBindingSource
+        '
+        Me.JoustMatchesBindingSource.DataMember = "JoustMatches"
+        Me.JoustMatchesBindingSource.DataSource = Me.SmiteDataSet
+>>>>>>> master
         '
         'RankedJoust
         '
@@ -481,7 +486,6 @@ Partial Class RankedJoust
     Friend WithEvents Atras As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
-    Friend WithEvents JoustMatchesBindingSource As BindingSource
     Friend WithEvents JoustMatchesTableAdapter As SmiteDataSetTableAdapters.JoustMatchesTableAdapter
     Friend WithEvents TiersBindingSource As BindingSource
     Friend WithEvents TiersTableAdapter As SmiteDataSetTableAdapters.TiersTableAdapter
@@ -489,6 +493,8 @@ Partial Class RankedJoust
     Friend WithEvents TeamsTableAdapter As SmiteDataSetTableAdapters.TeamsTableAdapter
     Friend WithEvents QueTypesBindingSource As BindingSource
     Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
+    Friend WithEvents Modify As Button
+    Friend WithEvents Stats As Button
     Friend WithEvents IdMatchDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TierDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents WinnerDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -498,7 +504,11 @@ Partial Class RankedJoust
     Friend WithEvents MyADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MyKDADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+<<<<<<< HEAD
     Friend WithEvents Modify As Button
     Friend WithEvents Stats As Button
     Friend WithEvents Button1 As Button
+=======
+    Friend WithEvents JoustMatchesBindingSource As BindingSource
+>>>>>>> master
 End Class
