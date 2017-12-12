@@ -56,9 +56,9 @@
 
     End Sub
 
-    Private Sub Stats_Click(sender As Object, e As EventArgs) Handles Stats.Click
+    Private Sub Stats_Click(sender As Object, e As EventArgs) Handles Stats.Click, Button1.Click
 
-        JoustStatsScreen.Show()
+        AddJoustMatch.Show()
         Me.Close()
 
     End Sub

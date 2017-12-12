@@ -171,6 +171,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GodIcons.resx</DependentUpon>
     </Compile>
+    <Compile Include="Graphics.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graphics.resx</DependentUpon>
+    </Compile>
     <Compile Include="JoustStatsScreen.Designer.vb">
       <DependentUpon>JoustStatsScreen.vb</DependentUpon>
     </Compile>
@@ -224,6 +229,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GodIcons.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Graphics.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="JoustStatsScreen.resx">
       <DependentUpon>JoustStatsScreen.vb</DependentUpon>
@@ -473,6 +483,7 @@
     <Content Include="Resources\GodIcons\Ymir.jpg" />
     <Content Include="Resources\GodIcons\Zeus.jpg" />
     <Content Include="Resources\GodIcons\ZhongKui.jpg" />
+    <None Include="Resources\JoustP&amp;B.jpg" />
     <Content Include="Smite.accdb" />
   </ItemGroup>
   <ItemGroup />

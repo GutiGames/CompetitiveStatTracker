@@ -3470,4 +3470,10 @@
 
     End Sub
 
+    Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
+
+        RankedJoust.Show()
+        Me.Close()
+
+    End Sub
 End Class

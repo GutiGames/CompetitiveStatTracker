@@ -42,7 +42,6 @@ Partial Class AddJoustMatch
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.God6 = New System.Windows.Forms.ComboBox()
         Me.GodsBindingSource6 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.BansBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.BansBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
@@ -68,6 +67,7 @@ Partial Class AddJoustMatch
         Me.JoustPicksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JoustPicksTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustPicksTableAdapter()
         Me.MatchNumber = New System.Windows.Forms.TextBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.GodsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +80,6 @@ Partial Class AddJoustMatch
         CType(Me.GodsBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GodsBindingSource6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BansBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BansBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +94,7 @@ Partial Class AddJoustMatch
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JoustBansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JoustPicksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'God1
@@ -103,7 +103,7 @@ Partial Class AddJoustMatch
         Me.God1.DataSource = Me.GodsBindingSource1
         Me.God1.DisplayMember = "Name"
         Me.God1.FormattingEnabled = True
-        Me.God1.Location = New System.Drawing.Point(117, 349)
+        Me.God1.Location = New System.Drawing.Point(160, 368)
         Me.God1.Name = "God1"
         Me.God1.Size = New System.Drawing.Size(85, 21)
         Me.God1.TabIndex = 21
@@ -126,7 +126,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(54, 77)
+        Me.PictureBox1.Location = New System.Drawing.Point(103, 89)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -135,7 +135,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(290, 77)
+        Me.PictureBox2.Location = New System.Drawing.Point(341, 89)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -154,7 +154,7 @@ Partial Class AddJoustMatch
         Me.God2.DataSource = Me.GodsBindingSource2
         Me.God2.DisplayMember = "Name"
         Me.God2.FormattingEnabled = True
-        Me.God2.Location = New System.Drawing.Point(348, 349)
+        Me.God2.Location = New System.Drawing.Point(399, 368)
         Me.God2.Name = "God2"
         Me.God2.Size = New System.Drawing.Size(85, 21)
         Me.God2.TabIndex = 21
@@ -166,7 +166,7 @@ Partial Class AddJoustMatch
         Me.God3.DataSource = Me.GodsBindingSource3
         Me.God3.DisplayMember = "Name"
         Me.God3.FormattingEnabled = True
-        Me.God3.Location = New System.Drawing.Point(583, 349)
+        Me.God3.Location = New System.Drawing.Point(638, 368)
         Me.God3.Name = "God3"
         Me.God3.Size = New System.Drawing.Size(85, 21)
         Me.God3.TabIndex = 21
@@ -180,7 +180,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(526, 77)
+        Me.PictureBox3.Location = New System.Drawing.Point(580, 89)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -193,7 +193,7 @@ Partial Class AddJoustMatch
         Me.God4.DataSource = Me.GodsBindingSource4
         Me.God4.DisplayMember = "Name"
         Me.God4.FormattingEnabled = True
-        Me.God4.Location = New System.Drawing.Point(583, 703)
+        Me.God4.Location = New System.Drawing.Point(638, 718)
         Me.God4.Name = "God4"
         Me.God4.Size = New System.Drawing.Size(85, 21)
         Me.God4.TabIndex = 21
@@ -207,7 +207,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(526, 431)
+        Me.PictureBox4.Location = New System.Drawing.Point(581, 439)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -220,7 +220,7 @@ Partial Class AddJoustMatch
         Me.God5.DataSource = Me.GodsBindingSource5
         Me.God5.DisplayMember = "Name"
         Me.God5.FormattingEnabled = True
-        Me.God5.Location = New System.Drawing.Point(821, 703)
+        Me.God5.Location = New System.Drawing.Point(877, 718)
         Me.God5.Name = "God5"
         Me.God5.Size = New System.Drawing.Size(85, 21)
         Me.God5.TabIndex = 21
@@ -234,7 +234,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(762, 431)
+        Me.PictureBox5.Location = New System.Drawing.Point(819, 439)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -247,7 +247,7 @@ Partial Class AddJoustMatch
         Me.God6.DataSource = Me.GodsBindingSource6
         Me.God6.DisplayMember = "Name"
         Me.God6.FormattingEnabled = True
-        Me.God6.Location = New System.Drawing.Point(1071, 703)
+        Me.God6.Location = New System.Drawing.Point(1116, 718)
         Me.God6.Name = "God6"
         Me.God6.Size = New System.Drawing.Size(85, 21)
         Me.God6.TabIndex = 21
@@ -259,18 +259,9 @@ Partial Class AddJoustMatch
         Me.GodsBindingSource6.DataSource = Me.SmiteDataSet
         Me.GodsBindingSource6.Sort = "Name"
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.Location = New System.Drawing.Point(998, 431)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(200, 266)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 22
-        Me.PictureBox6.TabStop = False
-        '
         'PictureBox7
         '
-        Me.PictureBox7.Location = New System.Drawing.Point(821, 77)
+        Me.PictureBox7.Location = New System.Drawing.Point(911, 139)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -319,7 +310,7 @@ Partial Class AddJoustMatch
         Me.Ban1.DataSource = Me.BansBindingSource1
         Me.Ban1.DisplayMember = "Name"
         Me.Ban1.FormattingEnabled = True
-        Me.Ban1.Location = New System.Drawing.Point(830, 183)
+        Me.Ban1.Location = New System.Drawing.Point(919, 252)
         Me.Ban1.Name = "Ban1"
         Me.Ban1.Size = New System.Drawing.Size(85, 21)
         Me.Ban1.TabIndex = 21
@@ -331,7 +322,7 @@ Partial Class AddJoustMatch
         Me.Ban2.DataSource = Me.BansBindingSource2
         Me.Ban2.DisplayMember = "Name"
         Me.Ban2.FormattingEnabled = True
-        Me.Ban2.Location = New System.Drawing.Point(936, 183)
+        Me.Ban2.Location = New System.Drawing.Point(1042, 252)
         Me.Ban2.Name = "Ban2"
         Me.Ban2.Size = New System.Drawing.Size(85, 21)
         Me.Ban2.TabIndex = 21
@@ -339,7 +330,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox8
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(927, 77)
+        Me.PictureBox8.Location = New System.Drawing.Point(1034, 139)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -352,7 +343,7 @@ Partial Class AddJoustMatch
         Me.Ban3.DataSource = Me.BansBindingSource3
         Me.Ban3.DisplayMember = "Name"
         Me.Ban3.FormattingEnabled = True
-        Me.Ban3.Location = New System.Drawing.Point(1042, 183)
+        Me.Ban3.Location = New System.Drawing.Point(1165, 252)
         Me.Ban3.Name = "Ban3"
         Me.Ban3.Size = New System.Drawing.Size(85, 21)
         Me.Ban3.TabIndex = 21
@@ -360,7 +351,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox9
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(1033, 77)
+        Me.PictureBox9.Location = New System.Drawing.Point(1157, 139)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -373,7 +364,7 @@ Partial Class AddJoustMatch
         Me.Ban4.DataSource = Me.BansBindingSource4
         Me.Ban4.DisplayMember = "Name"
         Me.Ban4.FormattingEnabled = True
-        Me.Ban4.Location = New System.Drawing.Point(117, 703)
+        Me.Ban4.Location = New System.Drawing.Point(111, 668)
         Me.Ban4.Name = "Ban4"
         Me.Ban4.Size = New System.Drawing.Size(85, 21)
         Me.Ban4.TabIndex = 21
@@ -385,7 +376,7 @@ Partial Class AddJoustMatch
         Me.Ban5.DataSource = Me.BansBindingSource5
         Me.Ban5.DisplayMember = "Name"
         Me.Ban5.FormattingEnabled = True
-        Me.Ban5.Location = New System.Drawing.Point(223, 703)
+        Me.Ban5.Location = New System.Drawing.Point(234, 668)
         Me.Ban5.Name = "Ban5"
         Me.Ban5.Size = New System.Drawing.Size(85, 21)
         Me.Ban5.TabIndex = 21
@@ -397,7 +388,7 @@ Partial Class AddJoustMatch
         Me.Ban6.DataSource = Me.BansBindingSource6
         Me.Ban6.DisplayMember = "Name"
         Me.Ban6.FormattingEnabled = True
-        Me.Ban6.Location = New System.Drawing.Point(329, 703)
+        Me.Ban6.Location = New System.Drawing.Point(357, 668)
         Me.Ban6.Name = "Ban6"
         Me.Ban6.Size = New System.Drawing.Size(85, 21)
         Me.Ban6.TabIndex = 21
@@ -405,7 +396,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox10
         '
-        Me.PictureBox10.Location = New System.Drawing.Point(108, 597)
+        Me.PictureBox10.Location = New System.Drawing.Point(103, 555)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -414,7 +405,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox11
         '
-        Me.PictureBox11.Location = New System.Drawing.Point(214, 597)
+        Me.PictureBox11.Location = New System.Drawing.Point(226, 555)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -423,7 +414,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox12
         '
-        Me.PictureBox12.Location = New System.Drawing.Point(320, 597)
+        Me.PictureBox12.Location = New System.Drawing.Point(349, 555)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -432,18 +423,18 @@ Partial Class AddJoustMatch
         '
         'Atras
         '
-        Me.Atras.Location = New System.Drawing.Point(12, 12)
+        Me.Atras.Location = New System.Drawing.Point(25, 25)
         Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(100, 48)
+        Me.Atras.Size = New System.Drawing.Size(100, 50)
         Me.Atras.TabIndex = 32
         Me.Atras.Text = "<="
         Me.Atras.UseVisualStyleBackColor = True
         '
         'AddPaB
         '
-        Me.AddPaB.Location = New System.Drawing.Point(1152, 12)
+        Me.AddPaB.Location = New System.Drawing.Point(1235, 25)
         Me.AddPaB.Name = "AddPaB"
-        Me.AddPaB.Size = New System.Drawing.Size(100, 48)
+        Me.AddPaB.Size = New System.Drawing.Size(100, 50)
         Me.AddPaB.TabIndex = 33
         Me.AddPaB.Text = "Add"
         Me.AddPaB.UseVisualStyleBackColor = True
@@ -473,11 +464,22 @@ Partial Class AddJoustMatch
         Me.MatchNumber.Size = New System.Drawing.Size(100, 20)
         Me.MatchNumber.TabIndex = 34
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Location = New System.Drawing.Point(1058, 439)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(200, 266)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 22
+        Me.PictureBox6.TabStop = False
+        '
         'AddJoustMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1264, 741)
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.JoustPB
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(1356, 764)
         Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.AddPaB)
         Me.Controls.Add(Me.Atras)
@@ -520,7 +522,6 @@ Partial Class AddJoustMatch
         CType(Me.GodsBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GodsBindingSource6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BansBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BansBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -535,6 +536,7 @@ Partial Class AddJoustMatch
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JoustBansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JoustPicksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -555,7 +557,6 @@ Partial Class AddJoustMatch
     Friend WithEvents God5 As ComboBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents God6 As ComboBox
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents GodsBindingSource4 As BindingSource
     Friend WithEvents GodsBindingSource5 As BindingSource
     Friend WithEvents GodsBindingSource6 As BindingSource
@@ -584,4 +585,5 @@ Partial Class AddJoustMatch
     Friend WithEvents JoustPicksBindingSource As BindingSource
     Friend WithEvents JoustPicksTableAdapter As SmiteDataSetTableAdapters.JoustPicksTableAdapter
     Friend WithEvents MatchNumber As TextBox
+    Friend WithEvents PictureBox6 As PictureBox
 End Class

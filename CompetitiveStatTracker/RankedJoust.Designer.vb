@@ -62,6 +62,7 @@ Partial Class RankedJoust
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
         Me.Modify = New System.Windows.Forms.Button()
         Me.Stats = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +86,7 @@ Partial Class RankedJoust
         Me.MatchID.Location = New System.Drawing.Point(20, 627)
         Me.MatchID.Margin = New System.Windows.Forms.Padding(4)
         Me.MatchID.Name = "MatchID"
-        Me.MatchID.Size = New System.Drawing.Size(102, 22)
+        Me.MatchID.Size = New System.Drawing.Size(102, 26)
         Me.MatchID.TabIndex = 6
         '
         'Tier
@@ -97,7 +98,7 @@ Partial Class RankedJoust
         Me.Tier.Location = New System.Drawing.Point(130, 627)
         Me.Tier.Margin = New System.Windows.Forms.Padding(4)
         Me.Tier.Name = "Tier"
-        Me.Tier.Size = New System.Drawing.Size(112, 24)
+        Me.Tier.Size = New System.Drawing.Size(112, 28)
         Me.Tier.TabIndex = 10
         Me.Tier.ValueMember = "IdTier"
         '
@@ -120,7 +121,7 @@ Partial Class RankedJoust
         Me.Winner.Location = New System.Drawing.Point(250, 627)
         Me.Winner.Margin = New System.Windows.Forms.Padding(4)
         Me.Winner.Name = "Winner"
-        Me.Winner.Size = New System.Drawing.Size(73, 24)
+        Me.Winner.Size = New System.Drawing.Size(73, 28)
         Me.Winner.TabIndex = 11
         Me.Winner.ValueMember = "IdTeams"
         '
@@ -134,7 +135,7 @@ Partial Class RankedJoust
         Me.Deaths.Location = New System.Drawing.Point(499, 627)
         Me.Deaths.Margin = New System.Windows.Forms.Padding(4)
         Me.Deaths.Name = "Deaths"
-        Me.Deaths.Size = New System.Drawing.Size(86, 22)
+        Me.Deaths.Size = New System.Drawing.Size(86, 26)
         Me.Deaths.TabIndex = 14
         '
         'Kills
@@ -142,7 +143,7 @@ Partial Class RankedJoust
         Me.Kills.Location = New System.Drawing.Point(405, 627)
         Me.Kills.Margin = New System.Windows.Forms.Padding(4)
         Me.Kills.Name = "Kills"
-        Me.Kills.Size = New System.Drawing.Size(86, 22)
+        Me.Kills.Size = New System.Drawing.Size(86, 26)
         Me.Kills.TabIndex = 15
         '
         'Assists
@@ -150,7 +151,7 @@ Partial Class RankedJoust
         Me.Assists.Location = New System.Drawing.Point(593, 627)
         Me.Assists.Margin = New System.Windows.Forms.Padding(4)
         Me.Assists.Name = "Assists"
-        Me.Assists.Size = New System.Drawing.Size(86, 22)
+        Me.Assists.Size = New System.Drawing.Size(86, 26)
         Me.Assists.TabIndex = 16
         '
         'Que
@@ -162,7 +163,7 @@ Partial Class RankedJoust
         Me.Que.Location = New System.Drawing.Point(331, 627)
         Me.Que.Margin = New System.Windows.Forms.Padding(4)
         Me.Que.Name = "Que"
-        Me.Que.Size = New System.Drawing.Size(66, 24)
+        Me.Que.Size = New System.Drawing.Size(66, 28)
         Me.Que.TabIndex = 17
         Me.Que.ValueMember = "IdQueType"
         '
@@ -187,7 +188,7 @@ Partial Class RankedJoust
         Me.Label1.Location = New System.Drawing.Point(17, 608)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 15)
+        Me.Label1.Size = New System.Drawing.Size(123, 18)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Match Number:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -198,7 +199,7 @@ Partial Class RankedJoust
         Me.Label2.Location = New System.Drawing.Point(168, 608)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 15)
+        Me.Label2.Size = New System.Drawing.Size(42, 18)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Tier:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -209,7 +210,7 @@ Partial Class RankedJoust
         Me.Label3.Location = New System.Drawing.Point(258, 608)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 15)
+        Me.Label3.Size = New System.Drawing.Size(66, 18)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Winner:"
         '
@@ -220,7 +221,7 @@ Partial Class RankedJoust
         Me.Label8.Location = New System.Drawing.Point(429, 608)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 15)
+        Me.Label8.Size = New System.Drawing.Size(45, 18)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Kills:"
         '
@@ -231,7 +232,7 @@ Partial Class RankedJoust
         Me.Label9.Location = New System.Drawing.Point(514, 608)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 15)
+        Me.Label9.Size = New System.Drawing.Size(66, 18)
         Me.Label9.TabIndex = 27
         Me.Label9.Text = "Deaths:"
         '
@@ -242,7 +243,7 @@ Partial Class RankedJoust
         Me.Label10.Location = New System.Drawing.Point(609, 608)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(55, 15)
+        Me.Label10.Size = New System.Drawing.Size(68, 18)
         Me.Label10.TabIndex = 28
         Me.Label10.Text = "Assists:"
         '
@@ -253,7 +254,7 @@ Partial Class RankedJoust
         Me.Label11.Location = New System.Drawing.Point(329, 608)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 15)
+        Me.Label11.Size = New System.Drawing.Size(85, 18)
         Me.Label11.TabIndex = 29
         Me.Label11.Text = "Que Type:"
         '
@@ -264,7 +265,7 @@ Partial Class RankedJoust
         Me.Label12.Location = New System.Drawing.Point(867, 608)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(72, 15)
+        Me.Label12.Size = New System.Drawing.Size(86, 18)
         Me.Label12.TabIndex = 30
         Me.Label12.Text = "Comment:"
         '
@@ -408,11 +409,22 @@ Partial Class RankedJoust
         Me.Stats.Text = "Stats"
         Me.Stats.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(977, 13)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(133, 50)
+        Me.Button1.TabIndex = 33
+        Me.Button1.Text = "Stats"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'RankedJoust
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Atras)
@@ -488,4 +500,5 @@ Partial Class RankedJoust
     Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Modify As Button
     Friend WithEvents Stats As Button
+    Friend WithEvents Button1 As Button
 End Class
