@@ -1,6 +1,6 @@
 ﻿Public Class SmiteMenu
     Private Sub Conquest_Click(sender As Object, e As EventArgs) Handles Conquest.Click
-
+        RankedConquest.Show()
         Me.Hide()
     End Sub
 
