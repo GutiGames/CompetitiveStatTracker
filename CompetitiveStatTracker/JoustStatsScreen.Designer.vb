@@ -31,7 +31,7 @@ Partial Class JoustStatsScreen
         Me.WinRateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WinRatioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
-        Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter()
+        Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
