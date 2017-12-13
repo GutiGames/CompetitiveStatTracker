@@ -39,10 +39,10 @@ Partial Class JoustStatsScreen
         '
         'Atras
         '
-        Me.Atras.Location = New System.Drawing.Point(17, 16)
-        Me.Atras.Margin = New System.Windows.Forms.Padding(5)
+        Me.Atras.Location = New System.Drawing.Point(13, 13)
+        Me.Atras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(177, 62)
+        Me.Atras.Size = New System.Drawing.Size(133, 50)
         Me.Atras.TabIndex = 32
         Me.Atras.Text = "<="
         Me.Atras.UseVisualStyleBackColor = True
@@ -55,11 +55,10 @@ Partial Class JoustStatsScreen
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.PlayedDataGridViewTextBoxColumn, Me.WinnedDataGridViewTextBoxColumn, Me.WinRateDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.WinRatioBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 86)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 70)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(596, 278)
+        Me.DataGridView1.Size = New System.Drawing.Size(468, 256)
         Me.DataGridView1.TabIndex = 33
         '
         'NameDataGridViewTextBoxColumn
@@ -106,12 +105,11 @@ Partial Class JoustStatsScreen
         '
         'JoustStatsScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1685, 838)
+        Me.ClientSize = New System.Drawing.Size(1071, 681)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Atras)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "JoustStatsScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "JoustStatsScreen"

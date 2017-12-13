@@ -126,7 +126,7 @@ Partial Class AddJoustMatch
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(103, 89)
+        Me.PictureBox1.Location = New System.Drawing.Point(103, 88)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

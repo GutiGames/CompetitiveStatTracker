@@ -148,6 +148,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddConquestMatch.Designer.vb">
+      <DependentUpon>AddConquestMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddConquestMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddJoustMatch.Designer.vb">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddConquestMatch.resx">
+      <DependentUpon>AddConquestMatch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddJoustMatch.resx">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>
     </EmbeddedResource>
