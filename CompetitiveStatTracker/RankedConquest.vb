@@ -15,7 +15,7 @@
         Return KDA
     End Function
 
-    Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
+    Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
 
         SmiteMenu.Show()
         Me.Close()
@@ -49,6 +49,14 @@
 
         Me.ConquestMatchesTableAdapter.ModifyConquestMatch(Tier.SelectedValue, Winner.SelectedValue, Que.SelectedValue, Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text), KDA, Comment.Text, Val(MatchID.Text))
         Me.ConquestMatchesTableAdapter.Fill(Me.SmiteDataSet.ConquestMatches)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        AddConquestMatch.Show()
+        Me.Close()
+
 
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class JoustStatsScreen
-    Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
+    Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
 
         RankedJoust.Show()
         Me.Close()

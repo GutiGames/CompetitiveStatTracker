@@ -23,26 +23,8 @@ Partial Class RankedConquest
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Comment = New System.Windows.Forms.TextBox()
-        Me.Que = New System.Windows.Forms.ComboBox()
-        Me.Assists = New System.Windows.Forms.TextBox()
-        Me.Kills = New System.Windows.Forms.TextBox()
-        Me.Deaths = New System.Windows.Forms.TextBox()
-        Me.Winner = New System.Windows.Forms.ComboBox()
-        Me.Tier = New System.Windows.Forms.ComboBox()
-        Me.MatchID = New System.Windows.Forms.TextBox()
-        Me.Modify = New System.Windows.Forms.Button()
-        Me.Add = New System.Windows.Forms.Button()
         Me.IdMatchDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TierDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WinnerDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -54,30 +36,49 @@ Partial Class RankedConquest
         Me.CommetsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ConquestMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
-        Me.ConquestMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestMatchesTableAdapter()
-        Me.TiersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
-        Me.TeamsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Comment = New System.Windows.Forms.TextBox()
+        Me.Que = New System.Windows.Forms.ComboBox()
         Me.QueTypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Assists = New System.Windows.Forms.TextBox()
+        Me.Kills = New System.Windows.Forms.TextBox()
+        Me.Deaths = New System.Windows.Forms.TextBox()
+        Me.Winner = New System.Windows.Forms.ComboBox()
+        Me.TeamsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tier = New System.Windows.Forms.ComboBox()
+        Me.TiersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatchID = New System.Windows.Forms.TextBox()
+        Me.Modify = New System.Windows.Forms.Button()
+        Me.Add = New System.Windows.Forms.Button()
+        Me.ConquestMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestMatchesTableAdapter()
+        Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
+        Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(17, 16)
-        Me.Atras.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(133, 50)
-        Me.Atras.TabIndex = 32
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(17, 16)
+        Me.Back.Margin = New System.Windows.Forms.Padding(5)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.TabIndex = 32
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -89,12 +90,94 @@ Partial Class RankedConquest
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdMatchDataGridViewTextBoxColumn, Me.TierDataGridViewTextBoxColumn, Me.WinnerDataGridViewTextBoxColumn, Me.QueTypeDataGridViewTextBoxColumn, Me.MyKDataGridViewTextBoxColumn, Me.MyDDataGridViewTextBoxColumn, Me.MyADataGridViewTextBoxColumn, Me.MyKDADataGridViewTextBoxColumn, Me.CommetsDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.ConquestMatchesBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(17, 76)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView1.Size = New System.Drawing.Size(1240, 500)
         Me.DataGridView1.TabIndex = 32
+        '
+        'IdMatchDataGridViewTextBoxColumn
+        '
+        Me.IdMatchDataGridViewTextBoxColumn.DataPropertyName = "IdMatch"
+        Me.IdMatchDataGridViewTextBoxColumn.HeaderText = "IdMatch"
+        Me.IdMatchDataGridViewTextBoxColumn.Name = "IdMatchDataGridViewTextBoxColumn"
+        Me.IdMatchDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdMatchDataGridViewTextBoxColumn.Width = 130
+        '
+        'TierDataGridViewTextBoxColumn
+        '
+        Me.TierDataGridViewTextBoxColumn.DataPropertyName = "Tier"
+        Me.TierDataGridViewTextBoxColumn.HeaderText = "Tier"
+        Me.TierDataGridViewTextBoxColumn.Name = "TierDataGridViewTextBoxColumn"
+        Me.TierDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TierDataGridViewTextBoxColumn.Width = 130
+        '
+        'WinnerDataGridViewTextBoxColumn
+        '
+        Me.WinnerDataGridViewTextBoxColumn.DataPropertyName = "Winner"
+        Me.WinnerDataGridViewTextBoxColumn.HeaderText = "Winner"
+        Me.WinnerDataGridViewTextBoxColumn.Name = "WinnerDataGridViewTextBoxColumn"
+        Me.WinnerDataGridViewTextBoxColumn.ReadOnly = True
+        Me.WinnerDataGridViewTextBoxColumn.Width = 130
+        '
+        'QueTypeDataGridViewTextBoxColumn
+        '
+        Me.QueTypeDataGridViewTextBoxColumn.DataPropertyName = "Que Type"
+        Me.QueTypeDataGridViewTextBoxColumn.HeaderText = "Que Type"
+        Me.QueTypeDataGridViewTextBoxColumn.Name = "QueTypeDataGridViewTextBoxColumn"
+        Me.QueTypeDataGridViewTextBoxColumn.ReadOnly = True
+        Me.QueTypeDataGridViewTextBoxColumn.Width = 130
+        '
+        'MyKDataGridViewTextBoxColumn
+        '
+        Me.MyKDataGridViewTextBoxColumn.DataPropertyName = "My K"
+        Me.MyKDataGridViewTextBoxColumn.HeaderText = "My K"
+        Me.MyKDataGridViewTextBoxColumn.Name = "MyKDataGridViewTextBoxColumn"
+        Me.MyKDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDataGridViewTextBoxColumn.Width = 130
+        '
+        'MyDDataGridViewTextBoxColumn
+        '
+        Me.MyDDataGridViewTextBoxColumn.DataPropertyName = "My D"
+        Me.MyDDataGridViewTextBoxColumn.HeaderText = "My D"
+        Me.MyDDataGridViewTextBoxColumn.Name = "MyDDataGridViewTextBoxColumn"
+        Me.MyDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyDDataGridViewTextBoxColumn.Width = 130
+        '
+        'MyADataGridViewTextBoxColumn
+        '
+        Me.MyADataGridViewTextBoxColumn.DataPropertyName = "My A"
+        Me.MyADataGridViewTextBoxColumn.HeaderText = "My A"
+        Me.MyADataGridViewTextBoxColumn.Name = "MyADataGridViewTextBoxColumn"
+        Me.MyADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyADataGridViewTextBoxColumn.Width = 130
+        '
+        'MyKDADataGridViewTextBoxColumn
+        '
+        Me.MyKDADataGridViewTextBoxColumn.DataPropertyName = "My KDA"
+        Me.MyKDADataGridViewTextBoxColumn.HeaderText = "My KDA"
+        Me.MyKDADataGridViewTextBoxColumn.Name = "MyKDADataGridViewTextBoxColumn"
+        Me.MyKDADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDADataGridViewTextBoxColumn.Width = 130
+        '
+        'CommetsDataGridViewTextBoxColumn
+        '
+        Me.CommetsDataGridViewTextBoxColumn.DataPropertyName = "Commets"
+        Me.CommetsDataGridViewTextBoxColumn.HeaderText = "Commets"
+        Me.CommetsDataGridViewTextBoxColumn.Name = "CommetsDataGridViewTextBoxColumn"
+        Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CommetsDataGridViewTextBoxColumn.Width = 130
+        '
+        'ConquestMatchesBindingSource
+        '
+        Me.ConquestMatchesBindingSource.DataMember = "ConquestMatches"
+        Me.ConquestMatchesBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'SmiteDataSet
+        '
+        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
+        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label12
         '
@@ -206,6 +289,11 @@ Partial Class RankedConquest
         Me.Que.TabIndex = 39
         Me.Que.ValueMember = "IdQueType"
         '
+        'QueTypesBindingSource
+        '
+        Me.QueTypesBindingSource.DataMember = "QueTypes"
+        Me.QueTypesBindingSource.DataSource = Me.SmiteDataSet
+        '
         'Assists
         '
         Me.Assists.Location = New System.Drawing.Point(590, 625)
@@ -243,6 +331,11 @@ Partial Class RankedConquest
         Me.Winner.TabIndex = 35
         Me.Winner.ValueMember = "IdTeams"
         '
+        'TeamsBindingSource
+        '
+        Me.TeamsBindingSource.DataMember = "Teams"
+        Me.TeamsBindingSource.DataSource = Me.SmiteDataSet
+        '
         'Tier
         '
         Me.Tier.AllowDrop = True
@@ -255,6 +348,11 @@ Partial Class RankedConquest
         Me.Tier.Size = New System.Drawing.Size(112, 24)
         Me.Tier.TabIndex = 34
         Me.Tier.ValueMember = "IdTier"
+        '
+        'TiersBindingSource
+        '
+        Me.TiersBindingSource.DataMember = "Tiers"
+        Me.TiersBindingSource.DataSource = Me.SmiteDataSet
         '
         'MatchID
         '
@@ -284,118 +382,31 @@ Partial Class RankedConquest
         Me.Add.Text = "Add"
         Me.Add.UseVisualStyleBackColor = True
         '
-        'IdMatchDataGridViewTextBoxColumn
-        '
-        Me.IdMatchDataGridViewTextBoxColumn.DataPropertyName = "IdMatch"
-        Me.IdMatchDataGridViewTextBoxColumn.HeaderText = "IdMatch"
-        Me.IdMatchDataGridViewTextBoxColumn.Name = "IdMatchDataGridViewTextBoxColumn"
-        Me.IdMatchDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdMatchDataGridViewTextBoxColumn.Width = 130
-        '
-        'TierDataGridViewTextBoxColumn
-        '
-        Me.TierDataGridViewTextBoxColumn.DataPropertyName = "Tier"
-        Me.TierDataGridViewTextBoxColumn.HeaderText = "Tier"
-        Me.TierDataGridViewTextBoxColumn.Name = "TierDataGridViewTextBoxColumn"
-        Me.TierDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TierDataGridViewTextBoxColumn.Width = 130
-        '
-        'WinnerDataGridViewTextBoxColumn
-        '
-        Me.WinnerDataGridViewTextBoxColumn.DataPropertyName = "Winner"
-        Me.WinnerDataGridViewTextBoxColumn.HeaderText = "Winner"
-        Me.WinnerDataGridViewTextBoxColumn.Name = "WinnerDataGridViewTextBoxColumn"
-        Me.WinnerDataGridViewTextBoxColumn.ReadOnly = True
-        Me.WinnerDataGridViewTextBoxColumn.Width = 130
-        '
-        'QueTypeDataGridViewTextBoxColumn
-        '
-        Me.QueTypeDataGridViewTextBoxColumn.DataPropertyName = "Que Type"
-        Me.QueTypeDataGridViewTextBoxColumn.HeaderText = "Que Type"
-        Me.QueTypeDataGridViewTextBoxColumn.Name = "QueTypeDataGridViewTextBoxColumn"
-        Me.QueTypeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.QueTypeDataGridViewTextBoxColumn.Width = 130
-        '
-        'MyKDataGridViewTextBoxColumn
-        '
-        Me.MyKDataGridViewTextBoxColumn.DataPropertyName = "My K"
-        Me.MyKDataGridViewTextBoxColumn.HeaderText = "My K"
-        Me.MyKDataGridViewTextBoxColumn.Name = "MyKDataGridViewTextBoxColumn"
-        Me.MyKDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MyKDataGridViewTextBoxColumn.Width = 130
-        '
-        'MyDDataGridViewTextBoxColumn
-        '
-        Me.MyDDataGridViewTextBoxColumn.DataPropertyName = "My D"
-        Me.MyDDataGridViewTextBoxColumn.HeaderText = "My D"
-        Me.MyDDataGridViewTextBoxColumn.Name = "MyDDataGridViewTextBoxColumn"
-        Me.MyDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MyDDataGridViewTextBoxColumn.Width = 130
-        '
-        'MyADataGridViewTextBoxColumn
-        '
-        Me.MyADataGridViewTextBoxColumn.DataPropertyName = "My A"
-        Me.MyADataGridViewTextBoxColumn.HeaderText = "My A"
-        Me.MyADataGridViewTextBoxColumn.Name = "MyADataGridViewTextBoxColumn"
-        Me.MyADataGridViewTextBoxColumn.ReadOnly = True
-        Me.MyADataGridViewTextBoxColumn.Width = 130
-        '
-        'MyKDADataGridViewTextBoxColumn
-        '
-        Me.MyKDADataGridViewTextBoxColumn.DataPropertyName = "My KDA"
-        Me.MyKDADataGridViewTextBoxColumn.HeaderText = "My KDA"
-        Me.MyKDADataGridViewTextBoxColumn.Name = "MyKDADataGridViewTextBoxColumn"
-        Me.MyKDADataGridViewTextBoxColumn.ReadOnly = True
-        Me.MyKDADataGridViewTextBoxColumn.Width = 130
-        '
-        'CommetsDataGridViewTextBoxColumn
-        '
-        Me.CommetsDataGridViewTextBoxColumn.DataPropertyName = "Commets"
-        Me.CommetsDataGridViewTextBoxColumn.HeaderText = "Commets"
-        Me.CommetsDataGridViewTextBoxColumn.Name = "CommetsDataGridViewTextBoxColumn"
-        Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
-        Me.CommetsDataGridViewTextBoxColumn.Width = 130
-        '
-        'ConquestMatchesBindingSource
-        '
-        Me.ConquestMatchesBindingSource.DataMember = "ConquestMatches"
-        Me.ConquestMatchesBindingSource.DataSource = Me.SmiteDataSet
-        '
-        'SmiteDataSet
-        '
-        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
-        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'ConquestMatchesTableAdapter
         '
         Me.ConquestMatchesTableAdapter.ClearBeforeFill = True
-        '
-        'TiersBindingSource
-        '
-        Me.TiersBindingSource.DataMember = "Tiers"
-        Me.TiersBindingSource.DataSource = Me.SmiteDataSet
         '
         'TiersTableAdapter
         '
         Me.TiersTableAdapter.ClearBeforeFill = True
         '
-        'TeamsBindingSource
-        '
-        Me.TeamsBindingSource.DataMember = "Teams"
-        Me.TeamsBindingSource.DataSource = Me.SmiteDataSet
-        '
         'TeamsTableAdapter
         '
         Me.TeamsTableAdapter.ClearBeforeFill = True
         '
-        'QueTypesBindingSource
-        '
-        Me.QueTypesBindingSource.DataMember = "QueTypes"
-        Me.QueTypesBindingSource.DataSource = Me.SmiteDataSet
-        '
         'QueTypesTableAdapter
         '
         Me.QueTypesTableAdapter.ClearBeforeFill = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(964, 16)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(133, 50)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "<="
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'RankedConquest
         '
@@ -421,24 +432,25 @@ Partial Class RankedConquest
         Me.Controls.Add(Me.Tier)
         Me.Controls.Add(Me.MatchID)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Back)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RankedConquest"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RankedConquest"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
     Friend WithEvents ConquestMatchesBindingSource As BindingSource
@@ -476,4 +488,5 @@ Partial Class RankedConquest
     Friend WithEvents TeamsTableAdapter As SmiteDataSetTableAdapters.TeamsTableAdapter
     Friend WithEvents QueTypesBindingSource As BindingSource
     Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
+    Friend WithEvents Button1 As Button
 End Class

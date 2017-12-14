@@ -1,16 +1,4 @@
-﻿Public Class AddJoustMatch
-    Private Sub AddJoustMatch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.JoustPicks' Puede moverla o quitarla según sea necesario.
-        Me.JoustPicksTableAdapter.Fill(Me.SmiteDataSet.JoustPicks)
-        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.JoustBans' Puede moverla o quitarla según sea necesario.
-        Me.JoustBansTableAdapter.Fill(Me.SmiteDataSet.JoustBans)
-        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
-        Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
-
-
-
-    End Sub
-
+﻿Public Class AddConquestMatch
     Private Sub God1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles God1.SelectedIndexChanged
 
 
@@ -1728,1153 +1716,1161 @@
 
     End Sub
 
-    Private Sub Ban1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban1.SelectedIndexChanged
+    Private Sub God7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles God7.SelectedIndexChanged
+
 
         Dim Sel7 As Integer
 
-        Sel7 = Ban1.SelectedValue
+        Sel7 = God7.SelectedValue
 
         If Sel7 = 1 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Agni
+            PictureBox7.Image = My.Resources.GodCards.Agni
         ElseIf Sel7 = 2 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Anubis
+            PictureBox7.Image = My.Resources.GodCards.Anubis
         ElseIf Sel7 = 3 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Arachne
+            PictureBox7.Image = My.Resources.GodCards.Arachne
         ElseIf Sel7 = 4 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Artemis
+            PictureBox7.Image = My.Resources.GodCards.Artemis
         ElseIf Sel7 = 5 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Bastet
+            PictureBox7.Image = My.Resources.GodCards.Bastet
         ElseIf Sel7 = 6 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Hades
+            PictureBox7.Image = My.Resources.GodCards.Hades
         ElseIf Sel7 = 7 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.HeBo
+            PictureBox7.Image = My.Resources.GodCards.HeBo
         ElseIf Sel7 = 8 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Hel
+            PictureBox7.Image = My.Resources.GodCards.Hel
         ElseIf Sel7 = 9 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.HunBatz
+            PictureBox7.Image = My.Resources.GodCards.HunBatz
         ElseIf Sel7 = 10 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Kali
+            PictureBox7.Image = My.Resources.GodCards.Kali
         ElseIf Sel7 = 11 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Kukulkan
+            PictureBox7.Image = My.Resources.GodCards.Kukulkan
         ElseIf Sel7 = 12 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Odin
+            PictureBox7.Image = My.Resources.GodCards.Odin
         ElseIf Sel7 = 13 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ra
+            PictureBox7.Image = My.Resources.GodCards.Ra
         ElseIf Sel7 = 14 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Sobek
+            PictureBox7.Image = My.Resources.GodCards.Sobek
         ElseIf Sel7 = 15 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Vamana
+            PictureBox7.Image = My.Resources.GodCards.Vamana
         ElseIf Sel7 = 16 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ymir
+            PictureBox7.Image = My.Resources.GodCards.Ymir
         ElseIf Sel7 = 17 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Zeus
+            PictureBox7.Image = My.Resources.GodCards.Zeus
         ElseIf Sel7 = 18 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.GuanYu
+            PictureBox7.Image = My.Resources.GodCards.GuanYu
         ElseIf Sel7 = 19 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Bakasura
+            PictureBox7.Image = My.Resources.GodCards.Bakasura
         ElseIf Sel7 = 20 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Anhur
+            PictureBox7.Image = My.Resources.GodCards.Anhur
         ElseIf Sel7 = 21 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Cupid
+            PictureBox7.Image = My.Resources.GodCards.Cupid
         ElseIf Sel7 = 22 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Thor
+            PictureBox7.Image = My.Resources.GodCards.Thor
         ElseIf Sel7 = 23 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ares
+            PictureBox7.Image = My.Resources.GodCards.Ares
         ElseIf Sel7 = 24 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Freya
+            PictureBox7.Image = My.Resources.GodCards.Freya
         ElseIf Sel7 = 25 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Loki
+            PictureBox7.Image = My.Resources.GodCards.Loki
         ElseIf Sel7 = 26 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Bacchus
+            PictureBox7.Image = My.Resources.GodCards.Bacchus
         ElseIf Sel7 = 27 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Xbalanque
+            PictureBox7.Image = My.Resources.GodCards.Xbalanque
         ElseIf Sel7 = 28 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Hercules
+            PictureBox7.Image = My.Resources.GodCards.Hercules
         ElseIf Sel7 = 29 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Vulcan
+            PictureBox7.Image = My.Resources.GodCards.Vulcan
         ElseIf Sel7 = 30 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Neith
+            PictureBox7.Image = My.Resources.GodCards.Neith
         ElseIf Sel7 = 31 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Poseidon
+            PictureBox7.Image = My.Resources.GodCards.Poseidon
         ElseIf Sel7 = 32 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Aphrodite
+            PictureBox7.Image = My.Resources.GodCards.Aphrodite
         ElseIf Sel7 = 33 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Apollo
+            PictureBox7.Image = My.Resources.GodCards.Apollo
         ElseIf Sel7 = 34 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.NeZha
+            PictureBox7.Image = My.Resources.GodCards.NeZha
         ElseIf Sel7 = 35 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Fenrir
+            PictureBox7.Image = My.Resources.GodCards.Fenrir
         ElseIf Sel7 = 36 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Isis
+            PictureBox7.Image = My.Resources.GodCards.Isis
         ElseIf Sel7 = 37 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Athena
+            PictureBox7.Image = My.Resources.GodCards.Athena
         ElseIf Sel7 = 38 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Chronos
+            PictureBox7.Image = My.Resources.GodCards.Chronos
         ElseIf Sel7 = 39 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Chang_e
+            PictureBox7.Image = My.Resources.GodCards.Chang_e
         ElseIf Sel7 = 40 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Tyr
+            PictureBox7.Image = My.Resources.GodCards.Tyr
         ElseIf Sel7 = 41 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.ZhongKui
+            PictureBox7.Image = My.Resources.GodCards.ZhongKui
         ElseIf Sel7 = 42 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Thanatos
+            PictureBox7.Image = My.Resources.GodCards.Thanatos
         ElseIf Sel7 = 43 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Mercury
+            PictureBox7.Image = My.Resources.GodCards.Mercury
         ElseIf Sel7 = 44 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.SunWukong
+            PictureBox7.Image = My.Resources.GodCards.SunWukong
         ElseIf Sel7 = 45 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.AhMuzenCab
+            PictureBox7.Image = My.Resources.GodCards.AhMuzenCab
         ElseIf Sel7 = 46 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.NuWa
+            PictureBox7.Image = My.Resources.GodCards.NuWa
         ElseIf Sel7 = 47 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Chaac
+            PictureBox7.Image = My.Resources.GodCards.Chaac
         ElseIf Sel7 = 48 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Geb
+            PictureBox7.Image = My.Resources.GodCards.Geb
         ElseIf Sel7 = 49 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Nemesis
+            PictureBox7.Image = My.Resources.GodCards.Nemesis
         ElseIf Sel7 = 50 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Scylla
+            PictureBox7.Image = My.Resources.GodCards.Scylla
         ElseIf Sel7 = 51 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ullr
+            PictureBox7.Image = My.Resources.GodCards.Ullr
         ElseIf Sel7 = 52 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Kumbhakarna
+            PictureBox7.Image = My.Resources.GodCards.Kumbhakarna
         ElseIf Sel7 = 53 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Osiris
+            PictureBox7.Image = My.Resources.GodCards.Osiris
         ElseIf Sel7 = 54 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Janus
+            PictureBox7.Image = My.Resources.GodCards.Janus
         ElseIf Sel7 = 55 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Rama
+            PictureBox7.Image = My.Resources.GodCards.Rama
         ElseIf Sel7 = 56 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Serqet
+            PictureBox7.Image = My.Resources.GodCards.Serqet
         ElseIf Sel7 = 57 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Cabrakan
+            PictureBox7.Image = My.Resources.GodCards.Cabrakan
         ElseIf Sel7 = 58 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Sylvanus
+            PictureBox7.Image = My.Resources.GodCards.Sylvanus
         ElseIf Sel7 = 59 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Nox
+            PictureBox7.Image = My.Resources.GodCards.Nox
         ElseIf Sel7 = 60 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.AoKuang
+            PictureBox7.Image = My.Resources.GodCards.AoKuang
         ElseIf Sel7 = 61 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Awilix
+            PictureBox7.Image = My.Resources.GodCards.Awilix
         ElseIf Sel7 = 62 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.HouYi
+            PictureBox7.Image = My.Resources.GodCards.HouYi
         ElseIf Sel7 = 63 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Bellona
+            PictureBox7.Image = My.Resources.GodCards.Bellona
         ElseIf Sel7 = 64 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Medusa
+            PictureBox7.Image = My.Resources.GodCards.Medusa
         ElseIf Sel7 = 65 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.AhPuch
+            PictureBox7.Image = My.Resources.GodCards.AhPuch
         ElseIf Sel7 = 66 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ratatoskr
+            PictureBox7.Image = My.Resources.GodCards.Ratatoskr
         ElseIf Sel7 = 67 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ravana
+            PictureBox7.Image = My.Resources.GodCards.Ravana
         ElseIf Sel7 = 68 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Khepri
+            PictureBox7.Image = My.Resources.GodCards.Khepri
         ElseIf Sel7 = 69 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.XingTian
+            PictureBox7.Image = My.Resources.GodCards.XingTian
         ElseIf Sel7 = 70 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Sol
+            PictureBox7.Image = My.Resources.GodCards.Sol
         ElseIf Sel7 = 71 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Chiron
+            PictureBox7.Image = My.Resources.GodCards.Chiron
         ElseIf Sel7 = 72 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Amaterasu
+            PictureBox7.Image = My.Resources.GodCards.Amaterasu
         ElseIf Sel7 = 73 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Raijin
+            PictureBox7.Image = My.Resources.GodCards.Raijin
         ElseIf Sel7 = 74 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Skadi
+            PictureBox7.Image = My.Resources.GodCards.Skadi
         ElseIf Sel7 = 75 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.JingWei
+            PictureBox7.Image = My.Resources.GodCards.JingWei
         ElseIf Sel7 = 76 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Susano
+            PictureBox7.Image = My.Resources.GodCards.Susano
         ElseIf Sel7 = 77 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Fafnir
+            PictureBox7.Image = My.Resources.GodCards.Fafnir
         ElseIf Sel7 = 78 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.ErlangShen
+            PictureBox7.Image = My.Resources.GodCards.ErlangShen
         ElseIf Sel7 = 79 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Terra
+            PictureBox7.Image = My.Resources.GodCards.Terra
         ElseIf Sel7 = 80 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Izanami
+            PictureBox7.Image = My.Resources.GodCards.Izanami
         ElseIf Sel7 = 81 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Camazotz
+            PictureBox7.Image = My.Resources.GodCards.Camazotz
         ElseIf Sel7 = 82 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Thoth
+            PictureBox7.Image = My.Resources.GodCards.Thoth
         ElseIf Sel7 = 83 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Nike
+            PictureBox7.Image = My.Resources.GodCards.Nike
         ElseIf Sel7 = 84 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.TheMorrigan
+            PictureBox7.Image = My.Resources.GodCards.TheMorrigan
         ElseIf Sel7 = 85 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Kuzenbo
+            PictureBox7.Image = My.Resources.GodCards.Kuzenbo
         ElseIf Sel7 = 86 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Cernunnos
+            PictureBox7.Image = My.Resources.GodCards.Cernunnos
         ElseIf Sel7 = 87 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Ganesha
+            PictureBox7.Image = My.Resources.GodCards.Ganesha
         ElseIf Sel7 = 88 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.DaJi
+            PictureBox7.Image = My.Resources.GodCards.DaJi
         ElseIf Sel7 = 89 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.CuChulainn
+            PictureBox7.Image = My.Resources.GodCards.CuChulainn
         ElseIf Sel7 = 90 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Artio
+            PictureBox7.Image = My.Resources.GodCards.Artio
         ElseIf Sel7 = 91 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Hachiman
+            PictureBox7.Image = My.Resources.GodCards.Hachiman
         ElseIf Sel7 = 92 Then
 
-            PictureBox7.Image = My.Resources.GodIcons.Discordia
+            PictureBox7.Image = My.Resources.GodCards.Discordia
         End If
 
     End Sub
 
-    Private Sub Ban2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban2.SelectedIndexChanged
+    Private Sub God8_SelectedIndexChanged(sender As Object, e As EventArgs) Handles God8.SelectedIndexChanged
+
 
         Dim Sel8 As Integer
 
-        Sel8 = Ban2.SelectedValue
+        Sel8 = God8.SelectedValue
 
         If Sel8 = 1 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Agni
+            PictureBox8.Image = My.Resources.GodCards.Agni
         ElseIf Sel8 = 2 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Anubis
+            PictureBox8.Image = My.Resources.GodCards.Anubis
         ElseIf Sel8 = 3 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Arachne
+            PictureBox8.Image = My.Resources.GodCards.Arachne
         ElseIf Sel8 = 4 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Artemis
+            PictureBox8.Image = My.Resources.GodCards.Artemis
         ElseIf Sel8 = 5 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Bastet
+            PictureBox8.Image = My.Resources.GodCards.Bastet
         ElseIf Sel8 = 6 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Hades
+            PictureBox8.Image = My.Resources.GodCards.Hades
         ElseIf Sel8 = 7 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.HeBo
+            PictureBox8.Image = My.Resources.GodCards.HeBo
         ElseIf Sel8 = 8 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Hel
+            PictureBox8.Image = My.Resources.GodCards.Hel
         ElseIf Sel8 = 9 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.HunBatz
+            PictureBox8.Image = My.Resources.GodCards.HunBatz
         ElseIf Sel8 = 10 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Kali
+            PictureBox8.Image = My.Resources.GodCards.Kali
         ElseIf Sel8 = 11 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Kukulkan
+            PictureBox8.Image = My.Resources.GodCards.Kukulkan
         ElseIf Sel8 = 12 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Odin
+            PictureBox8.Image = My.Resources.GodCards.Odin
         ElseIf Sel8 = 13 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ra
+            PictureBox8.Image = My.Resources.GodCards.Ra
         ElseIf Sel8 = 14 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Sobek
+            PictureBox8.Image = My.Resources.GodCards.Sobek
         ElseIf Sel8 = 15 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Vamana
+            PictureBox8.Image = My.Resources.GodCards.Vamana
         ElseIf Sel8 = 16 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ymir
+            PictureBox8.Image = My.Resources.GodCards.Ymir
         ElseIf Sel8 = 17 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Zeus
+            PictureBox8.Image = My.Resources.GodCards.Zeus
         ElseIf Sel8 = 18 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.GuanYu
+            PictureBox8.Image = My.Resources.GodCards.GuanYu
         ElseIf Sel8 = 19 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Bakasura
+            PictureBox8.Image = My.Resources.GodCards.Bakasura
         ElseIf Sel8 = 20 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Anhur
+            PictureBox8.Image = My.Resources.GodCards.Anhur
         ElseIf Sel8 = 21 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Cupid
+            PictureBox8.Image = My.Resources.GodCards.Cupid
         ElseIf Sel8 = 22 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Thor
+            PictureBox8.Image = My.Resources.GodCards.Thor
         ElseIf Sel8 = 23 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ares
+            PictureBox8.Image = My.Resources.GodCards.Ares
         ElseIf Sel8 = 24 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Freya
+            PictureBox8.Image = My.Resources.GodCards.Freya
         ElseIf Sel8 = 25 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Loki
+            PictureBox8.Image = My.Resources.GodCards.Loki
         ElseIf Sel8 = 26 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Bacchus
+            PictureBox8.Image = My.Resources.GodCards.Bacchus
         ElseIf Sel8 = 27 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Xbalanque
+            PictureBox8.Image = My.Resources.GodCards.Xbalanque
         ElseIf Sel8 = 28 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Hercules
+            PictureBox8.Image = My.Resources.GodCards.Hercules
         ElseIf Sel8 = 29 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Vulcan
+            PictureBox8.Image = My.Resources.GodCards.Vulcan
         ElseIf Sel8 = 30 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Neith
+            PictureBox8.Image = My.Resources.GodCards.Neith
         ElseIf Sel8 = 31 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Poseidon
+            PictureBox8.Image = My.Resources.GodCards.Poseidon
         ElseIf Sel8 = 32 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Aphrodite
+            PictureBox8.Image = My.Resources.GodCards.Aphrodite
         ElseIf Sel8 = 33 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Apollo
+            PictureBox8.Image = My.Resources.GodCards.Apollo
         ElseIf Sel8 = 34 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.NeZha
+            PictureBox8.Image = My.Resources.GodCards.NeZha
         ElseIf Sel8 = 35 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Fenrir
+            PictureBox8.Image = My.Resources.GodCards.Fenrir
         ElseIf Sel8 = 36 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Isis
+            PictureBox8.Image = My.Resources.GodCards.Isis
         ElseIf Sel8 = 37 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Athena
+            PictureBox8.Image = My.Resources.GodCards.Athena
         ElseIf Sel8 = 38 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Chronos
+            PictureBox8.Image = My.Resources.GodCards.Chronos
         ElseIf Sel8 = 39 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Chang_e
+            PictureBox8.Image = My.Resources.GodCards.Chang_e
         ElseIf Sel8 = 40 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Tyr
+            PictureBox8.Image = My.Resources.GodCards.Tyr
         ElseIf Sel8 = 41 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.ZhongKui
+            PictureBox8.Image = My.Resources.GodCards.ZhongKui
         ElseIf Sel8 = 42 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Thanatos
+            PictureBox8.Image = My.Resources.GodCards.Thanatos
         ElseIf Sel8 = 43 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Mercury
+            PictureBox8.Image = My.Resources.GodCards.Mercury
         ElseIf Sel8 = 44 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.SunWukong
+            PictureBox8.Image = My.Resources.GodCards.SunWukong
         ElseIf Sel8 = 45 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.AhMuzenCab
+            PictureBox8.Image = My.Resources.GodCards.AhMuzenCab
         ElseIf Sel8 = 46 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.NuWa
+            PictureBox8.Image = My.Resources.GodCards.NuWa
         ElseIf Sel8 = 47 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Chaac
+            PictureBox8.Image = My.Resources.GodCards.Chaac
         ElseIf Sel8 = 48 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Geb
+            PictureBox8.Image = My.Resources.GodCards.Geb
         ElseIf Sel8 = 49 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Nemesis
+            PictureBox8.Image = My.Resources.GodCards.Nemesis
         ElseIf Sel8 = 50 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Scylla
+            PictureBox8.Image = My.Resources.GodCards.Scylla
         ElseIf Sel8 = 51 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ullr
+            PictureBox8.Image = My.Resources.GodCards.Ullr
         ElseIf Sel8 = 52 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Kumbhakarna
+            PictureBox8.Image = My.Resources.GodCards.Kumbhakarna
         ElseIf Sel8 = 53 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Osiris
+            PictureBox8.Image = My.Resources.GodCards.Osiris
         ElseIf Sel8 = 54 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Janus
+            PictureBox8.Image = My.Resources.GodCards.Janus
         ElseIf Sel8 = 55 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Rama
+            PictureBox8.Image = My.Resources.GodCards.Rama
         ElseIf Sel8 = 56 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Serqet
+            PictureBox8.Image = My.Resources.GodCards.Serqet
         ElseIf Sel8 = 57 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Cabrakan
+            PictureBox8.Image = My.Resources.GodCards.Cabrakan
         ElseIf Sel8 = 58 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Sylvanus
+            PictureBox8.Image = My.Resources.GodCards.Sylvanus
         ElseIf Sel8 = 59 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Nox
+            PictureBox8.Image = My.Resources.GodCards.Nox
         ElseIf Sel8 = 60 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.AoKuang
+            PictureBox8.Image = My.Resources.GodCards.AoKuang
         ElseIf Sel8 = 61 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Awilix
+            PictureBox8.Image = My.Resources.GodCards.Awilix
         ElseIf Sel8 = 62 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.HouYi
+            PictureBox8.Image = My.Resources.GodCards.HouYi
         ElseIf Sel8 = 63 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Bellona
+            PictureBox8.Image = My.Resources.GodCards.Bellona
         ElseIf Sel8 = 64 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Medusa
+            PictureBox8.Image = My.Resources.GodCards.Medusa
         ElseIf Sel8 = 65 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.AhPuch
+            PictureBox8.Image = My.Resources.GodCards.AhPuch
         ElseIf Sel8 = 66 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ratatoskr
+            PictureBox8.Image = My.Resources.GodCards.Ratatoskr
         ElseIf Sel8 = 67 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ravana
+            PictureBox8.Image = My.Resources.GodCards.Ravana
         ElseIf Sel8 = 68 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Khepri
+            PictureBox8.Image = My.Resources.GodCards.Khepri
         ElseIf Sel8 = 69 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.XingTian
+            PictureBox8.Image = My.Resources.GodCards.XingTian
         ElseIf Sel8 = 70 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Sol
+            PictureBox8.Image = My.Resources.GodCards.Sol
         ElseIf Sel8 = 71 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Chiron
+            PictureBox8.Image = My.Resources.GodCards.Chiron
         ElseIf Sel8 = 72 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Amaterasu
+            PictureBox8.Image = My.Resources.GodCards.Amaterasu
         ElseIf Sel8 = 73 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Raijin
+            PictureBox8.Image = My.Resources.GodCards.Raijin
         ElseIf Sel8 = 74 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Skadi
+            PictureBox8.Image = My.Resources.GodCards.Skadi
         ElseIf Sel8 = 75 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.JingWei
+            PictureBox8.Image = My.Resources.GodCards.JingWei
         ElseIf Sel8 = 76 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Susano
+            PictureBox8.Image = My.Resources.GodCards.Susano
         ElseIf Sel8 = 77 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Fafnir
+            PictureBox8.Image = My.Resources.GodCards.Fafnir
         ElseIf Sel8 = 78 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.ErlangShen
+            PictureBox8.Image = My.Resources.GodCards.ErlangShen
         ElseIf Sel8 = 79 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Terra
+            PictureBox8.Image = My.Resources.GodCards.Terra
         ElseIf Sel8 = 80 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Izanami
+            PictureBox8.Image = My.Resources.GodCards.Izanami
         ElseIf Sel8 = 81 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Camazotz
+            PictureBox8.Image = My.Resources.GodCards.Camazotz
         ElseIf Sel8 = 82 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Thoth
+            PictureBox8.Image = My.Resources.GodCards.Thoth
         ElseIf Sel8 = 83 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Nike
+            PictureBox8.Image = My.Resources.GodCards.Nike
         ElseIf Sel8 = 84 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.TheMorrigan
+            PictureBox8.Image = My.Resources.GodCards.TheMorrigan
         ElseIf Sel8 = 85 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Kuzenbo
+            PictureBox8.Image = My.Resources.GodCards.Kuzenbo
         ElseIf Sel8 = 86 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Cernunnos
+            PictureBox8.Image = My.Resources.GodCards.Cernunnos
         ElseIf Sel8 = 87 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Ganesha
+            PictureBox8.Image = My.Resources.GodCards.Ganesha
         ElseIf Sel8 = 88 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.DaJi
+            PictureBox8.Image = My.Resources.GodCards.DaJi
         ElseIf Sel8 = 89 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.CuChulainn
+            PictureBox8.Image = My.Resources.GodCards.CuChulainn
         ElseIf Sel8 = 90 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Artio
+            PictureBox8.Image = My.Resources.GodCards.Artio
         ElseIf Sel8 = 91 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Hachiman
+            PictureBox8.Image = My.Resources.GodCards.Hachiman
         ElseIf Sel8 = 92 Then
 
-            PictureBox8.Image = My.Resources.GodIcons.Discordia
+            PictureBox8.Image = My.Resources.GodCards.Discordia
         End If
 
     End Sub
 
-    Private Sub Ban3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban3.SelectedIndexChanged
+Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles God9.SelectedIndexChanged
+
 
         Dim Sel9 As Integer
 
-        Sel9 = Ban3.SelectedValue
+        Sel9 = God9.SelectedValue
 
         If Sel9 = 1 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Agni
+            PictureBox9.Image = My.Resources.GodCards.Agni
         ElseIf Sel9 = 2 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Anubis
+            PictureBox9.Image = My.Resources.GodCards.Anubis
         ElseIf Sel9 = 3 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Arachne
+            PictureBox9.Image = My.Resources.GodCards.Arachne
         ElseIf Sel9 = 4 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Artemis
+            PictureBox9.Image = My.Resources.GodCards.Artemis
         ElseIf Sel9 = 5 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Bastet
+            PictureBox9.Image = My.Resources.GodCards.Bastet
         ElseIf Sel9 = 6 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Hades
+            PictureBox9.Image = My.Resources.GodCards.Hades
         ElseIf Sel9 = 7 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.HeBo
+            PictureBox9.Image = My.Resources.GodCards.HeBo
         ElseIf Sel9 = 8 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Hel
+            PictureBox9.Image = My.Resources.GodCards.Hel
         ElseIf Sel9 = 9 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.HunBatz
+            PictureBox9.Image = My.Resources.GodCards.HunBatz
         ElseIf Sel9 = 10 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Kali
+            PictureBox9.Image = My.Resources.GodCards.Kali
         ElseIf Sel9 = 11 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Kukulkan
+            PictureBox9.Image = My.Resources.GodCards.Kukulkan
         ElseIf Sel9 = 12 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Odin
+            PictureBox9.Image = My.Resources.GodCards.Odin
         ElseIf Sel9 = 13 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ra
+            PictureBox9.Image = My.Resources.GodCards.Ra
         ElseIf Sel9 = 14 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Sobek
+            PictureBox9.Image = My.Resources.GodCards.Sobek
         ElseIf Sel9 = 15 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Vamana
+            PictureBox9.Image = My.Resources.GodCards.Vamana
         ElseIf Sel9 = 16 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ymir
+            PictureBox9.Image = My.Resources.GodCards.Ymir
         ElseIf Sel9 = 17 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Zeus
+            PictureBox9.Image = My.Resources.GodCards.Zeus
         ElseIf Sel9 = 18 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.GuanYu
+            PictureBox9.Image = My.Resources.GodCards.GuanYu
         ElseIf Sel9 = 19 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Bakasura
+            PictureBox9.Image = My.Resources.GodCards.Bakasura
         ElseIf Sel9 = 20 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Anhur
+            PictureBox9.Image = My.Resources.GodCards.Anhur
         ElseIf Sel9 = 21 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Cupid
+            PictureBox9.Image = My.Resources.GodCards.Cupid
         ElseIf Sel9 = 22 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Thor
+            PictureBox9.Image = My.Resources.GodCards.Thor
         ElseIf Sel9 = 23 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ares
+            PictureBox9.Image = My.Resources.GodCards.Ares
         ElseIf Sel9 = 24 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Freya
+            PictureBox9.Image = My.Resources.GodCards.Freya
         ElseIf Sel9 = 25 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Loki
+            PictureBox9.Image = My.Resources.GodCards.Loki
         ElseIf Sel9 = 26 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Bacchus
+            PictureBox9.Image = My.Resources.GodCards.Bacchus
         ElseIf Sel9 = 27 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Xbalanque
+            PictureBox9.Image = My.Resources.GodCards.Xbalanque
         ElseIf Sel9 = 28 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Hercules
+            PictureBox9.Image = My.Resources.GodCards.Hercules
         ElseIf Sel9 = 29 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Vulcan
+            PictureBox9.Image = My.Resources.GodCards.Vulcan
         ElseIf Sel9 = 30 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Neith
+            PictureBox9.Image = My.Resources.GodCards.Neith
         ElseIf Sel9 = 31 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Poseidon
+            PictureBox9.Image = My.Resources.GodCards.Poseidon
         ElseIf Sel9 = 32 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Aphrodite
+            PictureBox9.Image = My.Resources.GodCards.Aphrodite
         ElseIf Sel9 = 33 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Apollo
+            PictureBox9.Image = My.Resources.GodCards.Apollo
         ElseIf Sel9 = 34 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.NeZha
+            PictureBox9.Image = My.Resources.GodCards.NeZha
         ElseIf Sel9 = 35 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Fenrir
+            PictureBox9.Image = My.Resources.GodCards.Fenrir
         ElseIf Sel9 = 36 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Isis
+            PictureBox9.Image = My.Resources.GodCards.Isis
         ElseIf Sel9 = 37 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Athena
+            PictureBox9.Image = My.Resources.GodCards.Athena
         ElseIf Sel9 = 38 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Chronos
+            PictureBox9.Image = My.Resources.GodCards.Chronos
         ElseIf Sel9 = 39 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Chang_e
+            PictureBox9.Image = My.Resources.GodCards.Chang_e
         ElseIf Sel9 = 40 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Tyr
+            PictureBox9.Image = My.Resources.GodCards.Tyr
         ElseIf Sel9 = 41 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.ZhongKui
+            PictureBox9.Image = My.Resources.GodCards.ZhongKui
         ElseIf Sel9 = 42 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Thanatos
+            PictureBox9.Image = My.Resources.GodCards.Thanatos
         ElseIf Sel9 = 43 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Mercury
+            PictureBox9.Image = My.Resources.GodCards.Mercury
         ElseIf Sel9 = 44 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.SunWukong
+            PictureBox9.Image = My.Resources.GodCards.SunWukong
         ElseIf Sel9 = 45 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.AhMuzenCab
+            PictureBox9.Image = My.Resources.GodCards.AhMuzenCab
         ElseIf Sel9 = 46 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.NuWa
+            PictureBox9.Image = My.Resources.GodCards.NuWa
         ElseIf Sel9 = 47 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Chaac
+            PictureBox9.Image = My.Resources.GodCards.Chaac
         ElseIf Sel9 = 48 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Geb
+            PictureBox9.Image = My.Resources.GodCards.Geb
         ElseIf Sel9 = 49 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Nemesis
+            PictureBox9.Image = My.Resources.GodCards.Nemesis
         ElseIf Sel9 = 50 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Scylla
+            PictureBox9.Image = My.Resources.GodCards.Scylla
         ElseIf Sel9 = 51 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ullr
+            PictureBox9.Image = My.Resources.GodCards.Ullr
         ElseIf Sel9 = 52 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Kumbhakarna
+            PictureBox9.Image = My.Resources.GodCards.Kumbhakarna
         ElseIf Sel9 = 53 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Osiris
+            PictureBox9.Image = My.Resources.GodCards.Osiris
         ElseIf Sel9 = 54 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Janus
+            PictureBox9.Image = My.Resources.GodCards.Janus
         ElseIf Sel9 = 55 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Rama
+            PictureBox9.Image = My.Resources.GodCards.Rama
         ElseIf Sel9 = 56 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Serqet
+            PictureBox9.Image = My.Resources.GodCards.Serqet
         ElseIf Sel9 = 57 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Cabrakan
+            PictureBox9.Image = My.Resources.GodCards.Cabrakan
         ElseIf Sel9 = 58 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Sylvanus
+            PictureBox9.Image = My.Resources.GodCards.Sylvanus
         ElseIf Sel9 = 59 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Nox
+            PictureBox9.Image = My.Resources.GodCards.Nox
         ElseIf Sel9 = 60 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.AoKuang
+            PictureBox9.Image = My.Resources.GodCards.AoKuang
         ElseIf Sel9 = 61 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Awilix
+            PictureBox9.Image = My.Resources.GodCards.Awilix
         ElseIf Sel9 = 62 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.HouYi
+            PictureBox9.Image = My.Resources.GodCards.HouYi
         ElseIf Sel9 = 63 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Bellona
+            PictureBox9.Image = My.Resources.GodCards.Bellona
         ElseIf Sel9 = 64 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Medusa
+            PictureBox9.Image = My.Resources.GodCards.Medusa
         ElseIf Sel9 = 65 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.AhPuch
+            PictureBox9.Image = My.Resources.GodCards.AhPuch
         ElseIf Sel9 = 66 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ratatoskr
+            PictureBox9.Image = My.Resources.GodCards.Ratatoskr
         ElseIf Sel9 = 67 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ravana
+            PictureBox9.Image = My.Resources.GodCards.Ravana
         ElseIf Sel9 = 68 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Khepri
+            PictureBox9.Image = My.Resources.GodCards.Khepri
         ElseIf Sel9 = 69 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.XingTian
+            PictureBox9.Image = My.Resources.GodCards.XingTian
         ElseIf Sel9 = 70 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Sol
+            PictureBox9.Image = My.Resources.GodCards.Sol
         ElseIf Sel9 = 71 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Chiron
+            PictureBox9.Image = My.Resources.GodCards.Chiron
         ElseIf Sel9 = 72 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Amaterasu
+            PictureBox9.Image = My.Resources.GodCards.Amaterasu
         ElseIf Sel9 = 73 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Raijin
+            PictureBox9.Image = My.Resources.GodCards.Raijin
         ElseIf Sel9 = 74 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Skadi
+            PictureBox9.Image = My.Resources.GodCards.Skadi
         ElseIf Sel9 = 75 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.JingWei
+            PictureBox9.Image = My.Resources.GodCards.JingWei
         ElseIf Sel9 = 76 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Susano
+            PictureBox9.Image = My.Resources.GodCards.Susano
         ElseIf Sel9 = 77 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Fafnir
+            PictureBox9.Image = My.Resources.GodCards.Fafnir
         ElseIf Sel9 = 78 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.ErlangShen
+            PictureBox9.Image = My.Resources.GodCards.ErlangShen
         ElseIf Sel9 = 79 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Terra
+            PictureBox9.Image = My.Resources.GodCards.Terra
         ElseIf Sel9 = 80 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Izanami
+            PictureBox9.Image = My.Resources.GodCards.Izanami
         ElseIf Sel9 = 81 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Camazotz
+            PictureBox9.Image = My.Resources.GodCards.Camazotz
         ElseIf Sel9 = 82 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Thoth
+            PictureBox9.Image = My.Resources.GodCards.Thoth
         ElseIf Sel9 = 83 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Nike
+            PictureBox9.Image = My.Resources.GodCards.Nike
         ElseIf Sel9 = 84 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.TheMorrigan
+            PictureBox9.Image = My.Resources.GodCards.TheMorrigan
         ElseIf Sel9 = 85 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Kuzenbo
+            PictureBox9.Image = My.Resources.GodCards.Kuzenbo
         ElseIf Sel9 = 86 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Cernunnos
+            PictureBox9.Image = My.Resources.GodCards.Cernunnos
         ElseIf Sel9 = 87 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Ganesha
+            PictureBox9.Image = My.Resources.GodCards.Ganesha
         ElseIf Sel9 = 88 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.DaJi
+            PictureBox9.Image = My.Resources.GodCards.DaJi
         ElseIf Sel9 = 89 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.CuChulainn
+            PictureBox9.Image = My.Resources.GodCards.CuChulainn
         ElseIf Sel9 = 90 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Artio
+            PictureBox9.Image = My.Resources.GodCards.Artio
         ElseIf Sel9 = 91 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Hachiman
+            PictureBox9.Image = My.Resources.GodCards.Hachiman
         ElseIf Sel9 = 92 Then
 
-            PictureBox9.Image = My.Resources.GodIcons.Discordia
+            PictureBox9.Image = My.Resources.GodCards.Discordia
         End If
 
     End Sub
 
-    Private Sub Ban4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban4.SelectedIndexChanged
+
+    Private Sub God10_SelectedIndexChanged(sender As Object, e As EventArgs) Handles God10.SelectedIndexChanged
+
+
         Dim Sel10 As Integer
 
-        Sel10 = Ban4.SelectedValue
+        Sel10 = God10.SelectedValue
 
         If Sel10 = 1 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Agni
+            PictureBox10.Image = My.Resources.GodCards.Agni
         ElseIf Sel10 = 2 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Anubis
+            PictureBox10.Image = My.Resources.GodCards.Anubis
         ElseIf Sel10 = 3 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Arachne
+            PictureBox10.Image = My.Resources.GodCards.Arachne
         ElseIf Sel10 = 4 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Artemis
+            PictureBox10.Image = My.Resources.GodCards.Artemis
         ElseIf Sel10 = 5 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Bastet
+            PictureBox10.Image = My.Resources.GodCards.Bastet
         ElseIf Sel10 = 6 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Hades
+            PictureBox10.Image = My.Resources.GodCards.Hades
         ElseIf Sel10 = 7 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.HeBo
+            PictureBox10.Image = My.Resources.GodCards.HeBo
         ElseIf Sel10 = 8 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Hel
+            PictureBox10.Image = My.Resources.GodCards.Hel
         ElseIf Sel10 = 9 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.HunBatz
+            PictureBox10.Image = My.Resources.GodCards.HunBatz
         ElseIf Sel10 = 10 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Kali
+            PictureBox10.Image = My.Resources.GodCards.Kali
         ElseIf Sel10 = 11 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Kukulkan
+            PictureBox10.Image = My.Resources.GodCards.Kukulkan
         ElseIf Sel10 = 12 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Odin
+            PictureBox10.Image = My.Resources.GodCards.Odin
         ElseIf Sel10 = 13 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ra
+            PictureBox10.Image = My.Resources.GodCards.Ra
         ElseIf Sel10 = 14 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Sobek
+            PictureBox10.Image = My.Resources.GodCards.Sobek
         ElseIf Sel10 = 15 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Vamana
+            PictureBox10.Image = My.Resources.GodCards.Vamana
         ElseIf Sel10 = 16 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ymir
+            PictureBox10.Image = My.Resources.GodCards.Ymir
         ElseIf Sel10 = 17 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Zeus
+            PictureBox10.Image = My.Resources.GodCards.Zeus
         ElseIf Sel10 = 18 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.GuanYu
+            PictureBox10.Image = My.Resources.GodCards.GuanYu
         ElseIf Sel10 = 19 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Bakasura
+            PictureBox10.Image = My.Resources.GodCards.Bakasura
         ElseIf Sel10 = 20 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Anhur
+            PictureBox10.Image = My.Resources.GodCards.Anhur
         ElseIf Sel10 = 21 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Cupid
+            PictureBox10.Image = My.Resources.GodCards.Cupid
         ElseIf Sel10 = 22 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Thor
+            PictureBox10.Image = My.Resources.GodCards.Thor
         ElseIf Sel10 = 23 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ares
+            PictureBox10.Image = My.Resources.GodCards.Ares
         ElseIf Sel10 = 24 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Freya
+            PictureBox10.Image = My.Resources.GodCards.Freya
         ElseIf Sel10 = 25 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Loki
+            PictureBox10.Image = My.Resources.GodCards.Loki
         ElseIf Sel10 = 26 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Bacchus
+            PictureBox10.Image = My.Resources.GodCards.Bacchus
         ElseIf Sel10 = 27 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Xbalanque
+            PictureBox10.Image = My.Resources.GodCards.Xbalanque
         ElseIf Sel10 = 28 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Hercules
+            PictureBox10.Image = My.Resources.GodCards.Hercules
         ElseIf Sel10 = 29 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Vulcan
+            PictureBox10.Image = My.Resources.GodCards.Vulcan
         ElseIf Sel10 = 30 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Neith
+            PictureBox10.Image = My.Resources.GodCards.Neith
         ElseIf Sel10 = 31 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Poseidon
+            PictureBox10.Image = My.Resources.GodCards.Poseidon
         ElseIf Sel10 = 32 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Aphrodite
+            PictureBox10.Image = My.Resources.GodCards.Aphrodite
         ElseIf Sel10 = 33 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Apollo
+            PictureBox10.Image = My.Resources.GodCards.Apollo
         ElseIf Sel10 = 34 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.NeZha
+            PictureBox10.Image = My.Resources.GodCards.NeZha
         ElseIf Sel10 = 35 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Fenrir
+            PictureBox10.Image = My.Resources.GodCards.Fenrir
         ElseIf Sel10 = 36 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Isis
+            PictureBox10.Image = My.Resources.GodCards.Isis
         ElseIf Sel10 = 37 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Athena
+            PictureBox10.Image = My.Resources.GodCards.Athena
         ElseIf Sel10 = 38 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Chronos
+            PictureBox10.Image = My.Resources.GodCards.Chronos
         ElseIf Sel10 = 39 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Chang_e
+            PictureBox10.Image = My.Resources.GodCards.Chang_e
         ElseIf Sel10 = 40 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Tyr
+            PictureBox10.Image = My.Resources.GodCards.Tyr
         ElseIf Sel10 = 41 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.ZhongKui
+            PictureBox10.Image = My.Resources.GodCards.ZhongKui
         ElseIf Sel10 = 42 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Thanatos
+            PictureBox10.Image = My.Resources.GodCards.Thanatos
         ElseIf Sel10 = 43 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Mercury
+            PictureBox10.Image = My.Resources.GodCards.Mercury
         ElseIf Sel10 = 44 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.SunWukong
+            PictureBox10.Image = My.Resources.GodCards.SunWukong
         ElseIf Sel10 = 45 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.AhMuzenCab
+            PictureBox10.Image = My.Resources.GodCards.AhMuzenCab
         ElseIf Sel10 = 46 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.NuWa
+            PictureBox10.Image = My.Resources.GodCards.NuWa
         ElseIf Sel10 = 47 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Chaac
+            PictureBox10.Image = My.Resources.GodCards.Chaac
         ElseIf Sel10 = 48 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Geb
+            PictureBox10.Image = My.Resources.GodCards.Geb
         ElseIf Sel10 = 49 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Nemesis
+            PictureBox10.Image = My.Resources.GodCards.Nemesis
         ElseIf Sel10 = 50 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Scylla
+            PictureBox10.Image = My.Resources.GodCards.Scylla
         ElseIf Sel10 = 51 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ullr
+            PictureBox10.Image = My.Resources.GodCards.Ullr
         ElseIf Sel10 = 52 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Kumbhakarna
+            PictureBox10.Image = My.Resources.GodCards.Kumbhakarna
         ElseIf Sel10 = 53 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Osiris
+            PictureBox10.Image = My.Resources.GodCards.Osiris
         ElseIf Sel10 = 54 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Janus
+            PictureBox10.Image = My.Resources.GodCards.Janus
         ElseIf Sel10 = 55 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Rama
+            PictureBox10.Image = My.Resources.GodCards.Rama
         ElseIf Sel10 = 56 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Serqet
+            PictureBox10.Image = My.Resources.GodCards.Serqet
         ElseIf Sel10 = 57 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Cabrakan
+            PictureBox10.Image = My.Resources.GodCards.Cabrakan
         ElseIf Sel10 = 58 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Sylvanus
+            PictureBox10.Image = My.Resources.GodCards.Sylvanus
         ElseIf Sel10 = 59 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Nox
+            PictureBox10.Image = My.Resources.GodCards.Nox
         ElseIf Sel10 = 60 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.AoKuang
+            PictureBox10.Image = My.Resources.GodCards.AoKuang
         ElseIf Sel10 = 61 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Awilix
+            PictureBox10.Image = My.Resources.GodCards.Awilix
         ElseIf Sel10 = 62 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.HouYi
+            PictureBox10.Image = My.Resources.GodCards.HouYi
         ElseIf Sel10 = 63 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Bellona
+            PictureBox10.Image = My.Resources.GodCards.Bellona
         ElseIf Sel10 = 64 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Medusa
+            PictureBox10.Image = My.Resources.GodCards.Medusa
         ElseIf Sel10 = 65 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.AhPuch
+            PictureBox10.Image = My.Resources.GodCards.AhPuch
         ElseIf Sel10 = 66 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ratatoskr
+            PictureBox10.Image = My.Resources.GodCards.Ratatoskr
         ElseIf Sel10 = 67 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ravana
+            PictureBox10.Image = My.Resources.GodCards.Ravana
         ElseIf Sel10 = 68 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Khepri
+            PictureBox10.Image = My.Resources.GodCards.Khepri
         ElseIf Sel10 = 69 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.XingTian
+            PictureBox10.Image = My.Resources.GodCards.XingTian
         ElseIf Sel10 = 70 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Sol
+            PictureBox10.Image = My.Resources.GodCards.Sol
         ElseIf Sel10 = 71 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Chiron
+            PictureBox10.Image = My.Resources.GodCards.Chiron
         ElseIf Sel10 = 72 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Amaterasu
+            PictureBox10.Image = My.Resources.GodCards.Amaterasu
         ElseIf Sel10 = 73 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Raijin
+            PictureBox10.Image = My.Resources.GodCards.Raijin
         ElseIf Sel10 = 74 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Skadi
+            PictureBox10.Image = My.Resources.GodCards.Skadi
         ElseIf Sel10 = 75 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.JingWei
+            PictureBox10.Image = My.Resources.GodCards.JingWei
         ElseIf Sel10 = 76 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Susano
+            PictureBox10.Image = My.Resources.GodCards.Susano
         ElseIf Sel10 = 77 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Fafnir
+            PictureBox10.Image = My.Resources.GodCards.Fafnir
         ElseIf Sel10 = 78 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.ErlangShen
+            PictureBox10.Image = My.Resources.GodCards.ErlangShen
         ElseIf Sel10 = 79 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Terra
+            PictureBox10.Image = My.Resources.GodCards.Terra
         ElseIf Sel10 = 80 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Izanami
+            PictureBox10.Image = My.Resources.GodCards.Izanami
         ElseIf Sel10 = 81 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Camazotz
+            PictureBox10.Image = My.Resources.GodCards.Camazotz
         ElseIf Sel10 = 82 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Thoth
+            PictureBox10.Image = My.Resources.GodCards.Thoth
         ElseIf Sel10 = 83 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Nike
+            PictureBox10.Image = My.Resources.GodCards.Nike
         ElseIf Sel10 = 84 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.TheMorrigan
+            PictureBox10.Image = My.Resources.GodCards.TheMorrigan
         ElseIf Sel10 = 85 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Kuzenbo
+            PictureBox10.Image = My.Resources.GodCards.Kuzenbo
         ElseIf Sel10 = 86 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Cernunnos
+            PictureBox10.Image = My.Resources.GodCards.Cernunnos
         ElseIf Sel10 = 87 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Ganesha
+            PictureBox10.Image = My.Resources.GodCards.Ganesha
         ElseIf Sel10 = 88 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.DaJi
+            PictureBox10.Image = My.Resources.GodCards.DaJi
         ElseIf Sel10 = 89 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.CuChulainn
+            PictureBox10.Image = My.Resources.GodCards.CuChulainn
         ElseIf Sel10 = 90 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Artio
+            PictureBox10.Image = My.Resources.GodCards.Artio
         ElseIf Sel10 = 91 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Hachiman
+            PictureBox10.Image = My.Resources.GodCards.Hachiman
         ElseIf Sel10 = 92 Then
 
-            PictureBox10.Image = My.Resources.GodIcons.Discordia
+            PictureBox10.Image = My.Resources.GodCards.Discordia
         End If
 
     End Sub
 
-    Private Sub Ban5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban5.SelectedIndexChanged
+    Private Sub Ban1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban1.SelectedIndexChanged
+
+
         Dim Sel11 As Integer
 
-        Sel11 = Ban5.SelectedValue
+        Sel11 = Ban1.SelectedValue
 
         If Sel11 = 1 Then
 
@@ -3156,10 +3152,12 @@
 
     End Sub
 
-    Private Sub Ban6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban6.SelectedIndexChanged
+    Private Sub Ban2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban2.SelectedIndexChanged
+
+
         Dim Sel12 As Integer
 
-        Sel12 = Ban6.SelectedValue
+        Sel12 = Ban2.SelectedValue
 
         If Sel12 = 1 Then
 
@@ -3441,39 +3439,1774 @@
 
     End Sub
 
-    Private Sub AddPaB_Click(sender As Object, e As EventArgs) Handles AddPaB.Click
+    Private Sub Ban3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban3.SelectedIndexChanged
 
-        'Order Side Picks
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God2.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God3.SelectedValue)
 
-        'Chaos Side Picks
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God4.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God5.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God6.SelectedValue)
+        Dim Sel13 As Integer
 
-        'Order Side Bans
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
+        Sel13 = Ban3.SelectedValue
 
-        'Chaos Side Bans 
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban4.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
+        If Sel13 = 1 Then
 
-        MsgBox("Match Added.")
+            PictureBox13.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel13 = 2 Then
 
-        Me.Close()
+            PictureBox13.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel13 = 3 Then
 
+            PictureBox13.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel13 = 4 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel13 = 5 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel13 = 6 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel13 = 7 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel13 = 8 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel13 = 9 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel13 = 10 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel13 = 11 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel13 = 12 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel13 = 13 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel13 = 14 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel13 = 15 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel13 = 16 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel13 = 17 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel13 = 18 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel13 = 19 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel13 = 20 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel13 = 21 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel13 = 22 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel13 = 23 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel13 = 24 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel13 = 25 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel13 = 26 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel13 = 27 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel13 = 28 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel13 = 29 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel13 = 30 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel13 = 31 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel13 = 32 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel13 = 33 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel13 = 34 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel13 = 35 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel13 = 36 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel13 = 37 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel13 = 38 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel13 = 39 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel13 = 40 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel13 = 41 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel13 = 42 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel13 = 43 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel13 = 44 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel13 = 45 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel13 = 46 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel13 = 47 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel13 = 48 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel13 = 49 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel13 = 50 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel13 = 51 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel13 = 52 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel13 = 53 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel13 = 54 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel13 = 55 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel13 = 56 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel13 = 57 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel13 = 58 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel13 = 59 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel13 = 60 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel13 = 61 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel13 = 62 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel13 = 63 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel13 = 64 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel13 = 65 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel13 = 66 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel13 = 67 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel13 = 68 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel13 = 69 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel13 = 70 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel13 = 71 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel13 = 72 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel13 = 73 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel13 = 74 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel13 = 75 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel13 = 76 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel13 = 77 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel13 = 78 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel13 = 79 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel13 = 80 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel13 = 81 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel13 = 82 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel13 = 83 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel13 = 84 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel13 = 85 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel13 = 86 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel13 = 87 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel13 = 88 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel13 = 89 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel13 = 90 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel13 = 91 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel13 = 92 Then
+
+            PictureBox13.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+    
+    Private Sub Ban4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban4.SelectedIndexChanged
+
+
+        Dim Sel14 As Integer
+
+        Sel14 = Ban4.SelectedValue
+
+        If Sel14 = 1 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel14 = 2 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel14 = 3 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel14 = 4 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel14 = 5 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel14 = 6 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel14 = 7 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel14 = 8 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel14 = 9 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel14 = 10 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel14 = 11 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel14 = 12 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel14 = 13 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel14 = 14 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel14 = 15 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel14 = 16 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel14 = 17 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel14 = 18 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel14 = 19 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel14 = 20 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel14 = 21 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel14 = 22 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel14 = 23 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel14 = 24 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel14 = 25 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel14 = 26 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel14 = 27 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel14 = 28 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel14 = 29 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel14 = 30 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel14 = 31 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel14 = 32 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel14 = 33 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel14 = 34 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel14 = 35 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel14 = 36 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel14 = 37 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel14 = 38 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel14 = 39 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel14 = 40 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel14 = 41 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel14 = 42 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel14 = 43 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel14 = 44 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel14 = 45 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel14 = 46 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel14 = 47 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel14 = 48 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel14 = 49 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel14 = 50 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel14 = 51 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel14 = 52 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel14 = 53 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel14 = 54 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel14 = 55 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel14 = 56 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel14 = 57 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel14 = 58 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel14 = 59 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel14 = 60 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel14 = 61 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel14 = 62 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel14 = 63 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel14 = 64 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel14 = 65 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel14 = 66 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel14 = 67 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel14 = 68 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel14 = 69 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel14 = 70 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel14 = 71 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel14 = 72 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel14 = 73 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel14 = 74 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel14 = 75 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel14 = 76 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel14 = 77 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel14 = 78 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel14 = 79 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel14 = 80 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel14 = 81 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel14 = 82 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel14 = 83 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel14 = 84 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel14 = 85 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel14 = 86 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel14 = 87 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel14 = 88 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel14 = 89 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel14 = 90 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel14 = 91 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel14 = 92 Then
+
+            PictureBox14.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+
+    Private Sub Ban5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban5.SelectedIndexChanged
+
+
+        Dim Sel15 As Integer
+
+        Sel15 = Ban5.SelectedValue
+
+        If Sel15 = 1 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel15 = 2 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel15 = 3 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel15 = 4 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel15 = 5 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel15 = 6 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel15 = 7 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel15 = 8 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel15 = 9 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel15 = 10 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel15 = 11 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel15 = 12 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel15 = 13 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel15 = 14 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel15 = 15 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel15 = 16 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel15 = 17 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel15 = 18 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel15 = 19 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel15 = 20 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel15 = 21 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel15 = 22 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel15 = 23 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel15 = 24 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel15 = 25 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel15 = 26 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel15 = 27 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel15 = 28 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel15 = 29 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel15 = 30 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel15 = 31 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel15 = 32 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel15 = 33 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel15 = 34 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel15 = 35 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel15 = 36 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel15 = 37 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel15 = 38 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel15 = 39 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel15 = 40 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel15 = 41 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel15 = 42 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel15 = 43 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel15 = 44 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel15 = 45 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel15 = 46 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel15 = 47 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel15 = 48 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel15 = 49 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel15 = 50 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel15 = 51 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel15 = 52 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel15 = 53 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel15 = 54 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel15 = 55 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel15 = 56 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel15 = 57 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel15 = 58 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel15 = 59 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel15 = 60 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel15 = 61 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel15 = 62 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel15 = 63 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel15 = 64 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel15 = 65 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel15 = 66 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel15 = 67 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel15 = 68 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel15 = 69 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel15 = 70 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel15 = 71 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel15 = 72 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel15 = 73 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel15 = 74 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel15 = 75 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel15 = 76 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel15 = 77 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel15 = 78 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel15 = 79 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel15 = 80 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel15 = 81 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel15 = 82 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel15 = 83 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel15 = 84 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel15 = 85 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel15 = 86 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel15 = 87 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel15 = 88 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel15 = 89 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel15 = 90 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel15 = 91 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel15 = 92 Then
+
+            PictureBox15.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+
+    Private Sub Ban6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban6.SelectedIndexChanged
+
+
+        Dim Sel16 As Integer
+
+        Sel16 = Ban6.SelectedValue
+
+        If Sel16 = 1 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel16 = 2 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel16 = 3 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel16 = 4 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel16 = 5 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel16 = 6 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel16 = 7 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel16 = 8 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel16 = 9 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel16 = 10 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel16 = 11 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel16 = 12 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel16 = 13 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel16 = 14 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel16 = 15 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel16 = 16 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel16 = 17 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel16 = 18 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel16 = 19 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel16 = 20 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel16 = 21 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel16 = 22 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel16 = 23 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel16 = 24 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel16 = 25 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel16 = 26 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel16 = 27 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel16 = 28 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel16 = 29 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel16 = 30 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel16 = 31 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel16 = 32 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel16 = 33 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel16 = 34 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel16 = 35 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel16 = 36 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel16 = 37 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel16 = 38 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel16 = 39 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel16 = 40 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel16 = 41 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel16 = 42 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel16 = 43 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel16 = 44 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel16 = 45 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel16 = 46 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel16 = 47 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel16 = 48 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel16 = 49 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel16 = 50 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel16 = 51 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel16 = 52 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel16 = 53 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel16 = 54 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel16 = 55 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel16 = 56 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel16 = 57 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel16 = 58 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel16 = 59 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel16 = 60 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel16 = 61 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel16 = 62 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel16 = 63 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel16 = 64 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel16 = 65 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel16 = 66 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel16 = 67 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel16 = 68 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel16 = 69 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel16 = 70 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel16 = 71 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel16 = 72 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel16 = 73 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel16 = 74 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel16 = 75 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel16 = 76 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel16 = 77 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel16 = 78 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel16 = 79 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel16 = 80 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel16 = 81 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel16 = 82 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel16 = 83 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel16 = 84 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel16 = 85 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel16 = 86 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel16 = 87 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel16 = 88 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel16 = 89 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel16 = 90 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel16 = 91 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel16 = 92 Then
+
+            PictureBox16.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+
+    Private Sub Ban7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban7.SelectedIndexChanged
+
+
+        Dim Sel17 As Integer
+
+        Sel17 = Ban7.SelectedValue
+
+        If Sel17 = 1 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel17 = 2 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel17 = 3 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel17 = 4 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel17 = 5 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel17 = 6 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel17 = 7 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel17 = 8 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel17 = 9 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel17 = 10 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel17 = 11 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel17 = 12 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel17 = 13 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel17 = 14 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel17 = 15 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel17 = 16 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel17 = 17 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel17 = 18 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel17 = 19 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel17 = 20 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel17 = 21 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel17 = 22 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel17 = 23 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel17 = 24 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel17 = 25 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel17 = 26 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel17 = 27 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel17 = 28 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel17 = 29 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel17 = 30 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel17 = 31 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel17 = 32 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel17 = 33 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel17 = 34 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel17 = 35 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel17 = 36 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel17 = 37 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel17 = 38 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel17 = 39 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel17 = 40 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel17 = 41 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel17 = 42 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel17 = 43 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel17 = 44 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel17 = 45 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel17 = 46 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel17 = 47 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel17 = 48 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel17 = 49 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel17 = 50 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel17 = 51 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel17 = 52 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel17 = 53 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel17 = 54 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel17 = 55 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel17 = 56 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel17 = 57 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel17 = 58 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel17 = 59 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel17 = 60 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel17 = 61 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel17 = 62 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel17 = 63 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel17 = 64 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel17 = 65 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel17 = 66 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel17 = 67 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel17 = 68 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel17 = 69 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel17 = 70 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel17 = 71 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel17 = 72 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel17 = 73 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel17 = 74 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel17 = 75 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel17 = 76 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel17 = 77 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel17 = 78 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel17 = 79 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel17 = 80 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel17 = 81 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel17 = 82 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel17 = 83 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel17 = 84 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel17 = 85 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel17 = 86 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel17 = 87 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel17 = 88 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel17 = 89 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel17 = 90 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel17 = 91 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel17 = 92 Then
+
+            PictureBox17.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+
+    Private Sub Ban8_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ban8.SelectedIndexChanged
+
+
+        Dim Sel18 As Integer
+
+        Sel18 = Ban8.SelectedValue
+
+        If Sel18 = 1 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Agni
+        ElseIf Sel18 = 2 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Anubis
+        ElseIf Sel18 = 3 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Arachne
+        ElseIf Sel18 = 4 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Artemis
+        ElseIf Sel18 = 5 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Bastet
+        ElseIf Sel18 = 6 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Hades
+        ElseIf Sel18 = 7 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.HeBo
+        ElseIf Sel18 = 8 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Hel
+        ElseIf Sel18 = 9 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.HunBatz
+        ElseIf Sel18 = 10 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Kali
+        ElseIf Sel18 = 11 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Kukulkan
+        ElseIf Sel18 = 12 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Odin
+        ElseIf Sel18 = 13 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ra
+        ElseIf Sel18 = 14 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Sobek
+        ElseIf Sel18 = 15 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Vamana
+        ElseIf Sel18 = 16 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ymir
+        ElseIf Sel18 = 17 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Zeus
+        ElseIf Sel18 = 18 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.GuanYu
+        ElseIf Sel18 = 19 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Bakasura
+        ElseIf Sel18 = 20 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Anhur
+        ElseIf Sel18 = 21 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Cupid
+        ElseIf Sel18 = 22 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Thor
+        ElseIf Sel18 = 23 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ares
+        ElseIf Sel18 = 24 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Freya
+        ElseIf Sel18 = 25 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Loki
+        ElseIf Sel18 = 26 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Bacchus
+        ElseIf Sel18 = 27 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Xbalanque
+        ElseIf Sel18 = 28 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Hercules
+        ElseIf Sel18 = 29 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Vulcan
+        ElseIf Sel18 = 30 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Neith
+        ElseIf Sel18 = 31 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Poseidon
+        ElseIf Sel18 = 32 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Aphrodite
+        ElseIf Sel18 = 33 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Apollo
+        ElseIf Sel18 = 34 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.NeZha
+        ElseIf Sel18 = 35 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Fenrir
+        ElseIf Sel18 = 36 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Isis
+        ElseIf Sel18 = 37 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Athena
+        ElseIf Sel18 = 38 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Chronos
+        ElseIf Sel18 = 39 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Chang_e
+        ElseIf Sel18 = 40 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Tyr
+        ElseIf Sel18 = 41 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.ZhongKui
+        ElseIf Sel18 = 42 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Thanatos
+        ElseIf Sel18 = 43 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Mercury
+        ElseIf Sel18 = 44 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.SunWukong
+        ElseIf Sel18 = 45 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.AhMuzenCab
+        ElseIf Sel18 = 46 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.NuWa
+        ElseIf Sel18 = 47 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Chaac
+        ElseIf Sel18 = 48 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Geb
+        ElseIf Sel18 = 49 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Nemesis
+        ElseIf Sel18 = 50 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Scylla
+        ElseIf Sel18 = 51 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ullr
+        ElseIf Sel18 = 52 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Kumbhakarna
+        ElseIf Sel18 = 53 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Osiris
+        ElseIf Sel18 = 54 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Janus
+        ElseIf Sel18 = 55 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Rama
+        ElseIf Sel18 = 56 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Serqet
+        ElseIf Sel18 = 57 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Cabrakan
+        ElseIf Sel18 = 58 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Sylvanus
+        ElseIf Sel18 = 59 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Nox
+        ElseIf Sel18 = 60 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.AoKuang
+        ElseIf Sel18 = 61 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Awilix
+        ElseIf Sel18 = 62 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.HouYi
+        ElseIf Sel18 = 63 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Bellona
+        ElseIf Sel18 = 64 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Medusa
+        ElseIf Sel18 = 65 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.AhPuch
+        ElseIf Sel18 = 66 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ratatoskr
+        ElseIf Sel18 = 67 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ravana
+        ElseIf Sel18 = 68 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Khepri
+        ElseIf Sel18 = 69 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.XingTian
+        ElseIf Sel18 = 70 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Sol
+        ElseIf Sel18 = 71 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Chiron
+        ElseIf Sel18 = 72 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Amaterasu
+        ElseIf Sel18 = 73 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Raijin
+        ElseIf Sel18 = 74 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Skadi
+        ElseIf Sel18 = 75 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.JingWei
+        ElseIf Sel18 = 76 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Susano
+        ElseIf Sel18 = 77 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Fafnir
+        ElseIf Sel18 = 78 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.ErlangShen
+        ElseIf Sel18 = 79 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Terra
+        ElseIf Sel18 = 80 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Izanami
+        ElseIf Sel18 = 81 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Camazotz
+        ElseIf Sel18 = 82 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Thoth
+        ElseIf Sel18 = 83 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Nike
+        ElseIf Sel18 = 84 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.TheMorrigan
+        ElseIf Sel18 = 85 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Kuzenbo
+        ElseIf Sel18 = 86 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Cernunnos
+        ElseIf Sel18 = 87 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Ganesha
+        ElseIf Sel18 = 88 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.DaJi
+        ElseIf Sel18 = 89 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.CuChulainn
+        ElseIf Sel18 = 90 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Artio
+        ElseIf Sel18 = 91 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Hachiman
+        ElseIf Sel18 = 92 Then
+
+            PictureBox18.Image = My.Resources.GodIcons.Discordia
+        End If
+
+    End Sub
+
+    Private Sub AddConquestMatch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestBans' Puede moverla o quitarla según sea necesario.
+        Me.ConquestBansTableAdapter.Fill(Me.SmiteDataSet.ConquestBans)
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestPicks' Puede moverla o quitarla según sea necesario.
+        Me.ConquestPicksTableAdapter.Fill(Me.SmiteDataSet.ConquestPicks)
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
+        Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
 
     End Sub
 
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
 
-        RankedJoust.Show()
+        RankedConquest.Show()
         Me.Close()
+
+    End Sub
+
+    Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
+
+        'Order Side Picks
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God2.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God3.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God4.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God5.SelectedValue)
+
+        'Chaos Side Picks
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God6.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God7.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God8.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God9.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God10.SelectedValue)
+
+        'Order Side Bans
+
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban4.SelectedValue)
+
+        'Chaos Side Bans
+
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban7.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban8.SelectedValue)
 
     End Sub
 End Class
