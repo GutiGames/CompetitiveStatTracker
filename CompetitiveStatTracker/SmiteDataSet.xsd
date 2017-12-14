@@ -991,10 +991,10 @@ WHERE        (IdMatch = ?)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WinRatioTableAdapter" GeneratorDataComponentClassName="WinRatioTableAdapter" Name="WinRatio" UserDataComponentName="WinRatioTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SmiteConnectionString (MySettings)" DbObjectName="WinRate" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SmiteConnectionString (MySettings)" DbObjectName="WinRatio" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT * FROM WinRate</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Name, Played, WinRate FROM WinRatio</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -1003,7 +1003,6 @@ WHERE        (IdMatch = ?)</CommandText>
             <Mappings>
               <Mapping SourceColumn="Name" DataSetColumn="Name" />
               <Mapping SourceColumn="Played" DataSetColumn="Played" />
-              <Mapping SourceColumn="Winned" DataSetColumn="Winned" />
               <Mapping SourceColumn="WinRate" DataSetColumn="WinRate" />
             </Mappings>
             <Sources />

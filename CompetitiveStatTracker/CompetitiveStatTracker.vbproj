@@ -409,6 +409,7 @@
     <None Include="Resources\GodCards\Ymir.jpg" />
     <None Include="Resources\GodCards\Zeus.jpg" />
     <None Include="Resources\GodCards\ZhongKui.jpg" />
+    <None Include="Resources\ConquestPB.jpg" />
     <Content Include="Resources\GodIcons\Agni.jpg" />
     <Content Include="Resources\GodIcons\AhMuzenCab.jpg" />
     <Content Include="Resources\GodIcons\AhPuch.jpg" />

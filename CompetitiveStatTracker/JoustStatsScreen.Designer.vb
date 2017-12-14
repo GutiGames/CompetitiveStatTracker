@@ -25,6 +25,9 @@ Partial Class JoustStatsScreen
         Me.components = New System.ComponentModel.Container()
         Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
+        Me.WinRatioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter()
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PlayedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WinnedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -33,8 +36,8 @@ Partial Class JoustStatsScreen
         Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
         Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Back
@@ -60,6 +63,20 @@ Partial Class JoustStatsScreen
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(468, 256)
         Me.DataGridView1.TabIndex = 33
+        '
+        'SmiteDataSet
+        '
+        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
+        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'WinRatioBindingSource
+        '
+        Me.WinRatioBindingSource.DataMember = "WinRatio"
+        Me.WinRatioBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'WinRatioTableAdapter
+        '
+        Me.WinRatioTableAdapter.ClearBeforeFill = True
         '
         'NameDataGridViewTextBoxColumn
         '
@@ -89,20 +106,6 @@ Partial Class JoustStatsScreen
         Me.WinRateDataGridViewTextBoxColumn.Name = "WinRateDataGridViewTextBoxColumn"
         Me.WinRateDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'WinRatioBindingSource
-        '
-        Me.WinRatioBindingSource.DataMember = "WinRatio"
-        Me.WinRatioBindingSource.DataSource = Me.SmiteDataSet
-        '
-        'SmiteDataSet
-        '
-        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
-        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'WinRatioTableAdapter
-        '
-        Me.WinRatioTableAdapter.ClearBeforeFill = True
-        '
         'JoustStatsScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -114,8 +117,8 @@ Partial Class JoustStatsScreen
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "JoustStatsScreen"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
