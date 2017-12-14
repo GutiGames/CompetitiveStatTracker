@@ -4,7 +4,7 @@
 ### _Current Features:_
 	
    - SMITE:
-     - Add and Modify every Smite: Joust match with Picks and Bans.
+     - Add and Modify every Smite: Joust and Conquest match with Picks and Bans.
      - Stat screen for Joust (Most played god, God Win rate calculate).
 
 ### _Future Plans:_ 
@@ -12,7 +12,7 @@
 
   - #### SMITE:
 
-    - Add every Smite: Conquest and Duel matches with Picks and Bans.
+    - Add every Smite: Duel matches with Picks and Bans.
     - Stat screen for each match type (Most played, Banned .. gods).
 
   - #### OVERWATCH (Very Long Term):

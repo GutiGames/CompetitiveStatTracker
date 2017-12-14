@@ -2,6 +2,11 @@
 
 ### _Patch Notes:_
 
+##### **_Pre-Alpha 0.004_**
+
+  - Added Smite: Conquest match screen.
+  - Added Smite: Conquest Picks and Bans screen.
+
 ##### **_Pre-Alpha 0.003_**
 
   - Added a stat screen to the Joust Match Screen with winrate.
