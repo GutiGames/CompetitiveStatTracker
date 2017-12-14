@@ -23,7 +23,7 @@ Partial Class JoustStatsScreen
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PlayedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -31,21 +31,21 @@ Partial Class JoustStatsScreen
         Me.WinRateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WinRatioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
-        Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter
+        Me.WinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.WinRatioTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(13, 13)
-        Me.Atras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(133, 50)
-        Me.Atras.TabIndex = 32
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(13, 13)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.TabIndex = 32
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -109,7 +109,7 @@ Partial Class JoustStatsScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1071, 681)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Back)
         Me.Name = "JoustStatsScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "JoustStatsScreen"
@@ -120,7 +120,7 @@ Partial Class JoustStatsScreen
 
     End Sub
 
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
     Friend WithEvents WinRatioBindingSource As BindingSource

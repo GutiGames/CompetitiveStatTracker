@@ -27,7 +27,7 @@ Partial Class SmiteMenu
         Me.Joust = New System.Windows.Forms.PictureBox()
         Me.Duel = New System.Windows.Forms.PictureBox()
         Me.Title = New System.Windows.Forms.Label()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         CType(Me.Conquest, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joust, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Duel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,21 +75,21 @@ Partial Class SmiteMenu
         Me.Title.Text = "Competitive Smite"
         Me.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(8, 12)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(100, 40)
-        Me.Atras.TabIndex = 32
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(8, 12)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(100, 40)
+        Me.Back.TabIndex = 32
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'SmiteMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1306, 671)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.Title)
         Me.Controls.Add(Me.Duel)
         Me.Controls.Add(Me.Joust)
@@ -109,5 +109,5 @@ Partial Class SmiteMenu
     Friend WithEvents Joust As PictureBox
     Friend WithEvents Duel As PictureBox
     Friend WithEvents Title As Label
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
 End Class

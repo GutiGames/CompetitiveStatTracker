@@ -60,7 +60,7 @@ Partial Class AddJoustMatch
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         Me.AddPaB = New System.Windows.Forms.Button()
         Me.JoustBansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JoustBansTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustBansTableAdapter()
@@ -421,14 +421,14 @@ Partial Class AddJoustMatch
         Me.PictureBox12.TabIndex = 22
         Me.PictureBox12.TabStop = False
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(25, 25)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(100, 50)
-        Me.Atras.TabIndex = 32
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(25, 25)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(100, 50)
+        Me.Back.TabIndex = 32
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'AddPaB
         '
@@ -482,7 +482,7 @@ Partial Class AddJoustMatch
         Me.ClientSize = New System.Drawing.Size(1356, 764)
         Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.AddPaB)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.God6)
@@ -578,7 +578,7 @@ Partial Class AddJoustMatch
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
     Friend WithEvents AddPaB As Button
     Friend WithEvents JoustBansBindingSource As BindingSource
     Friend WithEvents JoustBansTableAdapter As SmiteDataSetTableAdapters.JoustBansTableAdapter

@@ -44,7 +44,7 @@ Partial Class RankedJoust
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.IdMatchDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TierDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -269,15 +269,15 @@ Partial Class RankedJoust
         Me.Label12.TabIndex = 30
         Me.Label12.Text = "Comment:"
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(16, 18)
-        Me.Atras.Margin = New System.Windows.Forms.Padding(4)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(133, 50)
-        Me.Atras.TabIndex = 31
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(16, 18)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.TabIndex = 31
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -427,7 +427,7 @@ Partial Class RankedJoust
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -478,7 +478,7 @@ Partial Class RankedJoust
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
     Friend WithEvents JoustMatchesTableAdapter As SmiteDataSetTableAdapters.JoustMatchesTableAdapter

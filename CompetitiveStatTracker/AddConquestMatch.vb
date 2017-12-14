@@ -5160,39 +5160,53 @@ Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles 
         End If
 
     End Sub
-	
+
     Private Sub AddConquestMatch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestBans' Puede moverla o quitarla según sea necesario.
+        Me.ConquestBansTableAdapter.Fill(Me.SmiteDataSet.ConquestBans)
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestPicks' Puede moverla o quitarla según sea necesario.
+        Me.ConquestPicksTableAdapter.Fill(Me.SmiteDataSet.ConquestPicks)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
         Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
 
     End Sub
 
-    'Private Sub AddPaB_Click(sender As Object, e As EventArgs) Handles AddPaB.Click
+    Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
 
-    'Order Side Picks
-    ' Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
-    ' Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God2.SelectedValue)
-    'Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God3.SelectedValue)
+        RankedConquest.Show()
+        Me.Close()
 
-    'Chaos Side Picks
-    'Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God4.SelectedValue)
-    'Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God5.SelectedValue)
-    'Me.JoustPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God6.SelectedValue)
+    End Sub
 
-    'Order Side Bans
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
+    Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
 
-    'Chaos Side Bans 
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban4.SelectedValue)
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
-    'Me.JoustBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
+        'Order Side Picks
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God2.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God3.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God4.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God5.SelectedValue)
 
-    'MsgBox("Match Added.")
+        'Chaos Side Picks
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God6.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God7.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God8.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God9.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God10.SelectedValue)
 
-    'Me.Close()
+        'Order Side Bans
 
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban4.SelectedValue)
 
-    'End Sub
+        'Chaos Side Bans
+
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban7.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban8.SelectedValue)
+
+    End Sub
 End Class

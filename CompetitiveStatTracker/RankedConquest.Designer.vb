@@ -23,7 +23,7 @@ Partial Class RankedConquest
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Atras = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.IdMatchDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TierDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -70,15 +70,15 @@ Partial Class RankedConquest
         CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Atras
+        'Back
         '
-        Me.Atras.Location = New System.Drawing.Point(17, 16)
-        Me.Atras.Margin = New System.Windows.Forms.Padding(5)
-        Me.Atras.Name = "Atras"
-        Me.Atras.Size = New System.Drawing.Size(133, 50)
-        Me.Atras.TabIndex = 32
-        Me.Atras.Text = "<="
-        Me.Atras.UseVisualStyleBackColor = True
+        Me.Back.Location = New System.Drawing.Point(17, 16)
+        Me.Back.Margin = New System.Windows.Forms.Padding(5)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.TabIndex = 32
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -433,7 +433,7 @@ Partial Class RankedConquest
         Me.Controls.Add(Me.MatchID)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Atras)
+        Me.Controls.Add(Me.Back)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RankedConquest"
@@ -450,7 +450,7 @@ Partial Class RankedConquest
 
     End Sub
 
-    Friend WithEvents Atras As Button
+    Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
     Friend WithEvents ConquestMatchesBindingSource As BindingSource

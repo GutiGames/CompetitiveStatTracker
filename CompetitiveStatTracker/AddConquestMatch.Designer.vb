@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AddConquestMatch
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class AddConquestMatch
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.God3 = New System.Windows.Forms.ComboBox()
@@ -79,6 +79,13 @@ Partial Class AddConquestMatch
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.GodsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.GodsTableAdapter()
+        Me.Back = New System.Windows.Forms.Button()
+        Me.Add = New System.Windows.Forms.Button()
+        Me.MatchNumber = New System.Windows.Forms.TextBox()
+        Me.ConquestPicksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ConquestPicksTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestPicksTableAdapter()
+        Me.ConquestBansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ConquestBansTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestBansTableAdapter()
         CType(Me.GodsBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GodsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,6 +123,8 @@ Partial Class AddConquestMatch
         CType(Me.GodsBindingSource18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ConquestPicksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ConquestBansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'God3
@@ -124,7 +133,7 @@ Partial Class AddConquestMatch
         Me.God3.DataSource = Me.GodsBindingSource3
         Me.God3.DisplayMember = "Name"
         Me.God3.FormattingEnabled = True
-        Me.God3.Location = New System.Drawing.Point(437, 299)
+        Me.God3.Location = New System.Drawing.Point(428, 301)
         Me.God3.Name = "God3"
         Me.God3.Size = New System.Drawing.Size(85, 21)
         Me.God3.TabIndex = 23
@@ -147,7 +156,7 @@ Partial Class AddConquestMatch
         Me.God2.DataSource = Me.GodsBindingSource2
         Me.God2.DisplayMember = "Name"
         Me.God2.FormattingEnabled = True
-        Me.God2.Location = New System.Drawing.Point(268, 299)
+        Me.God2.Location = New System.Drawing.Point(254, 301)
         Me.God2.Name = "God2"
         Me.God2.Size = New System.Drawing.Size(85, 21)
         Me.God2.TabIndex = 24
@@ -165,7 +174,7 @@ Partial Class AddConquestMatch
         Me.God1.DataSource = Me.GodsBindingSource1
         Me.God1.DisplayMember = "Name"
         Me.God1.FormattingEnabled = True
-        Me.God1.Location = New System.Drawing.Point(89, 299)
+        Me.God1.Location = New System.Drawing.Point(80, 301)
         Me.God1.Name = "God1"
         Me.God1.Size = New System.Drawing.Size(85, 21)
         Me.God1.TabIndex = 25
@@ -183,7 +192,7 @@ Partial Class AddConquestMatch
         Me.God5.DataSource = Me.GodsBindingSource5
         Me.God5.DisplayMember = "Name"
         Me.God5.FormattingEnabled = True
-        Me.God5.Location = New System.Drawing.Point(769, 299)
+        Me.God5.Location = New System.Drawing.Point(776, 301)
         Me.God5.Name = "God5"
         Me.God5.Size = New System.Drawing.Size(85, 21)
         Me.God5.TabIndex = 29
@@ -201,7 +210,7 @@ Partial Class AddConquestMatch
         Me.God4.DataSource = Me.GodsBindingSource4
         Me.God4.DisplayMember = "Name"
         Me.God4.FormattingEnabled = True
-        Me.God4.Location = New System.Drawing.Point(602, 299)
+        Me.God4.Location = New System.Drawing.Point(602, 301)
         Me.God4.Name = "God4"
         Me.God4.Size = New System.Drawing.Size(85, 21)
         Me.God4.TabIndex = 30
@@ -219,7 +228,7 @@ Partial Class AddConquestMatch
         Me.God6.DataSource = Me.GodsBindingSource6
         Me.God6.DisplayMember = "Name"
         Me.God6.FormattingEnabled = True
-        Me.God6.Location = New System.Drawing.Point(90, 615)
+        Me.God6.Location = New System.Drawing.Point(497, 731)
         Me.God6.Name = "God6"
         Me.God6.Size = New System.Drawing.Size(85, 21)
         Me.God6.TabIndex = 39
@@ -237,7 +246,7 @@ Partial Class AddConquestMatch
         Me.God7.DataSource = Me.GodsBindingSource7
         Me.God7.DisplayMember = "Name"
         Me.God7.FormattingEnabled = True
-        Me.God7.Location = New System.Drawing.Point(267, 615)
+        Me.God7.Location = New System.Drawing.Point(671, 731)
         Me.God7.Name = "God7"
         Me.God7.Size = New System.Drawing.Size(85, 21)
         Me.God7.TabIndex = 40
@@ -255,7 +264,7 @@ Partial Class AddConquestMatch
         Me.God8.DataSource = Me.GodsBindingSource8
         Me.God8.DisplayMember = "Name"
         Me.God8.FormattingEnabled = True
-        Me.God8.Location = New System.Drawing.Point(437, 615)
+        Me.God8.Location = New System.Drawing.Point(845, 731)
         Me.God8.Name = "God8"
         Me.God8.Size = New System.Drawing.Size(85, 21)
         Me.God8.TabIndex = 33
@@ -273,7 +282,7 @@ Partial Class AddConquestMatch
         Me.God9.DataSource = Me.GodsBindingSource9
         Me.God9.DisplayMember = "Name"
         Me.God9.FormattingEnabled = True
-        Me.God9.Location = New System.Drawing.Point(603, 615)
+        Me.God9.Location = New System.Drawing.Point(1019, 731)
         Me.God9.Name = "God9"
         Me.God9.Size = New System.Drawing.Size(85, 21)
         Me.God9.TabIndex = 34
@@ -291,7 +300,7 @@ Partial Class AddConquestMatch
         Me.God10.DataSource = Me.GodsBindingSource10
         Me.God10.DisplayMember = "Name"
         Me.God10.FormattingEnabled = True
-        Me.God10.Location = New System.Drawing.Point(768, 616)
+        Me.God10.Location = New System.Drawing.Point(1193, 731)
         Me.God10.Name = "God10"
         Me.God10.Size = New System.Drawing.Size(85, 21)
         Me.God10.TabIndex = 35
@@ -305,7 +314,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox6
         '
-        Me.PictureBox6.Location = New System.Drawing.Point(55, 409)
+        Me.PictureBox6.Location = New System.Drawing.Point(465, 519)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -314,7 +323,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox7
         '
-        Me.PictureBox7.Location = New System.Drawing.Point(233, 409)
+        Me.PictureBox7.Location = New System.Drawing.Point(639, 519)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -323,7 +332,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox8
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(402, 409)
+        Me.PictureBox8.Location = New System.Drawing.Point(813, 519)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -332,7 +341,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox9
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(568, 409)
+        Me.PictureBox9.Location = New System.Drawing.Point(987, 519)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -341,7 +350,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox10
         '
-        Me.PictureBox10.Location = New System.Drawing.Point(734, 409)
+        Me.PictureBox10.Location = New System.Drawing.Point(1161, 519)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -350,7 +359,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(734, 82)
+        Me.PictureBox5.Location = New System.Drawing.Point(744, 89)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -359,7 +368,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(568, 82)
+        Me.PictureBox4.Location = New System.Drawing.Point(570, 89)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -368,7 +377,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(402, 82)
+        Me.PictureBox3.Location = New System.Drawing.Point(396, 89)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -377,7 +386,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(233, 82)
+        Me.PictureBox2.Location = New System.Drawing.Point(222, 89)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -386,7 +395,7 @@ Partial Class AddConquestMatch
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(55, 82)
+        Me.PictureBox1.Location = New System.Drawing.Point(48, 89)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 200)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -395,27 +404,27 @@ Partial Class AddConquestMatch
         '
         'PictureBox11
         '
-        Me.PictureBox11.Location = New System.Drawing.Point(906, 102)
+        Me.PictureBox11.Location = New System.Drawing.Point(923, 135)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox11.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 46
         Me.PictureBox11.TabStop = False
         '
         'PictureBox12
         '
-        Me.PictureBox12.Location = New System.Drawing.Point(1022, 102)
+        Me.PictureBox12.Location = New System.Drawing.Point(1025, 135)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox12.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 47
         Me.PictureBox12.TabStop = False
         '
         'PictureBox13
         '
-        Me.PictureBox13.Location = New System.Drawing.Point(1131, 102)
+        Me.PictureBox13.Location = New System.Drawing.Point(1128, 135)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox13.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 48
         Me.PictureBox13.TabStop = False
@@ -426,7 +435,7 @@ Partial Class AddConquestMatch
         Me.Ban3.DataSource = Me.GodsBindingSource13
         Me.Ban3.DisplayMember = "Name"
         Me.Ban3.FormattingEnabled = True
-        Me.Ban3.Location = New System.Drawing.Point(1146, 215)
+        Me.Ban3.Location = New System.Drawing.Point(1123, 222)
         Me.Ban3.Name = "Ban3"
         Me.Ban3.Size = New System.Drawing.Size(85, 21)
         Me.Ban3.TabIndex = 43
@@ -444,7 +453,7 @@ Partial Class AddConquestMatch
         Me.Ban2.DataSource = Me.GodsBindingSource12
         Me.Ban2.DisplayMember = "Name"
         Me.Ban2.FormattingEnabled = True
-        Me.Ban2.Location = New System.Drawing.Point(1030, 215)
+        Me.Ban2.Location = New System.Drawing.Point(1020, 222)
         Me.Ban2.Name = "Ban2"
         Me.Ban2.Size = New System.Drawing.Size(85, 21)
         Me.Ban2.TabIndex = 44
@@ -462,7 +471,7 @@ Partial Class AddConquestMatch
         Me.Ban1.DataSource = Me.GodsBindingSource11
         Me.Ban1.DisplayMember = "Name"
         Me.Ban1.FormattingEnabled = True
-        Me.Ban1.Location = New System.Drawing.Point(914, 215)
+        Me.Ban1.Location = New System.Drawing.Point(918, 222)
         Me.Ban1.Name = "Ban1"
         Me.Ban1.Size = New System.Drawing.Size(85, 21)
         Me.Ban1.TabIndex = 45
@@ -476,27 +485,27 @@ Partial Class AddConquestMatch
         '
         'PictureBox14
         '
-        Me.PictureBox14.Location = New System.Drawing.Point(1244, 102)
+        Me.PictureBox14.Location = New System.Drawing.Point(1231, 135)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox14.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox14.TabIndex = 52
         Me.PictureBox14.TabStop = False
         '
         'PictureBox15
         '
-        Me.PictureBox15.Location = New System.Drawing.Point(906, 462)
+        Me.PictureBox15.Location = New System.Drawing.Point(53, 565)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox15.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox15.TabIndex = 53
         Me.PictureBox15.TabStop = False
         '
         'PictureBox16
         '
-        Me.PictureBox16.Location = New System.Drawing.Point(1022, 462)
+        Me.PictureBox16.Location = New System.Drawing.Point(155, 565)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox16.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox16.TabIndex = 54
         Me.PictureBox16.TabStop = False
@@ -507,7 +516,7 @@ Partial Class AddConquestMatch
         Me.Ban6.DataSource = Me.GodsBindingSource16
         Me.Ban6.DisplayMember = "Name"
         Me.Ban6.FormattingEnabled = True
-        Me.Ban6.Location = New System.Drawing.Point(1037, 575)
+        Me.Ban6.Location = New System.Drawing.Point(150, 652)
         Me.Ban6.Name = "Ban6"
         Me.Ban6.Size = New System.Drawing.Size(85, 21)
         Me.Ban6.TabIndex = 49
@@ -524,7 +533,7 @@ Partial Class AddConquestMatch
         Me.Ban5.DataSource = Me.GodsBindingSource15
         Me.Ban5.DisplayMember = "Name"
         Me.Ban5.FormattingEnabled = True
-        Me.Ban5.Location = New System.Drawing.Point(914, 575)
+        Me.Ban5.Location = New System.Drawing.Point(48, 652)
         Me.Ban5.Name = "Ban5"
         Me.Ban5.Size = New System.Drawing.Size(85, 21)
         Me.Ban5.TabIndex = 50
@@ -541,7 +550,7 @@ Partial Class AddConquestMatch
         Me.Ban4.DataSource = Me.GodsBindingSource14
         Me.Ban4.DisplayMember = "Name"
         Me.Ban4.FormattingEnabled = True
-        Me.Ban4.Location = New System.Drawing.Point(1259, 215)
+        Me.Ban4.Location = New System.Drawing.Point(1226, 222)
         Me.Ban4.Name = "Ban4"
         Me.Ban4.Size = New System.Drawing.Size(85, 21)
         Me.Ban4.TabIndex = 51
@@ -559,7 +568,7 @@ Partial Class AddConquestMatch
         Me.Ban7.DataSource = Me.GodsBindingSource17
         Me.Ban7.DisplayMember = "Name"
         Me.Ban7.FormattingEnabled = True
-        Me.Ban7.Location = New System.Drawing.Point(1146, 575)
+        Me.Ban7.Location = New System.Drawing.Point(253, 652)
         Me.Ban7.Name = "Ban7"
         Me.Ban7.Size = New System.Drawing.Size(85, 21)
         Me.Ban7.TabIndex = 50
@@ -574,9 +583,9 @@ Partial Class AddConquestMatch
         '
         Me.Ban8.AllowDrop = True
         Me.Ban8.DataSource = Me.GodsBindingSource18
-        Me.Ban8.DisplayMember = "Name"
+        Me.Ban8.DisplayMember = "IdGod"
         Me.Ban8.FormattingEnabled = True
-        Me.Ban8.Location = New System.Drawing.Point(1269, 575)
+        Me.Ban8.Location = New System.Drawing.Point(356, 652)
         Me.Ban8.Name = "Ban8"
         Me.Ban8.Size = New System.Drawing.Size(85, 21)
         Me.Ban8.TabIndex = 49
@@ -589,18 +598,18 @@ Partial Class AddConquestMatch
         '
         'PictureBox17
         '
-        Me.PictureBox17.Location = New System.Drawing.Point(1138, 462)
+        Me.PictureBox17.Location = New System.Drawing.Point(258, 565)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox17.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 53
         Me.PictureBox17.TabStop = False
         '
         'PictureBox18
         '
-        Me.PictureBox18.Location = New System.Drawing.Point(1261, 462)
+        Me.PictureBox18.Location = New System.Drawing.Point(361, 565)
         Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox18.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox18.TabIndex = 52
         Me.PictureBox18.TabStop = False
@@ -609,11 +618,57 @@ Partial Class AddConquestMatch
         '
         Me.GodsTableAdapter.ClearBeforeFill = True
         '
+        'Back
+        '
+        Me.Back.Location = New System.Drawing.Point(25, 25)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(100, 50)
+        Me.Back.TabIndex = 55
+        Me.Back.Text = "<="
+        Me.Back.UseVisualStyleBackColor = True
+        '
+        'Add
+        '
+        Me.Add.Location = New System.Drawing.Point(1235, 25)
+        Me.Add.Name = "Add"
+        Me.Add.Size = New System.Drawing.Size(100, 50)
+        Me.Add.TabIndex = 56
+        Me.Add.Text = "Add"
+        Me.Add.UseVisualStyleBackColor = True
+        '
+        'MatchNumber
+        '
+        Me.MatchNumber.Location = New System.Drawing.Point(620, 41)
+        Me.MatchNumber.Name = "MatchNumber"
+        Me.MatchNumber.Size = New System.Drawing.Size(100, 20)
+        Me.MatchNumber.TabIndex = 57
+        '
+        'ConquestPicksBindingSource
+        '
+        Me.ConquestPicksBindingSource.DataMember = "ConquestPicks"
+        Me.ConquestPicksBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'ConquestPicksTableAdapter
+        '
+        Me.ConquestPicksTableAdapter.ClearBeforeFill = True
+        '
+        'ConquestBansBindingSource
+        '
+        Me.ConquestBansBindingSource.DataMember = "ConquestBans"
+        Me.ConquestBansBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'ConquestBansTableAdapter
+        '
+        Me.ConquestBansTableAdapter.ClearBeforeFill = True
+        '
         'AddConquestMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1356, 764)
+        Me.Controls.Add(Me.MatchNumber)
+        Me.Controls.Add(Me.Add)
+        Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.PictureBox18)
         Me.Controls.Add(Me.PictureBox14)
         Me.Controls.Add(Me.PictureBox17)
@@ -651,6 +706,7 @@ Partial Class AddConquestMatch
         Me.Controls.Add(Me.God2)
         Me.Controls.Add(Me.God1)
         Me.Name = "AddConquestMatch"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddConquestMatch"
         CType(Me.GodsBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -689,7 +745,10 @@ Partial Class AddConquestMatch
         CType(Me.GodsBindingSource18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ConquestPicksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ConquestBansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -749,4 +808,11 @@ Partial Class AddConquestMatch
     Friend WithEvents GodsBindingSource14 As BindingSource
     Friend WithEvents GodsBindingSource17 As BindingSource
     Friend WithEvents GodsBindingSource18 As BindingSource
+    Friend WithEvents Back As Button
+    Friend WithEvents Add As Button
+    Friend WithEvents MatchNumber As TextBox
+    Friend WithEvents ConquestPicksBindingSource As BindingSource
+    Friend WithEvents ConquestPicksTableAdapter As SmiteDataSetTableAdapters.ConquestPicksTableAdapter
+    Friend WithEvents ConquestBansBindingSource As BindingSource
+    Friend WithEvents ConquestBansTableAdapter As SmiteDataSetTableAdapters.ConquestBansTableAdapter
 End Class
