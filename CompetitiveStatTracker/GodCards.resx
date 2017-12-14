@@ -373,9 +373,6 @@
   <data name="Ullr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\godcards\ullr.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\godcards\vacio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Vamana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\godcards\vamana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

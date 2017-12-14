@@ -316,7 +316,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\GodCards\Vacio.png" />
     <None Include="Resources\GodCards\Agni.jpg" />
     <None Include="Resources\GodCards\AhMuzenCab.jpg" />
     <None Include="Resources\GodCards\AhPuch.jpg" />

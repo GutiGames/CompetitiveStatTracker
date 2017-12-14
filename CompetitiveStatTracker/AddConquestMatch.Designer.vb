@@ -665,6 +665,7 @@ Partial Class AddConquestMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.ConquestPB
         Me.ClientSize = New System.Drawing.Size(1356, 764)
         Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.Add)
