@@ -167,6 +167,12 @@
       <DependentUpon>App.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ConquestStatsScreen.Designer.vb">
+      <DependentUpon>ConquestStatsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConquestStatsScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GodCards.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConquestStatsScreen.resx">
+      <DependentUpon>ConquestStatsScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GodIcons.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>

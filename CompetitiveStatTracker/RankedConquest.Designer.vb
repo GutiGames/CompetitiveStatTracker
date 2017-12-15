@@ -62,6 +62,7 @@ Partial Class RankedConquest
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Stats = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -408,6 +409,16 @@ Partial Class RankedConquest
         Me.Button1.Text = "<="
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Stats
+        '
+        Me.Stats.Location = New System.Drawing.Point(1107, 16)
+        Me.Stats.Margin = New System.Windows.Forms.Padding(5)
+        Me.Stats.Name = "Stats"
+        Me.Stats.Size = New System.Drawing.Size(133, 50)
+        Me.Stats.TabIndex = 32
+        Me.Stats.Text = "Stats"
+        Me.Stats.UseVisualStyleBackColor = True
+        '
         'RankedConquest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -432,6 +443,7 @@ Partial Class RankedConquest
         Me.Controls.Add(Me.Tier)
         Me.Controls.Add(Me.MatchID)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Back)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -489,4 +501,5 @@ Partial Class RankedConquest
     Friend WithEvents QueTypesBindingSource As BindingSource
     Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
     Friend WithEvents Button1 As Button
+    Friend WithEvents Stats As Button
 End Class
