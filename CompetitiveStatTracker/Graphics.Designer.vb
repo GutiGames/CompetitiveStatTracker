@@ -67,6 +67,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property conquest_background_optimized() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("conquest_background_optimized", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property ConquestPB() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ConquestPB", resourceCulture)
@@ -80,6 +90,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property JoustPB() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("JoustPB", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property s3_joust_01() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("s3_joust_01", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

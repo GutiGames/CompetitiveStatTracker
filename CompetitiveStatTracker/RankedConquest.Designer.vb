@@ -412,6 +412,8 @@ Partial Class RankedConquest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.conquest_background_optimized
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.Modify)
         Me.Controls.Add(Me.Add)
