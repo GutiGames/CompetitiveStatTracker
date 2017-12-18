@@ -209,6 +209,12 @@
     <Compile Include="RankedConquest.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RankedDuel.Designer.vb">
+      <DependentUpon>RankedDuel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankedDuel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RankedJoust.Designer.vb">
       <DependentUpon>RankedJoust.vb</DependentUpon>
     </Compile>
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RankedConquest.resx">
       <DependentUpon>RankedConquest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankedDuel.resx">
+      <DependentUpon>RankedDuel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RankedJoust.resx">
       <DependentUpon>RankedJoust.vb</DependentUpon>

@@ -11,6 +11,7 @@
 
     Private Sub Duel_Click(sender As Object, e As EventArgs) Handles Duel.Click
 
+        RankedDuel.Show()
         Me.Hide()
     End Sub
 
