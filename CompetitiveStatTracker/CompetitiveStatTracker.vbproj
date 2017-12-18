@@ -502,6 +502,7 @@
     <Content Include="Resources\GodIcons\Zeus.jpg" />
     <Content Include="Resources\GodIcons\ZhongKui.jpg" />
     <None Include="Resources\JoustP&amp;B.jpg" />
+    <None Include="Resources\SmiteBackground.jpg" />
     <Content Include="Smite.accdb" />
   </ItemGroup>
   <ItemGroup />
