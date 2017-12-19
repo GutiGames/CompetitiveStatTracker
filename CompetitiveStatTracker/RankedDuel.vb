@@ -48,4 +48,10 @@
         Me.DuelMatchesTableAdapter.ModifyDuelMatch(Tier.SelectedValue, Winner.SelectedValue, Que.SelectedValue, Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text), KDA, Comment.Text, Val(MatchID.Text))
         Me.DuelMatchesTableAdapter.Fill(Me.SmiteDataSet.DuelMatches)
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        AddDuelMatch.Show()
+        Me.Close()
+    End Sub
 End Class

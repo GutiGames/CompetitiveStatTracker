@@ -154,6 +154,12 @@
     <Compile Include="AddConquestMatch.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddDuelMatch.Designer.vb">
+      <DependentUpon>AddDuelMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDuelMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddJoustMatch.Designer.vb">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>
     </Compile>
@@ -239,6 +245,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddConquestMatch.resx">
       <DependentUpon>AddConquestMatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDuelMatch.resx">
+      <DependentUpon>AddDuelMatch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddJoustMatch.resx">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>

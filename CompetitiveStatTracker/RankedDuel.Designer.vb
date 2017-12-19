@@ -46,27 +46,29 @@ Partial Class RankedDuel
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Comment = New System.Windows.Forms.TextBox()
         Me.Que = New System.Windows.Forms.ComboBox()
+        Me.QueTypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Assists = New System.Windows.Forms.TextBox()
         Me.Kills = New System.Windows.Forms.TextBox()
         Me.Deaths = New System.Windows.Forms.TextBox()
         Me.Winner = New System.Windows.Forms.ComboBox()
+        Me.TeamsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tier = New System.Windows.Forms.ComboBox()
+        Me.TiersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatchID = New System.Windows.Forms.TextBox()
         Me.Modify = New System.Windows.Forms.Button()
         Me.Add = New System.Windows.Forms.Button()
         Me.DuelMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelMatchesTableAdapter()
-        Me.TiersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
-        Me.TeamsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
-        Me.QueTypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Stats = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Back
@@ -279,6 +281,11 @@ Partial Class RankedDuel
         Me.Que.TabIndex = 40
         Me.Que.ValueMember = "IdQueType"
         '
+        'QueTypesBindingSource
+        '
+        Me.QueTypesBindingSource.DataMember = "QueTypes"
+        Me.QueTypesBindingSource.DataSource = Me.SmiteDataSet
+        '
         'Assists
         '
         Me.Assists.Location = New System.Drawing.Point(589, 636)
@@ -316,6 +323,11 @@ Partial Class RankedDuel
         Me.Winner.TabIndex = 36
         Me.Winner.ValueMember = "IdTeams"
         '
+        'TeamsBindingSource
+        '
+        Me.TeamsBindingSource.DataMember = "Teams"
+        Me.TeamsBindingSource.DataSource = Me.SmiteDataSet
+        '
         'Tier
         '
         Me.Tier.AllowDrop = True
@@ -328,6 +340,11 @@ Partial Class RankedDuel
         Me.Tier.Size = New System.Drawing.Size(112, 21)
         Me.Tier.TabIndex = 35
         Me.Tier.ValueMember = "IdTier"
+        '
+        'TiersBindingSource
+        '
+        Me.TiersBindingSource.DataMember = "Tiers"
+        Me.TiersBindingSource.DataSource = Me.SmiteDataSet
         '
         'MatchID
         '
@@ -361,38 +378,45 @@ Partial Class RankedDuel
         '
         Me.DuelMatchesTableAdapter.ClearBeforeFill = True
         '
-        'TiersBindingSource
-        '
-        Me.TiersBindingSource.DataMember = "Tiers"
-        Me.TiersBindingSource.DataSource = Me.SmiteDataSet
-        '
         'TiersTableAdapter
         '
         Me.TiersTableAdapter.ClearBeforeFill = True
-        '
-        'TeamsBindingSource
-        '
-        Me.TeamsBindingSource.DataMember = "Teams"
-        Me.TeamsBindingSource.DataSource = Me.SmiteDataSet
         '
         'TeamsTableAdapter
         '
         Me.TeamsTableAdapter.ClearBeforeFill = True
         '
-        'QueTypesBindingSource
-        '
-        Me.QueTypesBindingSource.DataMember = "QueTypes"
-        Me.QueTypesBindingSource.DataSource = Me.SmiteDataSet
-        '
         'QueTypesTableAdapter
         '
         Me.QueTypesTableAdapter.ClearBeforeFill = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(978, 13)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(133, 50)
+        Me.Button1.TabIndex = 52
+        Me.Button1.Text = "=>"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Stats
+        '
+        Me.Stats.Location = New System.Drawing.Point(1119, 13)
+        Me.Stats.Margin = New System.Windows.Forms.Padding(4)
+        Me.Stats.Name = "Stats"
+        Me.Stats.Size = New System.Drawing.Size(133, 50)
+        Me.Stats.TabIndex = 53
+        Me.Stats.Text = "Stats"
+        Me.Stats.UseVisualStyleBackColor = True
         '
         'RankedDuel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.Modify)
         Me.Controls.Add(Me.Add)
         Me.Controls.Add(Me.Label12)
@@ -419,9 +443,9 @@ Partial Class RankedDuel
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TiersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -465,4 +489,6 @@ Partial Class RankedDuel
     Friend WithEvents TeamsTableAdapter As SmiteDataSetTableAdapters.TeamsTableAdapter
     Friend WithEvents QueTypesBindingSource As BindingSource
     Friend WithEvents QueTypesTableAdapter As SmiteDataSetTableAdapters.QueTypesTableAdapter
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Stats As Button
 End Class
