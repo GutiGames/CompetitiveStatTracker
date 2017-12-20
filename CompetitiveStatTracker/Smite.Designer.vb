@@ -71,7 +71,7 @@ Partial Class SmiteMenu
         Me.Title.BackColor = System.Drawing.Color.Transparent
         Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Title.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Title.Location = New System.Drawing.Point(8, 9)
+        Me.Title.Location = New System.Drawing.Point(8, 0)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(1342, 55)
         Me.Title.TabIndex = 3
