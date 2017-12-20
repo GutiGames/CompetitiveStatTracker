@@ -59,4 +59,11 @@
 
 
     End Sub
+
+    Private Sub Stats_Click(sender As Object, e As EventArgs) Handles Stats.Click
+
+        ConquestStatsScreen.Show()
+        Me.Close()
+
+    End Sub
 End Class

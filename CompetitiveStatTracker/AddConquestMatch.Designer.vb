@@ -526,6 +526,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource16.DataMember = "Gods"
         Me.GodsBindingSource16.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource16.Sort = "Name"
         '
         'Ban5
         '
@@ -543,6 +544,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource15.DataMember = "Gods"
         Me.GodsBindingSource15.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource15.Sort = "Name"
         '
         'Ban4
         '
@@ -578,12 +580,13 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource17.DataMember = "Gods"
         Me.GodsBindingSource17.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource17.Sort = "Name"
         '
         'Ban8
         '
         Me.Ban8.AllowDrop = True
         Me.Ban8.DataSource = Me.GodsBindingSource18
-        Me.Ban8.DisplayMember = "IdGod"
+        Me.Ban8.DisplayMember = "Name"
         Me.Ban8.FormattingEnabled = True
         Me.Ban8.Location = New System.Drawing.Point(356, 652)
         Me.Ban8.Name = "Ban8"
@@ -595,6 +598,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource18.DataMember = "Gods"
         Me.GodsBindingSource18.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource18.Sort = "Name"
         '
         'PictureBox17
         '
