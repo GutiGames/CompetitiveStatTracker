@@ -54,4 +54,10 @@
         AddDuelMatch.Show()
         Me.Close()
     End Sub
+
+    Private Sub Stats_Click(sender As Object, e As EventArgs) Handles Stats.Click
+
+        DuelStatScreen.Show()
+        Me.Hide()
+    End Sub
 End Class

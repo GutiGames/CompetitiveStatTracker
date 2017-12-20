@@ -173,6 +173,12 @@
       <DependentUpon>App.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DuelStatScreen.Designer.vb">
+      <DependentUpon>DuelStatScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DuelStatScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GodCards.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuelStatScreen.resx">
+      <DependentUpon>DuelStatScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GodIcons.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
