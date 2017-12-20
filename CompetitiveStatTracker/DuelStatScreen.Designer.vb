@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class JoustStatsScreen
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class DuelStatScreen
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,21 @@ Partial Class JoustStatsScreen
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Back = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
+        Me.DuelWinRatioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DuelWinRatioTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelWinRatioTableAdapter()
         Me.GodDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WinnedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.WinRateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PlayedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WinRatioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JoustWinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DuelWinRatioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Back
@@ -39,7 +43,7 @@ Partial Class JoustStatsScreen
         Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(133, 50)
-        Me.Back.TabIndex = 32
+        Me.Back.TabIndex = 33
         Me.Back.Text = "<="
         Me.Back.UseVisualStyleBackColor = True
         '
@@ -50,12 +54,26 @@ Partial Class JoustStatsScreen
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GodDataGridViewTextBoxColumn, Me.WinnedDataGridViewTextBoxColumn, Me.PlayedDataGridViewTextBoxColumn, Me.WinRatioDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.JoustWinRatioBindingSource
+        Me.DataGridView1.DataSource = Me.DuelWinRatioBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(13, 70)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(468, 256)
-        Me.DataGridView1.TabIndex = 33
+        Me.DataGridView1.TabIndex = 34
+        '
+        'SmiteDataSet
+        '
+        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
+        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DuelWinRatioBindingSource
+        '
+        Me.DuelWinRatioBindingSource.DataMember = "DuelWinRatio"
+        Me.DuelWinRatioBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'DuelWinRatioTableAdapter
+        '
+        Me.DuelWinRatioTableAdapter.ClearBeforeFill = True
         '
         'GodDataGridViewTextBoxColumn
         '
@@ -85,33 +103,19 @@ Partial Class JoustStatsScreen
         Me.WinRatioDataGridViewTextBoxColumn.Name = "WinRatioDataGridViewTextBoxColumn"
         Me.WinRatioDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'JoustWinRatioBindingSource
-        '
-        Me.JoustWinRatioBindingSource.DataMember = "JoustWinRatio"
-        Me.JoustWinRatioBindingSource.DataSource = Me.SmiteDataSet
-        '
-        'SmiteDataSet
-        '
-        Me.SmiteDataSet.DataSetName = "SmiteDataSet"
-        Me.SmiteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'JoustWinRatioTableAdapter
-        '
-        Me.JoustWinRatioTableAdapter.ClearBeforeFill = True
-        '
-        'JoustStatsScreen
+        'DuelStatScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1064, 681)
+        Me.ClientSize = New System.Drawing.Size(1071, 681)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Back)
-        Me.Name = "JoustStatsScreen"
+        Me.Name = "DuelStatScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "JoustStatsScreen"
+        Me.Text = "DuelStatScreen"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JoustWinRatioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DuelWinRatioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -119,8 +123,8 @@ Partial Class JoustStatsScreen
     Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SmiteDataSet As SmiteDataSet
-    Friend WithEvents JoustWinRatioBindingSource As BindingSource
-    Friend WithEvents JoustWinRatioTableAdapter As SmiteDataSetTableAdapters.JoustWinRatioTableAdapter
+    Friend WithEvents DuelWinRatioBindingSource As BindingSource
+    Friend WithEvents DuelWinRatioTableAdapter As SmiteDataSetTableAdapters.DuelWinRatioTableAdapter
     Friend WithEvents GodDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents WinnedDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PlayedDataGridViewTextBoxColumn As DataGridViewTextBoxColumn

@@ -154,6 +154,12 @@
     <Compile Include="AddConquestMatch.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddDuelMatch.Designer.vb">
+      <DependentUpon>AddDuelMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDuelMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddJoustMatch.Designer.vb">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>
     </Compile>
@@ -167,10 +173,10 @@
       <DependentUpon>App.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConquestStatsScreen.Designer.vb">
-      <DependentUpon>ConquestStatsScreen.vb</DependentUpon>
+    <Compile Include="DuelStatScreen.Designer.vb">
+      <DependentUpon>DuelStatScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="ConquestStatsScreen.vb">
+    <Compile Include="DuelStatScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GodCards.Designer.vb">
@@ -215,6 +221,12 @@
     <Compile Include="RankedConquest.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RankedDuel.Designer.vb">
+      <DependentUpon>RankedDuel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankedDuel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RankedJoust.Designer.vb">
       <DependentUpon>RankedJoust.vb</DependentUpon>
     </Compile>
@@ -240,14 +252,17 @@
     <EmbeddedResource Include="AddConquestMatch.resx">
       <DependentUpon>AddConquestMatch.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDuelMatch.resx">
+      <DependentUpon>AddDuelMatch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddJoustMatch.resx">
       <DependentUpon>AddJoustMatch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConquestStatsScreen.resx">
-      <DependentUpon>ConquestStatsScreen.vb</DependentUpon>
+    <EmbeddedResource Include="DuelStatScreen.resx">
+      <DependentUpon>DuelStatScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GodIcons.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -270,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RankedConquest.resx">
       <DependentUpon>RankedConquest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankedDuel.resx">
+      <DependentUpon>RankedDuel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RankedJoust.resx">
       <DependentUpon>RankedJoust.vb</DependentUpon>
