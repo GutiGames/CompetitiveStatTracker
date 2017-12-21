@@ -41,6 +41,9 @@
         ConquestMatchesTableAdapter.InsertConquestMatch(Tier.SelectedValue, Winner.SelectedValue, Que.SelectedValue, Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text), KDA, Comment.Text)
         Me.ConquestMatchesTableAdapter.Fill(Me.SmiteDataSet.ConquestMatches)
 
+        Me.Hide()
+        AddConquestMatch.Show()
+
     End Sub
 
     Private Sub Modify_Click(sender As Object, e As EventArgs) Handles Modify.Click

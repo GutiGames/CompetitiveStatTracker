@@ -5162,12 +5162,18 @@ Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles 
     End Sub
 
     Private Sub AddConquestMatch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestMatches' Puede moverla o quitarla según sea necesario.
+        Me.ConquestMatchesTableAdapter.Fill(Me.SmiteDataSet.ConquestMatches)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestBans' Puede moverla o quitarla según sea necesario.
         Me.ConquestBansTableAdapter.Fill(Me.SmiteDataSet.ConquestBans)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.ConquestPicks' Puede moverla o quitarla según sea necesario.
         Me.ConquestPicksTableAdapter.Fill(Me.SmiteDataSet.ConquestPicks)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
         Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
+
+        Dim LastInsert As Integer
+        LastInsert = Me.ConquestMatchesTableAdapter.LastInsert()
+
 
     End Sub
 
@@ -5180,33 +5186,42 @@ Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles 
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
 
+        Dim LastInsert As Integer
+        LastInsert = Me.ConquestMatchesTableAdapter.LastInsert()
+
         'Order Side Picks
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God2.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God3.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God4.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God5.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God2.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God3.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God4.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God5.SelectedValue)
 
         'Chaos Side Picks
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God6.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God7.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God8.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God9.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God10.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God6.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God7.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God8.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God9.SelectedValue)
+        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God10.SelectedValue)
 
         'Order Side Bans
 
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban4.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban4.SelectedValue)
 
         'Chaos Side Bans
 
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban7.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban8.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban7.SelectedValue)
+        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban8.SelectedValue)
+
+
+        MsgBox("Match Added.")
+
+        Me.Close()
 
     End Sub
+
 End Class

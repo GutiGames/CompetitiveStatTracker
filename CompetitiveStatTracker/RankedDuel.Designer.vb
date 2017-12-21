@@ -73,10 +73,10 @@ Partial Class RankedDuel
         '
         'Back
         '
-        Me.Back.Location = New System.Drawing.Point(13, 13)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Location = New System.Drawing.Point(17, 16)
+        Me.Back.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.Size = New System.Drawing.Size(177, 62)
         Me.Back.TabIndex = 32
         Me.Back.Text = "<="
         Me.Back.UseVisualStyleBackColor = True
@@ -90,12 +90,12 @@ Partial Class RankedDuel
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdMatchDataGridViewTextBoxColumn, Me.TierDataGridViewTextBoxColumn, Me.WinnerDataGridViewTextBoxColumn, Me.QueTypeDataGridViewTextBoxColumn, Me.MyKDataGridViewTextBoxColumn, Me.MyDDataGridViewTextBoxColumn, Me.MyADataGridViewTextBoxColumn, Me.MyKDADataGridViewTextBoxColumn, Me.CommetsDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.DuelMatchesBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 90)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 111)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.DataGridView1.Size = New System.Drawing.Size(1240, 500)
+        Me.DataGridView1.Size = New System.Drawing.Size(1653, 615)
         Me.DataGridView1.TabIndex = 33
         '
         'IdMatchDataGridViewTextBoxColumn
@@ -104,6 +104,7 @@ Partial Class RankedDuel
         Me.IdMatchDataGridViewTextBoxColumn.HeaderText = "IdMatch"
         Me.IdMatchDataGridViewTextBoxColumn.Name = "IdMatchDataGridViewTextBoxColumn"
         Me.IdMatchDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdMatchDataGridViewTextBoxColumn.Width = 130
         '
         'TierDataGridViewTextBoxColumn
         '
@@ -111,6 +112,7 @@ Partial Class RankedDuel
         Me.TierDataGridViewTextBoxColumn.HeaderText = "Tier"
         Me.TierDataGridViewTextBoxColumn.Name = "TierDataGridViewTextBoxColumn"
         Me.TierDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TierDataGridViewTextBoxColumn.Width = 130
         '
         'WinnerDataGridViewTextBoxColumn
         '
@@ -118,6 +120,7 @@ Partial Class RankedDuel
         Me.WinnerDataGridViewTextBoxColumn.HeaderText = "Winner"
         Me.WinnerDataGridViewTextBoxColumn.Name = "WinnerDataGridViewTextBoxColumn"
         Me.WinnerDataGridViewTextBoxColumn.ReadOnly = True
+        Me.WinnerDataGridViewTextBoxColumn.Width = 130
         '
         'QueTypeDataGridViewTextBoxColumn
         '
@@ -125,6 +128,7 @@ Partial Class RankedDuel
         Me.QueTypeDataGridViewTextBoxColumn.HeaderText = "Que Type"
         Me.QueTypeDataGridViewTextBoxColumn.Name = "QueTypeDataGridViewTextBoxColumn"
         Me.QueTypeDataGridViewTextBoxColumn.ReadOnly = True
+        Me.QueTypeDataGridViewTextBoxColumn.Width = 130
         '
         'MyKDataGridViewTextBoxColumn
         '
@@ -132,6 +136,7 @@ Partial Class RankedDuel
         Me.MyKDataGridViewTextBoxColumn.HeaderText = "My K"
         Me.MyKDataGridViewTextBoxColumn.Name = "MyKDataGridViewTextBoxColumn"
         Me.MyKDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDataGridViewTextBoxColumn.Width = 130
         '
         'MyDDataGridViewTextBoxColumn
         '
@@ -139,6 +144,7 @@ Partial Class RankedDuel
         Me.MyDDataGridViewTextBoxColumn.HeaderText = "My D"
         Me.MyDDataGridViewTextBoxColumn.Name = "MyDDataGridViewTextBoxColumn"
         Me.MyDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyDDataGridViewTextBoxColumn.Width = 130
         '
         'MyADataGridViewTextBoxColumn
         '
@@ -146,6 +152,7 @@ Partial Class RankedDuel
         Me.MyADataGridViewTextBoxColumn.HeaderText = "My A"
         Me.MyADataGridViewTextBoxColumn.Name = "MyADataGridViewTextBoxColumn"
         Me.MyADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyADataGridViewTextBoxColumn.Width = 130
         '
         'MyKDADataGridViewTextBoxColumn
         '
@@ -153,6 +160,7 @@ Partial Class RankedDuel
         Me.MyKDADataGridViewTextBoxColumn.HeaderText = "My KDA"
         Me.MyKDADataGridViewTextBoxColumn.Name = "MyKDADataGridViewTextBoxColumn"
         Me.MyKDADataGridViewTextBoxColumn.ReadOnly = True
+        Me.MyKDADataGridViewTextBoxColumn.Width = 130
         '
         'CommetsDataGridViewTextBoxColumn
         '
@@ -160,6 +168,7 @@ Partial Class RankedDuel
         Me.CommetsDataGridViewTextBoxColumn.HeaderText = "Commets"
         Me.CommetsDataGridViewTextBoxColumn.Name = "CommetsDataGridViewTextBoxColumn"
         Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CommetsDataGridViewTextBoxColumn.Width = 130
         '
         'DuelMatchesBindingSource
         '
@@ -175,8 +184,8 @@ Partial Class RankedDuel
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(863, 617)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(1151, 759)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(72, 15)
         Me.Label12.TabIndex = 49
@@ -186,8 +195,8 @@ Partial Class RankedDuel
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(325, 617)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(433, 759)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 15)
         Me.Label11.TabIndex = 48
@@ -197,8 +206,8 @@ Partial Class RankedDuel
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(605, 617)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(807, 759)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 15)
         Me.Label10.TabIndex = 47
@@ -208,8 +217,8 @@ Partial Class RankedDuel
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(510, 617)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(680, 759)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 15)
         Me.Label9.TabIndex = 46
@@ -219,8 +228,8 @@ Partial Class RankedDuel
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(425, 617)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(567, 759)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 15)
         Me.Label8.TabIndex = 45
@@ -230,8 +239,8 @@ Partial Class RankedDuel
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(254, 617)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(339, 759)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 15)
         Me.Label3.TabIndex = 44
@@ -241,8 +250,8 @@ Partial Class RankedDuel
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(164, 617)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(219, 759)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 15)
         Me.Label2.TabIndex = 43
@@ -252,8 +261,8 @@ Partial Class RankedDuel
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 617)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(17, 759)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 15)
         Me.Label1.TabIndex = 42
@@ -261,11 +270,11 @@ Partial Class RankedDuel
         '
         'Comment
         '
-        Me.Comment.Location = New System.Drawing.Point(683, 636)
-        Me.Comment.Margin = New System.Windows.Forms.Padding(4)
+        Me.Comment.Location = New System.Drawing.Point(911, 783)
+        Me.Comment.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Comment.Multiline = True
         Me.Comment.Name = "Comment"
-        Me.Comment.Size = New System.Drawing.Size(461, 22)
+        Me.Comment.Size = New System.Drawing.Size(613, 26)
         Me.Comment.TabIndex = 41
         '
         'Que
@@ -274,10 +283,10 @@ Partial Class RankedDuel
         Me.Que.DataSource = Me.QueTypesBindingSource
         Me.Que.DisplayMember = "Name"
         Me.Que.FormattingEnabled = True
-        Me.Que.Location = New System.Drawing.Point(327, 636)
-        Me.Que.Margin = New System.Windows.Forms.Padding(4)
+        Me.Que.Location = New System.Drawing.Point(436, 783)
+        Me.Que.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Que.Name = "Que"
-        Me.Que.Size = New System.Drawing.Size(66, 21)
+        Me.Que.Size = New System.Drawing.Size(87, 24)
         Me.Que.TabIndex = 40
         Me.Que.ValueMember = "IdQueType"
         '
@@ -288,26 +297,26 @@ Partial Class RankedDuel
         '
         'Assists
         '
-        Me.Assists.Location = New System.Drawing.Point(589, 636)
-        Me.Assists.Margin = New System.Windows.Forms.Padding(4)
+        Me.Assists.Location = New System.Drawing.Point(785, 783)
+        Me.Assists.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Assists.Name = "Assists"
-        Me.Assists.Size = New System.Drawing.Size(86, 20)
+        Me.Assists.Size = New System.Drawing.Size(113, 22)
         Me.Assists.TabIndex = 39
         '
         'Kills
         '
-        Me.Kills.Location = New System.Drawing.Point(401, 636)
-        Me.Kills.Margin = New System.Windows.Forms.Padding(4)
+        Me.Kills.Location = New System.Drawing.Point(535, 783)
+        Me.Kills.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Kills.Name = "Kills"
-        Me.Kills.Size = New System.Drawing.Size(86, 20)
+        Me.Kills.Size = New System.Drawing.Size(113, 22)
         Me.Kills.TabIndex = 38
         '
         'Deaths
         '
-        Me.Deaths.Location = New System.Drawing.Point(495, 636)
-        Me.Deaths.Margin = New System.Windows.Forms.Padding(4)
+        Me.Deaths.Location = New System.Drawing.Point(660, 783)
+        Me.Deaths.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Deaths.Name = "Deaths"
-        Me.Deaths.Size = New System.Drawing.Size(86, 20)
+        Me.Deaths.Size = New System.Drawing.Size(113, 22)
         Me.Deaths.TabIndex = 37
         '
         'Winner
@@ -316,10 +325,10 @@ Partial Class RankedDuel
         Me.Winner.DataSource = Me.TeamsBindingSource
         Me.Winner.DisplayMember = "Names"
         Me.Winner.FormattingEnabled = True
-        Me.Winner.Location = New System.Drawing.Point(246, 636)
-        Me.Winner.Margin = New System.Windows.Forms.Padding(4)
+        Me.Winner.Location = New System.Drawing.Point(328, 783)
+        Me.Winner.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Winner.Name = "Winner"
-        Me.Winner.Size = New System.Drawing.Size(73, 21)
+        Me.Winner.Size = New System.Drawing.Size(96, 24)
         Me.Winner.TabIndex = 36
         Me.Winner.ValueMember = "IdTeams"
         '
@@ -334,10 +343,10 @@ Partial Class RankedDuel
         Me.Tier.DataSource = Me.TiersBindingSource
         Me.Tier.DisplayMember = "Nombre"
         Me.Tier.FormattingEnabled = True
-        Me.Tier.Location = New System.Drawing.Point(126, 636)
-        Me.Tier.Margin = New System.Windows.Forms.Padding(4)
+        Me.Tier.Location = New System.Drawing.Point(168, 783)
+        Me.Tier.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Tier.Name = "Tier"
-        Me.Tier.Size = New System.Drawing.Size(112, 21)
+        Me.Tier.Size = New System.Drawing.Size(148, 24)
         Me.Tier.TabIndex = 35
         Me.Tier.ValueMember = "IdTier"
         '
@@ -348,28 +357,28 @@ Partial Class RankedDuel
         '
         'MatchID
         '
-        Me.MatchID.Location = New System.Drawing.Point(16, 636)
-        Me.MatchID.Margin = New System.Windows.Forms.Padding(4)
+        Me.MatchID.Location = New System.Drawing.Point(21, 783)
+        Me.MatchID.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.MatchID.Name = "MatchID"
-        Me.MatchID.Size = New System.Drawing.Size(102, 20)
+        Me.MatchID.Size = New System.Drawing.Size(135, 22)
         Me.MatchID.TabIndex = 34
         '
         'Modify
         '
-        Me.Modify.Location = New System.Drawing.Point(1205, 636)
-        Me.Modify.Margin = New System.Windows.Forms.Padding(4)
+        Me.Modify.Location = New System.Drawing.Point(1607, 783)
+        Me.Modify.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Modify.Name = "Modify"
-        Me.Modify.Size = New System.Drawing.Size(45, 22)
+        Me.Modify.Size = New System.Drawing.Size(60, 27)
         Me.Modify.TabIndex = 50
         Me.Modify.Text = "Edit"
         Me.Modify.UseVisualStyleBackColor = True
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(1152, 636)
-        Me.Add.Margin = New System.Windows.Forms.Padding(4)
+        Me.Add.Location = New System.Drawing.Point(1536, 783)
+        Me.Add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(45, 22)
+        Me.Add.Size = New System.Drawing.Size(60, 27)
         Me.Add.TabIndex = 51
         Me.Add.Text = "Add"
         Me.Add.UseVisualStyleBackColor = True
@@ -392,29 +401,31 @@ Partial Class RankedDuel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(978, 13)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(1304, 16)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(133, 50)
+        Me.Button1.Size = New System.Drawing.Size(177, 62)
         Me.Button1.TabIndex = 52
         Me.Button1.Text = "=>"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Stats
         '
-        Me.Stats.Location = New System.Drawing.Point(1119, 13)
-        Me.Stats.Margin = New System.Windows.Forms.Padding(4)
+        Me.Stats.Location = New System.Drawing.Point(1492, 16)
+        Me.Stats.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Stats.Name = "Stats"
-        Me.Stats.Size = New System.Drawing.Size(133, 50)
+        Me.Stats.Size = New System.Drawing.Size(177, 62)
         Me.Stats.TabIndex = 53
         Me.Stats.Text = "Stats"
         Me.Stats.UseVisualStyleBackColor = True
         '
         'RankedDuel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.s3_joust_01
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1436, 838)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.Modify)
@@ -437,6 +448,8 @@ Partial Class RankedDuel
         Me.Controls.Add(Me.MatchID)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Back)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "RankedDuel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RankedDuel"

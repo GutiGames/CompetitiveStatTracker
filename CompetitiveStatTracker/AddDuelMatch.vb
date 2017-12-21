@@ -1,11 +1,17 @@
 ﻿Public Class AddDuelMatch
     Private Sub AddDuelMatch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.DuelMatches' Puede moverla o quitarla según sea necesario.
+        Me.DuelMatchesTableAdapter.Fill(Me.SmiteDataSet.DuelMatches)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.DuelPicks' Puede moverla o quitarla según sea necesario.
         Me.DuelPicksTableAdapter.Fill(Me.SmiteDataSet.DuelPicks)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.DuelBans' Puede moverla o quitarla según sea necesario.
         Me.DuelBansTableAdapter.Fill(Me.SmiteDataSet.DuelBans)
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
         Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
+
+        Dim LastInsert As Integer
+        LastInsert = Me.DuelMatchesTableAdapter.LastInsert()
+
 
     End Sub
 
@@ -2886,25 +2892,28 @@
 
     Private Sub AddPaB_Click(sender As Object, e As EventArgs) Handles AddPaB.Click
 
+        Dim LastInsert As Integer
+        LastInsert = Me.DuelMatchesTableAdapter.LastInsert()
+
         'Order Side Pick
-        Me.DuelPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 1, God1.SelectedValue)
+        Me.DuelPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
 
 
         'Chaos Side Pick
-        Me.DuelPicksTableAdapter.AddPicks(Val(MatchNumber.Text), 2, God2.SelectedValue)
+        Me.DuelPicksTableAdapter.AddPicks(Val(LastInsert), 2, God2.SelectedValue)
 
         'Order Side Bans
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban1.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban2.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban3.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 1, Ban4.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 1, Ban4.SelectedValue)
 
         'Chaos Side Bans 
 
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban5.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban6.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban7.SelectedValue)
-        Me.DuelBansTableAdapter.AddBans(Val(MatchNumber.Text), 2, Ban8.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 2, Ban7.SelectedValue)
+        Me.DuelBansTableAdapter.AddBans(Val(LastInsert), 2, Ban8.SelectedValue)
 
         MsgBox("Match Added.")
 

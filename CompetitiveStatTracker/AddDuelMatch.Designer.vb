@@ -61,7 +61,8 @@ Partial Class AddDuelMatch
         Me.DuelBansTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelBansTableAdapter()
         Me.DuelPicksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DuelPicksTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelPicksTableAdapter()
-        Me.MatchNumber = New System.Windows.Forms.TextBox()
+        Me.DuelMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DuelMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelMatchesTableAdapter()
         CType(Me.GodsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GodsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,6 +86,7 @@ Partial Class AddDuelMatch
         CType(Me.GodsBindingSource7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DuelBansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DuelPicksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Back
@@ -402,19 +404,20 @@ Partial Class AddDuelMatch
         '
         Me.DuelPicksTableAdapter.ClearBeforeFill = True
         '
-        'MatchNumber
+        'DuelMatchesBindingSource
         '
-        Me.MatchNumber.Location = New System.Drawing.Point(697, 98)
-        Me.MatchNumber.Name = "MatchNumber"
-        Me.MatchNumber.Size = New System.Drawing.Size(100, 20)
-        Me.MatchNumber.TabIndex = 70
+        Me.DuelMatchesBindingSource.DataMember = "DuelMatches"
+        Me.DuelMatchesBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'DuelMatchesTableAdapter
+        '
+        Me.DuelMatchesTableAdapter.ClearBeforeFill = True
         '
         'AddDuelMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1356, 764)
-        Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.AddPaB)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox9)
@@ -463,8 +466,8 @@ Partial Class AddDuelMatch
         CType(Me.GodsBindingSource7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DuelBansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DuelPicksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -506,5 +509,6 @@ Partial Class AddDuelMatch
     Friend WithEvents DuelBansTableAdapter As SmiteDataSetTableAdapters.DuelBansTableAdapter
     Friend WithEvents DuelPicksBindingSource As BindingSource
     Friend WithEvents DuelPicksTableAdapter As SmiteDataSetTableAdapters.DuelPicksTableAdapter
-    Friend WithEvents MatchNumber As TextBox
+    Friend WithEvents DuelMatchesBindingSource As BindingSource
+    Friend WithEvents DuelMatchesTableAdapter As SmiteDataSetTableAdapters.DuelMatchesTableAdapter
 End Class
