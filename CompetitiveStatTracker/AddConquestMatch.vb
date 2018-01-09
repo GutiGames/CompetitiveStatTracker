@@ -5171,9 +5171,6 @@ Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles 
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
         Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
 
-        Dim LastInsert As Integer
-        LastInsert = Me.ConquestMatchesTableAdapter.LastInsert()
-
 
     End Sub
 
@@ -5189,38 +5186,46 @@ Private Sub God9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles 
         Dim LastInsert As Integer
         LastInsert = Me.ConquestMatchesTableAdapter.LastInsert()
 
-        'Order Side Picks
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God2.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God3.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God4.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God5.SelectedValue)
+        If LastInsert = 0 Then
 
-        'Chaos Side Picks
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God6.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God7.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God8.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God9.SelectedValue)
-        ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God10.SelectedValue)
+            MsgBox("Add the match first.")
+            Me.Close()
+            RankedConquest.Show()
+        Else
 
-        'Order Side Bans
+            'Order Side Picks
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God2.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God3.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God4.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 1, God5.SelectedValue)
 
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban4.SelectedValue)
+            'Chaos Side Picks
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God6.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God7.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God8.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God9.SelectedValue)
+            ConquestPicksTableAdapter.AddPicks(Val(LastInsert), 2, God10.SelectedValue)
 
-        'Chaos Side Bans
+            'Order Side Bans
 
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban7.SelectedValue)
-        ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban8.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 1, Ban4.SelectedValue)
+
+            'Chaos Side Bans
+
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban7.SelectedValue)
+            ConquestBansTableAdapter.AddBans(Val(LastInsert), 2, Ban8.SelectedValue)
 
 
-        MsgBox("Match Added.")
+            MsgBox("Match Added.")
 
-        Me.Close()
+            Me.Close()
+        End If
 
     End Sub
 

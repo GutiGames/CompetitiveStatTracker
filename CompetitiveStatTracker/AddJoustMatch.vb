@@ -9,10 +9,6 @@
         'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.Gods' Puede moverla o quitarla según sea necesario.
         Me.GodsTableAdapter.Fill(Me.SmiteDataSet.Gods)
 
-        Dim LastInsert As Integer
-        LastInsert = Me.JoustMatchesTableAdapter.LastInsert()
-
-
 
     End Sub
 
@@ -3451,29 +3447,38 @@
         Dim LastInsert As Integer
         LastInsert = Me.JoustMatchesTableAdapter.LastInsert()
 
-        'Order Side Picks
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God2.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God3.SelectedValue)
+        If LastInsert = 0 Then
 
-        'Chaos Side Picks
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God4.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God5.SelectedValue)
-        Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God6.SelectedValue)
+            MsgBox("Add the match first.")
+            Me.Close()
+            RankedJoust.Show()
+        Else
 
-        'Order Side Bans
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
+            'Order Side Picks
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God1.SelectedValue)
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God2.SelectedValue)
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 1, God3.SelectedValue)
 
-        'Chaos Side Bans 
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban4.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
-        Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
+            'Chaos Side Picks
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God4.SelectedValue)
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God5.SelectedValue)
+            Me.JoustPicksTableAdapter.AddPicks(Val(LastInsert), 2, God6.SelectedValue)
 
-        MsgBox("Match Added.")
+            'Order Side Bans
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban1.SelectedValue)
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban2.SelectedValue)
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 1, Ban3.SelectedValue)
 
-        Me.Close()
+            'Chaos Side Bans 
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban4.SelectedValue)
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban5.SelectedValue)
+            Me.JoustBansTableAdapter.AddBans(Val(LastInsert), 2, Ban6.SelectedValue)
+
+            MsgBox("Match Added.")
+
+            Me.Close()
+
+        End If
 
 
     End Sub

@@ -2,6 +2,13 @@
 
 ### _Patch Notes:_
 
+##### **_Alpha 0.005_**
+
+  - Added Smite: Duel match screen.
+  - Added Smite: Duel Picks and Bans screen.
+  - Added Smite: stat screen to all the gamemodes.
+  - Added new graphics for almost every screen. 
+
 ##### **_Pre-Alpha 0.004_**
 
   - Added Smite: Conquest match screen.
