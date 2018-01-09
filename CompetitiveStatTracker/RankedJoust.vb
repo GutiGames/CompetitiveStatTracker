@@ -36,6 +36,7 @@
         JoustMatchesTableAdapter.InsertJoustMatch(Tier.SelectedValue, Winner.SelectedValue, Que.SelectedValue, Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text), KDA, Comment.Text)
         Me.JoustMatchesTableAdapter.Fill(Me.SmiteDataSet.JoustMatches)
 
+        Me.Hide()
         AddJoustMatch.Show()
     End Sub
 

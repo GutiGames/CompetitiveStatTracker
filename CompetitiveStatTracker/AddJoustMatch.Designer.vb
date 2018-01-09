@@ -66,8 +66,9 @@ Partial Class AddJoustMatch
         Me.JoustBansTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustBansTableAdapter()
         Me.JoustPicksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JoustPicksTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustPicksTableAdapter()
-        Me.MatchNumber = New System.Windows.Forms.TextBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.JoustMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JoustMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.JoustMatchesTableAdapter()
         CType(Me.GodsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +96,7 @@ Partial Class AddJoustMatch
         CType(Me.JoustBansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JoustPicksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JoustMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'God1
@@ -457,13 +459,6 @@ Partial Class AddJoustMatch
         '
         Me.JoustPicksTableAdapter.ClearBeforeFill = True
         '
-        'MatchNumber
-        '
-        Me.MatchNumber.Location = New System.Drawing.Point(642, 28)
-        Me.MatchNumber.Name = "MatchNumber"
-        Me.MatchNumber.Size = New System.Drawing.Size(100, 20)
-        Me.MatchNumber.TabIndex = 34
-        '
         'PictureBox6
         '
         Me.PictureBox6.Location = New System.Drawing.Point(1058, 439)
@@ -473,6 +468,15 @@ Partial Class AddJoustMatch
         Me.PictureBox6.TabIndex = 22
         Me.PictureBox6.TabStop = False
         '
+        'JoustMatchesBindingSource
+        '
+        Me.JoustMatchesBindingSource.DataMember = "JoustMatches"
+        Me.JoustMatchesBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'JoustMatchesTableAdapter
+        '
+        Me.JoustMatchesTableAdapter.ClearBeforeFill = True
+        '
         'AddJoustMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -480,7 +484,6 @@ Partial Class AddJoustMatch
         Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.JoustPB
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1356, 764)
-        Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.AddPaB)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.PictureBox6)
@@ -537,8 +540,8 @@ Partial Class AddJoustMatch
         CType(Me.JoustBansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JoustPicksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JoustMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents God1 As ComboBox
@@ -584,6 +587,7 @@ Partial Class AddJoustMatch
     Friend WithEvents JoustBansTableAdapter As SmiteDataSetTableAdapters.JoustBansTableAdapter
     Friend WithEvents JoustPicksBindingSource As BindingSource
     Friend WithEvents JoustPicksTableAdapter As SmiteDataSetTableAdapters.JoustPicksTableAdapter
-    Friend WithEvents MatchNumber As TextBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents JoustMatchesBindingSource As BindingSource
+    Friend WithEvents JoustMatchesTableAdapter As SmiteDataSetTableAdapters.JoustMatchesTableAdapter
 End Class

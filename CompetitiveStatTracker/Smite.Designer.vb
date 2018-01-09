@@ -40,37 +40,40 @@ Partial Class SmiteMenu
         Me.Conquest.InitialImage = Nothing
         Me.Conquest.Location = New System.Drawing.Point(8, 67)
         Me.Conquest.Name = "Conquest"
-        Me.Conquest.Size = New System.Drawing.Size(430, 602)
+        Me.Conquest.Size = New System.Drawing.Size(445, 623)
+        Me.Conquest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Conquest.TabIndex = 0
         Me.Conquest.TabStop = False
         '
         'Joust
         '
         Me.Joust.Image = CType(resources.GetObject("Joust.Image"), System.Drawing.Image)
-        Me.Joust.Location = New System.Drawing.Point(439, 67)
+        Me.Joust.Location = New System.Drawing.Point(456, 67)
         Me.Joust.Name = "Joust"
-        Me.Joust.Size = New System.Drawing.Size(430, 602)
-        Me.Joust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Joust.Size = New System.Drawing.Size(445, 623)
+        Me.Joust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Joust.TabIndex = 1
         Me.Joust.TabStop = False
         '
         'Duel
         '
         Me.Duel.Image = CType(resources.GetObject("Duel.Image"), System.Drawing.Image)
-        Me.Duel.Location = New System.Drawing.Point(870, 67)
+        Me.Duel.Location = New System.Drawing.Point(905, 67)
         Me.Duel.Name = "Duel"
-        Me.Duel.Size = New System.Drawing.Size(430, 602)
-        Me.Duel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Duel.Size = New System.Drawing.Size(445, 623)
+        Me.Duel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Duel.TabIndex = 2
         Me.Duel.TabStop = False
         '
         'Title
         '
         Me.Title.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Title.BackColor = System.Drawing.Color.Transparent
         Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Title.Location = New System.Drawing.Point(12, 9)
+        Me.Title.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Title.Location = New System.Drawing.Point(8, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(1290, 55)
+        Me.Title.Size = New System.Drawing.Size(1342, 55)
         Me.Title.TabIndex = 3
         Me.Title.Text = "Competitive Smite"
         Me.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -88,7 +91,8 @@ Partial Class SmiteMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1306, 671)
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.SmiteBackground
+        Me.ClientSize = New System.Drawing.Size(1356, 696)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.Title)
         Me.Controls.Add(Me.Duel)
@@ -101,7 +105,6 @@ Partial Class SmiteMenu
         CType(Me.Joust, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Duel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

@@ -81,11 +81,12 @@ Partial Class AddConquestMatch
         Me.GodsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.GodsTableAdapter()
         Me.Back = New System.Windows.Forms.Button()
         Me.Add = New System.Windows.Forms.Button()
-        Me.MatchNumber = New System.Windows.Forms.TextBox()
         Me.ConquestPicksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ConquestPicksTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestPicksTableAdapter()
         Me.ConquestBansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ConquestBansTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestBansTableAdapter()
+        Me.ConquestMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ConquestMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestMatchesTableAdapter()
         CType(Me.GodsBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GodsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,6 +126,7 @@ Partial Class AddConquestMatch
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConquestPicksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConquestBansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'God3
@@ -526,6 +528,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource16.DataMember = "Gods"
         Me.GodsBindingSource16.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource16.Sort = "Name"
         '
         'Ban5
         '
@@ -543,6 +546,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource15.DataMember = "Gods"
         Me.GodsBindingSource15.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource15.Sort = "Name"
         '
         'Ban4
         '
@@ -578,12 +582,13 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource17.DataMember = "Gods"
         Me.GodsBindingSource17.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource17.Sort = "Name"
         '
         'Ban8
         '
         Me.Ban8.AllowDrop = True
         Me.Ban8.DataSource = Me.GodsBindingSource18
-        Me.Ban8.DisplayMember = "IdGod"
+        Me.Ban8.DisplayMember = "Name"
         Me.Ban8.FormattingEnabled = True
         Me.Ban8.Location = New System.Drawing.Point(356, 652)
         Me.Ban8.Name = "Ban8"
@@ -595,6 +600,7 @@ Partial Class AddConquestMatch
         '
         Me.GodsBindingSource18.DataMember = "Gods"
         Me.GodsBindingSource18.DataSource = Me.SmiteDataSet
+        Me.GodsBindingSource18.Sort = "Name"
         '
         'PictureBox17
         '
@@ -636,13 +642,6 @@ Partial Class AddConquestMatch
         Me.Add.Text = "Add"
         Me.Add.UseVisualStyleBackColor = True
         '
-        'MatchNumber
-        '
-        Me.MatchNumber.Location = New System.Drawing.Point(620, 41)
-        Me.MatchNumber.Name = "MatchNumber"
-        Me.MatchNumber.Size = New System.Drawing.Size(100, 20)
-        Me.MatchNumber.TabIndex = 57
-        '
         'ConquestPicksBindingSource
         '
         Me.ConquestPicksBindingSource.DataMember = "ConquestPicks"
@@ -661,13 +660,21 @@ Partial Class AddConquestMatch
         '
         Me.ConquestBansTableAdapter.ClearBeforeFill = True
         '
+        'ConquestMatchesBindingSource
+        '
+        Me.ConquestMatchesBindingSource.DataMember = "ConquestMatches"
+        Me.ConquestMatchesBindingSource.DataSource = Me.SmiteDataSet
+        '
+        'ConquestMatchesTableAdapter
+        '
+        Me.ConquestMatchesTableAdapter.ClearBeforeFill = True
+        '
         'AddConquestMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.ConquestPB
         Me.ClientSize = New System.Drawing.Size(1356, 764)
-        Me.Controls.Add(Me.MatchNumber)
         Me.Controls.Add(Me.Add)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.PictureBox18)
@@ -748,8 +755,8 @@ Partial Class AddConquestMatch
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConquestPicksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConquestBansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -811,9 +818,10 @@ Partial Class AddConquestMatch
     Friend WithEvents GodsBindingSource18 As BindingSource
     Friend WithEvents Back As Button
     Friend WithEvents Add As Button
-    Friend WithEvents MatchNumber As TextBox
     Friend WithEvents ConquestPicksBindingSource As BindingSource
     Friend WithEvents ConquestPicksTableAdapter As SmiteDataSetTableAdapters.ConquestPicksTableAdapter
     Friend WithEvents ConquestBansBindingSource As BindingSource
     Friend WithEvents ConquestBansTableAdapter As SmiteDataSetTableAdapters.ConquestBansTableAdapter
+    Friend WithEvents ConquestMatchesBindingSource As BindingSource
+    Friend WithEvents ConquestMatchesTableAdapter As SmiteDataSetTableAdapters.ConquestMatchesTableAdapter
 End Class

@@ -8,10 +8,8 @@
     End Sub
 
     Private Sub JoustStatsScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'SmiteDataSet.WinRatio' table. You can move, or remove it, as needed.
-        Me.WinRatioTableAdapter.Fill(Me.SmiteDataSet.WinRatio)
-        'TODO: This line of code loads data into the 'SmiteDataSet.WinRatio' table. You can move, or remove it, as needed.
-        Me.WinRatioTableAdapter.Fill(Me.SmiteDataSet.WinRatio)
+        'TODO: esta línea de código carga datos en la tabla 'SmiteDataSet.JoustWinRatio' Puede moverla o quitarla según sea necesario.
+        Me.JoustWinRatioTableAdapter.Fill(Me.SmiteDataSet.JoustWinRatio)
 
     End Sub
 End Class

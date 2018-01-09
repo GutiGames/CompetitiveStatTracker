@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class RankedConquest
+Partial Class RankedDuel
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -34,7 +34,7 @@ Partial Class RankedConquest
         Me.MyADataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MyKDADataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CommetsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ConquestMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DuelMatchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SmiteDataSet = New CompetitiveStatTracker.SmiteDataSet()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -57,14 +57,14 @@ Partial Class RankedConquest
         Me.MatchID = New System.Windows.Forms.TextBox()
         Me.Modify = New System.Windows.Forms.Button()
         Me.Add = New System.Windows.Forms.Button()
-        Me.ConquestMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.ConquestMatchesTableAdapter()
+        Me.DuelMatchesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.DuelMatchesTableAdapter()
         Me.TiersTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TiersTableAdapter()
         Me.TeamsTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.TeamsTableAdapter()
         Me.QueTypesTableAdapter = New CompetitiveStatTracker.SmiteDataSetTableAdapters.QueTypesTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Stats = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,9 +74,9 @@ Partial Class RankedConquest
         'Back
         '
         Me.Back.Location = New System.Drawing.Point(17, 16)
-        Me.Back.Margin = New System.Windows.Forms.Padding(5)
+        Me.Back.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(133, 50)
+        Me.Back.Size = New System.Drawing.Size(177, 62)
         Me.Back.TabIndex = 32
         Me.Back.Text = "<="
         Me.Back.UseVisualStyleBackColor = True
@@ -89,14 +89,14 @@ Partial Class RankedConquest
         Me.DataGridView1.ColumnHeadersHeight = 25
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdMatchDataGridViewTextBoxColumn, Me.TierDataGridViewTextBoxColumn, Me.WinnerDataGridViewTextBoxColumn, Me.QueTypeDataGridViewTextBoxColumn, Me.MyKDataGridViewTextBoxColumn, Me.MyDDataGridViewTextBoxColumn, Me.MyADataGridViewTextBoxColumn, Me.MyKDADataGridViewTextBoxColumn, Me.CommetsDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ConquestMatchesBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 76)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5)
+        Me.DataGridView1.DataSource = Me.DuelMatchesBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 111)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.DataGridView1.Size = New System.Drawing.Size(1240, 500)
-        Me.DataGridView1.TabIndex = 32
+        Me.DataGridView1.Size = New System.Drawing.Size(1653, 615)
+        Me.DataGridView1.TabIndex = 33
         '
         'IdMatchDataGridViewTextBoxColumn
         '
@@ -170,10 +170,10 @@ Partial Class RankedConquest
         Me.CommetsDataGridViewTextBoxColumn.ReadOnly = True
         Me.CommetsDataGridViewTextBoxColumn.Width = 130
         '
-        'ConquestMatchesBindingSource
+        'DuelMatchesBindingSource
         '
-        Me.ConquestMatchesBindingSource.DataMember = "ConquestMatches"
-        Me.ConquestMatchesBindingSource.DataSource = Me.SmiteDataSet
+        Me.DuelMatchesBindingSource.DataMember = "DuelMatches"
+        Me.DuelMatchesBindingSource.DataSource = Me.SmiteDataSet
         '
         'SmiteDataSet
         '
@@ -184,98 +184,98 @@ Partial Class RankedConquest
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(864, 606)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(1151, 759)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(72, 15)
-        Me.Label12.TabIndex = 48
+        Me.Label12.TabIndex = 49
         Me.Label12.Text = "Comment:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(326, 606)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(433, 759)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 15)
-        Me.Label11.TabIndex = 47
+        Me.Label11.TabIndex = 48
         Me.Label11.Text = "Que Type:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(606, 606)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(807, 759)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 15)
-        Me.Label10.TabIndex = 46
+        Me.Label10.TabIndex = 47
         Me.Label10.Text = "Assists:"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(511, 606)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(680, 759)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 15)
-        Me.Label9.TabIndex = 45
+        Me.Label9.TabIndex = 46
         Me.Label9.Text = "Deaths:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(426, 606)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(567, 759)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 15)
-        Me.Label8.TabIndex = 44
+        Me.Label8.TabIndex = 45
         Me.Label8.Text = "Kills:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(255, 606)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(339, 759)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 15)
-        Me.Label3.TabIndex = 43
+        Me.Label3.TabIndex = 44
         Me.Label3.Text = "Winner:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(165, 606)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(219, 759)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 15)
-        Me.Label2.TabIndex = 42
+        Me.Label2.TabIndex = 43
         Me.Label2.Text = "Tier:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(14, 606)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(17, 759)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 15)
-        Me.Label1.TabIndex = 41
+        Me.Label1.TabIndex = 42
         Me.Label1.Text = "Match Number:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Comment
         '
-        Me.Comment.Location = New System.Drawing.Point(684, 625)
-        Me.Comment.Margin = New System.Windows.Forms.Padding(4)
+        Me.Comment.Location = New System.Drawing.Point(911, 783)
+        Me.Comment.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Comment.Multiline = True
         Me.Comment.Name = "Comment"
-        Me.Comment.Size = New System.Drawing.Size(461, 22)
-        Me.Comment.TabIndex = 40
+        Me.Comment.Size = New System.Drawing.Size(613, 26)
+        Me.Comment.TabIndex = 41
         '
         'Que
         '
@@ -283,11 +283,11 @@ Partial Class RankedConquest
         Me.Que.DataSource = Me.QueTypesBindingSource
         Me.Que.DisplayMember = "Name"
         Me.Que.FormattingEnabled = True
-        Me.Que.Location = New System.Drawing.Point(328, 625)
-        Me.Que.Margin = New System.Windows.Forms.Padding(4)
+        Me.Que.Location = New System.Drawing.Point(436, 783)
+        Me.Que.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Que.Name = "Que"
-        Me.Que.Size = New System.Drawing.Size(66, 24)
-        Me.Que.TabIndex = 39
+        Me.Que.Size = New System.Drawing.Size(87, 24)
+        Me.Que.TabIndex = 40
         Me.Que.ValueMember = "IdQueType"
         '
         'QueTypesBindingSource
@@ -297,27 +297,27 @@ Partial Class RankedConquest
         '
         'Assists
         '
-        Me.Assists.Location = New System.Drawing.Point(590, 625)
-        Me.Assists.Margin = New System.Windows.Forms.Padding(4)
+        Me.Assists.Location = New System.Drawing.Point(785, 783)
+        Me.Assists.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Assists.Name = "Assists"
-        Me.Assists.Size = New System.Drawing.Size(86, 22)
-        Me.Assists.TabIndex = 38
+        Me.Assists.Size = New System.Drawing.Size(113, 22)
+        Me.Assists.TabIndex = 39
         '
         'Kills
         '
-        Me.Kills.Location = New System.Drawing.Point(402, 625)
-        Me.Kills.Margin = New System.Windows.Forms.Padding(4)
+        Me.Kills.Location = New System.Drawing.Point(535, 783)
+        Me.Kills.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Kills.Name = "Kills"
-        Me.Kills.Size = New System.Drawing.Size(86, 22)
-        Me.Kills.TabIndex = 37
+        Me.Kills.Size = New System.Drawing.Size(113, 22)
+        Me.Kills.TabIndex = 38
         '
         'Deaths
         '
-        Me.Deaths.Location = New System.Drawing.Point(496, 625)
-        Me.Deaths.Margin = New System.Windows.Forms.Padding(4)
+        Me.Deaths.Location = New System.Drawing.Point(660, 783)
+        Me.Deaths.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Deaths.Name = "Deaths"
-        Me.Deaths.Size = New System.Drawing.Size(86, 22)
-        Me.Deaths.TabIndex = 36
+        Me.Deaths.Size = New System.Drawing.Size(113, 22)
+        Me.Deaths.TabIndex = 37
         '
         'Winner
         '
@@ -325,11 +325,11 @@ Partial Class RankedConquest
         Me.Winner.DataSource = Me.TeamsBindingSource
         Me.Winner.DisplayMember = "Names"
         Me.Winner.FormattingEnabled = True
-        Me.Winner.Location = New System.Drawing.Point(247, 625)
-        Me.Winner.Margin = New System.Windows.Forms.Padding(4)
+        Me.Winner.Location = New System.Drawing.Point(328, 783)
+        Me.Winner.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Winner.Name = "Winner"
-        Me.Winner.Size = New System.Drawing.Size(73, 24)
-        Me.Winner.TabIndex = 35
+        Me.Winner.Size = New System.Drawing.Size(96, 24)
+        Me.Winner.TabIndex = 36
         Me.Winner.ValueMember = "IdTeams"
         '
         'TeamsBindingSource
@@ -343,11 +343,11 @@ Partial Class RankedConquest
         Me.Tier.DataSource = Me.TiersBindingSource
         Me.Tier.DisplayMember = "Nombre"
         Me.Tier.FormattingEnabled = True
-        Me.Tier.Location = New System.Drawing.Point(127, 625)
-        Me.Tier.Margin = New System.Windows.Forms.Padding(4)
+        Me.Tier.Location = New System.Drawing.Point(168, 783)
+        Me.Tier.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Tier.Name = "Tier"
-        Me.Tier.Size = New System.Drawing.Size(112, 24)
-        Me.Tier.TabIndex = 34
+        Me.Tier.Size = New System.Drawing.Size(148, 24)
+        Me.Tier.TabIndex = 35
         Me.Tier.ValueMember = "IdTier"
         '
         'TiersBindingSource
@@ -357,35 +357,35 @@ Partial Class RankedConquest
         '
         'MatchID
         '
-        Me.MatchID.Location = New System.Drawing.Point(17, 625)
-        Me.MatchID.Margin = New System.Windows.Forms.Padding(4)
+        Me.MatchID.Location = New System.Drawing.Point(21, 783)
+        Me.MatchID.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.MatchID.Name = "MatchID"
-        Me.MatchID.Size = New System.Drawing.Size(102, 22)
-        Me.MatchID.TabIndex = 33
+        Me.MatchID.Size = New System.Drawing.Size(135, 22)
+        Me.MatchID.TabIndex = 34
         '
         'Modify
         '
-        Me.Modify.Location = New System.Drawing.Point(1206, 625)
-        Me.Modify.Margin = New System.Windows.Forms.Padding(4)
+        Me.Modify.Location = New System.Drawing.Point(1607, 783)
+        Me.Modify.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Modify.Name = "Modify"
-        Me.Modify.Size = New System.Drawing.Size(45, 22)
-        Me.Modify.TabIndex = 49
+        Me.Modify.Size = New System.Drawing.Size(60, 27)
+        Me.Modify.TabIndex = 50
         Me.Modify.Text = "Edit"
         Me.Modify.UseVisualStyleBackColor = True
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(1153, 625)
-        Me.Add.Margin = New System.Windows.Forms.Padding(4)
+        Me.Add.Location = New System.Drawing.Point(1536, 783)
+        Me.Add.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(45, 22)
-        Me.Add.TabIndex = 50
+        Me.Add.Size = New System.Drawing.Size(60, 27)
+        Me.Add.TabIndex = 51
         Me.Add.Text = "Add"
         Me.Add.UseVisualStyleBackColor = True
         '
-        'ConquestMatchesTableAdapter
+        'DuelMatchesTableAdapter
         '
-        Me.ConquestMatchesTableAdapter.ClearBeforeFill = True
+        Me.DuelMatchesTableAdapter.ClearBeforeFill = True
         '
         'TiersTableAdapter
         '
@@ -401,31 +401,33 @@ Partial Class RankedConquest
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(964, 16)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button1.Location = New System.Drawing.Point(1304, 16)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(133, 50)
-        Me.Button1.TabIndex = 32
-        Me.Button1.Text = "<="
+        Me.Button1.Size = New System.Drawing.Size(177, 62)
+        Me.Button1.TabIndex = 52
+        Me.Button1.Text = "=>"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Stats
         '
-        Me.Stats.Location = New System.Drawing.Point(1107, 16)
-        Me.Stats.Margin = New System.Windows.Forms.Padding(5)
+        Me.Stats.Location = New System.Drawing.Point(1492, 16)
+        Me.Stats.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Stats.Name = "Stats"
-        Me.Stats.Size = New System.Drawing.Size(133, 50)
-        Me.Stats.TabIndex = 32
+        Me.Stats.Size = New System.Drawing.Size(177, 62)
+        Me.Stats.TabIndex = 53
         Me.Stats.Text = "Stats"
         Me.Stats.UseVisualStyleBackColor = True
         '
-        'RankedConquest
+        'RankedDuel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.conquest_background_optimized
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.s3_joust_01
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.ClientSize = New System.Drawing.Size(1436, 838)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Stats)
         Me.Controls.Add(Me.Modify)
         Me.Controls.Add(Me.Add)
         Me.Controls.Add(Me.Label12)
@@ -445,16 +447,14 @@ Partial Class RankedConquest
         Me.Controls.Add(Me.Tier)
         Me.Controls.Add(Me.MatchID)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Stats)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Back)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "RankedConquest"
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Name = "RankedDuel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RankedConquest"
+        Me.Text = "RankedDuel"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ConquestMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DuelMatchesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SmiteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QueTypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TeamsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -466,18 +466,6 @@ Partial Class RankedConquest
 
     Friend WithEvents Back As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents SmiteDataSet As SmiteDataSet
-    Friend WithEvents ConquestMatchesBindingSource As BindingSource
-    Friend WithEvents ConquestMatchesTableAdapter As SmiteDataSetTableAdapters.ConquestMatchesTableAdapter
-    Friend WithEvents IdMatchDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TierDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents WinnerDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents QueTypeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MyKDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MyDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MyADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MyKDADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
@@ -496,6 +484,18 @@ Partial Class RankedConquest
     Friend WithEvents MatchID As TextBox
     Friend WithEvents Modify As Button
     Friend WithEvents Add As Button
+    Friend WithEvents SmiteDataSet As SmiteDataSet
+    Friend WithEvents DuelMatchesBindingSource As BindingSource
+    Friend WithEvents DuelMatchesTableAdapter As SmiteDataSetTableAdapters.DuelMatchesTableAdapter
+    Friend WithEvents IdMatchDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TierDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents WinnerDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents QueTypeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MyKDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MyDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MyADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MyKDADataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CommetsDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TiersBindingSource As BindingSource
     Friend WithEvents TiersTableAdapter As SmiteDataSetTableAdapters.TiersTableAdapter
     Friend WithEvents TeamsBindingSource As BindingSource
