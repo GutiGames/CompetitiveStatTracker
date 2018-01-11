@@ -445,6 +445,7 @@
     <None Include="Resources\GodCards\Zeus.jpg" />
     <None Include="Resources\GodCards\ZhongKui.jpg" />
     <None Include="Resources\ConquestPB.jpg" />
+    <None Include="Resources\GodCards\DefaultCard.png" />
     <Content Include="Resources\GodIcons\Agni.jpg" />
     <Content Include="Resources\GodIcons\AhMuzenCab.jpg" />
     <Content Include="Resources\GodIcons\AhPuch.jpg" />
@@ -474,6 +475,7 @@
     <Content Include="Resources\GodIcons\CuChulainn.jpg" />
     <Content Include="Resources\GodIcons\Cupid.jpg" />
     <Content Include="Resources\GodIcons\DaJi.jpg" />
+    <None Include="Resources\GodIcons\DefaultIcon.png" />
     <Content Include="Resources\GodIcons\Discordia.jpg" />
     <Content Include="Resources\GodIcons\ErlangShen.jpg" />
     <Content Include="Resources\GodIcons\Fafnir.jpg" />

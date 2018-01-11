@@ -33,7 +33,7 @@
         Me.Close()
     End Sub
 
-    Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
+    Private Sub Add_Click(sender As Object, e As EventArgs)
 
         Dim KDA As Single = CalculateKDA(Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text))
 
@@ -45,7 +45,7 @@
 
     End Sub
 
-    Private Sub Modify_Click(sender As Object, e As EventArgs) Handles Modify.Click
+    Private Sub Modify_Click(sender As Object, e As EventArgs)
 
         Dim KDA As Single = CalculateKDA(Val(Kills.Text), Val(Deaths.Text), Val(Assists.Text))
 
