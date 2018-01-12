@@ -213,7 +213,7 @@ Partial Class RankedDuel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1124, 16)
+        Me.Button1.Location = New System.Drawing.Point(981, 14)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 50)
@@ -223,10 +223,10 @@ Partial Class RankedDuel
         '
         'Stats
         '
-        Me.Stats.Location = New System.Drawing.Point(1492, 16)
+        Me.Stats.Location = New System.Drawing.Point(1124, 14)
         Me.Stats.Margin = New System.Windows.Forms.Padding(5)
         Me.Stats.Name = "Stats"
-        Me.Stats.Size = New System.Drawing.Size(177, 62)
+        Me.Stats.Size = New System.Drawing.Size(133, 50)
         Me.Stats.TabIndex = 53
         Me.Stats.Text = "Stats"
         Me.Stats.UseVisualStyleBackColor = True
