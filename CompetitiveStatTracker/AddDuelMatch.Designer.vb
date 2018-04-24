@@ -23,6 +23,7 @@ Partial Class AddDuelMatch
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddDuelMatch))
         Me.Back = New System.Windows.Forms.Button()
         Me.God1 = New System.Windows.Forms.ComboBox()
         Me.GodsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
@@ -104,7 +105,7 @@ Partial Class AddDuelMatch
         Me.God1.DataSource = Me.GodsBindingSource1
         Me.God1.DisplayMember = "Name"
         Me.God1.FormattingEnabled = True
-        Me.God1.Location = New System.Drawing.Point(109, 348)
+        Me.God1.Location = New System.Drawing.Point(399, 368)
         Me.God1.Name = "God1"
         Me.God1.Size = New System.Drawing.Size(85, 21)
         Me.God1.TabIndex = 34
@@ -127,7 +128,7 @@ Partial Class AddDuelMatch
         Me.God2.DataSource = Me.GodsBindingSource2
         Me.God2.DisplayMember = "Name"
         Me.God2.FormattingEnabled = True
-        Me.God2.Location = New System.Drawing.Point(110, 674)
+        Me.God2.Location = New System.Drawing.Point(877, 718)
         Me.God2.Name = "God2"
         Me.God2.Size = New System.Drawing.Size(85, 21)
         Me.God2.TabIndex = 36
@@ -141,7 +142,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(52, 395)
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(819, 439)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -150,7 +154,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(52, 68)
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(341, 89)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(200, 266)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -159,7 +166,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox6
         '
-        Me.PictureBox6.Location = New System.Drawing.Point(650, 152)
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox6.Location = New System.Drawing.Point(1244, 135)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -172,7 +182,7 @@ Partial Class AddDuelMatch
         Me.Ban4.DataSource = Me.GodsBindingSource6
         Me.Ban4.DisplayMember = "Name"
         Me.Ban4.FormattingEnabled = True
-        Me.Ban4.Location = New System.Drawing.Point(645, 239)
+        Me.Ban4.Location = New System.Drawing.Point(1239, 222)
         Me.Ban4.Name = "Ban4"
         Me.Ban4.Size = New System.Drawing.Size(85, 21)
         Me.Ban4.TabIndex = 59
@@ -186,7 +196,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(342, 152)
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(936, 135)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -195,7 +208,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(444, 152)
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.Location = New System.Drawing.Point(1038, 135)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -204,7 +220,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(547, 152)
+        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox5.Location = New System.Drawing.Point(1141, 135)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -217,7 +236,7 @@ Partial Class AddDuelMatch
         Me.Ban3.DataSource = Me.GodsBindingSource5
         Me.Ban3.DisplayMember = "Name"
         Me.Ban3.FormattingEnabled = True
-        Me.Ban3.Location = New System.Drawing.Point(542, 239)
+        Me.Ban3.Location = New System.Drawing.Point(1136, 222)
         Me.Ban3.Name = "Ban3"
         Me.Ban3.Size = New System.Drawing.Size(85, 21)
         Me.Ban3.TabIndex = 53
@@ -235,7 +254,7 @@ Partial Class AddDuelMatch
         Me.Ban2.DataSource = Me.GodsBindingSource4
         Me.Ban2.DisplayMember = "Name"
         Me.Ban2.FormattingEnabled = True
-        Me.Ban2.Location = New System.Drawing.Point(439, 239)
+        Me.Ban2.Location = New System.Drawing.Point(1033, 222)
         Me.Ban2.Name = "Ban2"
         Me.Ban2.Size = New System.Drawing.Size(85, 21)
         Me.Ban2.TabIndex = 54
@@ -253,7 +272,7 @@ Partial Class AddDuelMatch
         Me.Ban1.DataSource = Me.GodsBindingSource3
         Me.Ban1.DisplayMember = "Name"
         Me.Ban1.FormattingEnabled = True
-        Me.Ban1.Location = New System.Drawing.Point(337, 239)
+        Me.Ban1.Location = New System.Drawing.Point(931, 222)
         Me.Ban1.Name = "Ban1"
         Me.Ban1.Size = New System.Drawing.Size(85, 21)
         Me.Ban1.TabIndex = 55
@@ -267,7 +286,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox10
         '
-        Me.PictureBox10.Location = New System.Drawing.Point(650, 501)
+        Me.PictureBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox10.BackgroundImage = CType(resources.GetObject("PictureBox10.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox10.Location = New System.Drawing.Point(359, 565)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -276,7 +298,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox9
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(547, 501)
+        Me.PictureBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox9.BackgroundImage = CType(resources.GetObject("PictureBox9.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox9.Location = New System.Drawing.Point(256, 565)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -285,7 +310,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox7
         '
-        Me.PictureBox7.Location = New System.Drawing.Point(342, 501)
+        Me.PictureBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox7.BackgroundImage = CType(resources.GetObject("PictureBox7.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox7.Location = New System.Drawing.Point(51, 565)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -298,7 +326,7 @@ Partial Class AddDuelMatch
         Me.Ban8.DataSource = Me.GodsBindingSource10
         Me.Ban8.DisplayMember = "Name"
         Me.Ban8.FormattingEnabled = True
-        Me.Ban8.Location = New System.Drawing.Point(645, 588)
+        Me.Ban8.Location = New System.Drawing.Point(354, 652)
         Me.Ban8.Name = "Ban8"
         Me.Ban8.Size = New System.Drawing.Size(85, 21)
         Me.Ban8.TabIndex = 61
@@ -312,7 +340,10 @@ Partial Class AddDuelMatch
         '
         'PictureBox8
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(444, 501)
+        Me.PictureBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.PictureBox8.BackgroundImage = CType(resources.GetObject("PictureBox8.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox8.Location = New System.Drawing.Point(153, 565)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(75, 75)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -325,7 +356,7 @@ Partial Class AddDuelMatch
         Me.Ban7.DataSource = Me.GodsBindingSource9
         Me.Ban7.DisplayMember = "Name"
         Me.Ban7.FormattingEnabled = True
-        Me.Ban7.Location = New System.Drawing.Point(542, 588)
+        Me.Ban7.Location = New System.Drawing.Point(251, 652)
         Me.Ban7.Name = "Ban7"
         Me.Ban7.Size = New System.Drawing.Size(85, 21)
         Me.Ban7.TabIndex = 63
@@ -343,7 +374,7 @@ Partial Class AddDuelMatch
         Me.Ban6.DataSource = Me.GodsBindingSource8
         Me.Ban6.DisplayMember = "Name"
         Me.Ban6.FormattingEnabled = True
-        Me.Ban6.Location = New System.Drawing.Point(439, 588)
+        Me.Ban6.Location = New System.Drawing.Point(148, 652)
         Me.Ban6.Name = "Ban6"
         Me.Ban6.Size = New System.Drawing.Size(85, 21)
         Me.Ban6.TabIndex = 62
@@ -361,7 +392,7 @@ Partial Class AddDuelMatch
         Me.Ban5.DataSource = Me.GodsBindingSource7
         Me.Ban5.DisplayMember = "Name"
         Me.Ban5.FormattingEnabled = True
-        Me.Ban5.Location = New System.Drawing.Point(337, 588)
+        Me.Ban5.Location = New System.Drawing.Point(46, 652)
         Me.Ban5.Name = "Ban5"
         Me.Ban5.Size = New System.Drawing.Size(85, 21)
         Me.Ban5.TabIndex = 64
@@ -417,6 +448,7 @@ Partial Class AddDuelMatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.CompetitiveStatTracker.My.Resources.Graphics.JoustPB
         Me.ClientSize = New System.Drawing.Size(1356, 764)
         Me.Controls.Add(Me.AddPaB)
         Me.Controls.Add(Me.PictureBox10)
